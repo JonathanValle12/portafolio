@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.cabecera {
+    background-color: #343537;
+    width: 100%;
+    max-width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección a columna */
+    justify-content: flex-start; /* Alinear contenido arriba */
+    align-items: center;
+    position: fixed; /* Hacer que el encabezado sea fijo */
+}
+
+.cabecera .menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.cabecera .menus img {
+    width: 160px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.cabecera .menus ul li {
+    list-style: none;
+}
+
+.cabecera .menus ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+}
+
+.contenedor .main {
+    display: flex; /* Alinear elementos de la derecha */
+    flex-direction: column;
+    flex: 1;
+    margin-left: 28%; /* Establecer un margen izquierdo para evitar solapamiento con el encabezado */
+    padding: 20px; /* Agregar un relleno para separar el contenido del margen */
+}
+
+.contenedor .main .presentacion {
+    text-align: center;
+    line-height: 30px;
+}
+
+.contenedor .presentacion .yo_2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+
+.contenedor .presentacion h2 {
+    font-size: 35px;
+    line-height: 45px;
+    color: #12588B;
+}
+.presentacion .botones {
+    text-align: center;
+    margin-top: 20px;
+}
+.presentacion button {
+    border: none;
+    border: 1px solid #12588B;
+    background-color: #12588B;
+    padding: 8px 15px;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+.presentacion button:hover {
+    transition: all .5s;
+    background-color: #0f4871;
+}
+
+.contenedor .redes_sociales {
+    margin-top: 30px;
+    
+    text-align: left;
+}
+
+.contenedor .redes_sociales i {
+    display: flex;
+    line-height: 50px;
+    font-size: 30px;
+}
+.contenedor .redes_sociales a {
+    color: #000;
+}
+.contenedor .main hr {
+    margin-top: 150px;
+}
+
+.contenedor .sobre_mi {
+    margin-top: 80px;
+}
+
+.contenedor .sobre_mi h2 {
+    font-size: 35px;
+    color: #12588B;
+    -webkit-text-stroke: 1px #000;
+}
+
+.contenedor .sobre_mi p {
+    width: 80%;
+    line-height: 25px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.contenedor .sobre_mi h3 {
+    font-size: 18px;
+    color: #12588B;
+    width: 60%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+/* Contenedor principal para los bloques de información */
+.view_stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con tamaño igual */
+    grid-gap: 20px; /* Espacio entre los bloques */
+}
+
+/* Estilo base para los bloques de información */
+.view_stack div {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* Agregar un borde a cada bloque si deseas */
+}
+.sobre_mi .view_stack .frontend,
+.sobre_mi .view_stack .backend,
+.sobre_mi .view_stack .herramientas {
+    margin-top: 30px; /* Añade un margen superior */
+}
+.sobre_mi .view_stack div h3 {
+    width: 100%;
+}
+.contenedor .sobre_mi img {
+    width: 70px;
+    height: 70px;
+}
+
+.sobre_mi .view_stack .contenedor_stack {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.sobre_mi .view_stack div span {
+    border: 1px solid #585858;
+    background-color: #585858;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Agrega margen inferior para separar los elementos */
+}
+
+.contenedor .proyectos {
+    margin-top: 80px;
+}
+
+.contenedor .proyectos p, h2 {
+    text-align: center;
+}
+.contenedor .proyectos h2 {
+    font-size: 45px;
+}
+.contenedor .proyectos .linea {
+    width: 18%;
+    margin: 15px auto;
+}
+
+.contenedor .proyectos .proyecto_izquierda,
+.contenedor .proyectos .proyecto_derecha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 140px;
+}
+.contenedor .proyectos .proyecto_derecha {
+    justify-content: flex-end;  
+}
+.contenedor .proyectos .proyecto_izquierda img,
+.contenedor .proyectos .proyecto_derecha img {
+    width: 48%;
+    height: 40%;
+    position: absolute;
+    margin-top: 130px;
+}
+
+.contenedor .proyectos .información_proyecto_izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 60%;
+    position: relative;
+    top: 60px;
+    line-height: 50px;
+    z-index: 999999;
+}
+
+.contenedor .proyectos .información_proyecto_derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 60%;
+
+    position: relative;
+    top: 60px;
+    line-height: 50px;
+    
+}
+.contenedor .proyectos .información_proyecto_izquierda h2,
+.contenedor .proyectos .información_proyecto_derecha h2 {
+    font-size: 25px;
+}
+.contenedor .proyectos .información_proyecto_izquierda .información_app,
+.contenedor .proyectos .información_proyecto_derecha .información_app {
+    background-color: #12588B;
+    padding: 0 70px;
+    color: #fff;
+    border-radius: 10px;
+}
+.contenedor .proyectos a {
+    color: #000;
+}
+.contenedor .proyectos i {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.contenedor .proyectos .lenguaje_ {
+    line-height: 5px;
+    font-size: 13px;
+}
+
+.contenedor .contactame {
+    width: 60%;
+    max-width: 1000px;
+    margin: 80px auto;
+}
+
+.contenedor .contactame p {
+    text-align: center;
+}
+.contenedor .contactame h2 {
+    font-size: 45px;
+}
+.contenedor .contactame .linea {
+    width: 45%;
+    margin: 15px auto;
+}
+.contenedor .contactame .contacto {
+    width: 60%;
+    margin: 50px auto 20px;
+    
+}
+.contenedor .contactame .contacto input,
+.contenedor .contactame .contacto textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #000;
+
+}
+
+.contenedor .contactame .contacto input[type="submit"] {
+    background-color: #12588B;
+    border: 1px solid #12588B;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contenedor .contactame .contacto textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 90px;
+    max-height: 150px;
+    min-height: 90px;
+}
+.contenedor .contactame .contacto input[type="submit"]:hover {
+    transition: all .5s;
+    background-color: #0e3f62;
+}
+
+.contenedor .contactame p {
+    width: 100%;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #007BFF;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Ocultar al principio */
+}
+
+#scroll-to-top a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#scroll-to-top i {
+    font-size: 20px;
+}
+
+#scroll-to-top.active {
+    display: block; /* Mostrar cuando se desplaza hacia abajo */
+}
+
+.contenedor .contactame .contacto .error {
+    background: rgb(162, 19, 19);
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+}
