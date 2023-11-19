@@ -1,4 +1,35 @@
 window.addEventListener("load", () => {
+    const scrollButton = document.getElementById("scroll-to-top");
+
+    function scrollToTarget(targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            scrollToTarget(targetId);
+        });
+    });
+
+    document.querySelector("#scroll-to-top a").addEventListener("click", function (e) {
+        e.preventDefault();
+        scrollToTarget("top");
+    });
+        document.addEventListener('scroll', function () {
+        if (window.scrollY > 700) {
+            scrollButton.classList.add("active");
+        } else {
+            scrollButton.classList.remove("active");
+        }
+    });
     window.addEventListener("scroll", function () {
         const scrollButton = document.getElementById("scroll-to-top");
     
@@ -39,6 +70,8 @@ window.addEventListener("load", () => {
 
         link.click();
     });  
+
+    
 });
 
 function validateInput(inputId, errorMessageId, validationFunction, errorMessage, emptyMessage) {
