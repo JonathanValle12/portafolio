@@ -8,53 +8,58 @@ body, html {
     scroll-behavior: smooth;
 }
 
-
-.cabecera {
-    background-color: #343537;
+.container {
     width: 100%;
-    max-width: 320px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Cambiar la dirección a columna */
-    justify-content: flex-start;
-    /* Alinear contenido arriba */
-    align-items: center;
+    height: 100%;
+}
+.sidebar {
+    background-color: #2C3E50; /* Cambiado a un tono más oscuro */
+    width: 320px;
+    min-height: 100vh;  
     position: fixed;
-    /* Hacer que el encabezado sea fijo */
-}
-
-.cabecera .menus {
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para un toque de profundidad */
 }
 
-.cabecera .menus img {
+.sidebar img {
+    display: block;
     width: 160px;
-    height: 140px;
+    height: 160px; /* Ajustado el tamaño */
+    object-fit: cover; /* Para mantener la proporción y recortar la imagen */
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.cabecera .menus ul li {
-    list-style: none;
+.sidebar ul {
+    padding: 0;
 }
 
-.cabecera .menus ul li a {
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.sidebar ul li a {
     text-decoration: none;
-    color: #fff;
-    line-height: 40px;
+    color: #ecf0f1; /* Cambiado a un tono más claro */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease-in-out; /* Transición suave del color */
+    line-height: 50px;
+}
+
+.sidebar ul li a:hover {
+    color: #3498db; /* Cambiado a un tono azul al pasar el ratón */
 }
 
 .main {
-    display: flex;
-    /* Alinear elementos de la derecha */
-    flex-direction: column;
     flex: 1;
-    margin-left: 20%;
     /* Establecer un margen izquierdo para evitar solapamiento con el encabezado */
+    margin-left: 340px;
     padding: 20px;
     /* Agregar un relleno para separar el contenido del margen */
 }
@@ -68,7 +73,7 @@ body, html {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 
 .presentacion h2 {
@@ -99,18 +104,18 @@ body, html {
 }
 
 .redes_sociales {
-    margin-top: 30px;
     width: 0;
 }
 
 .redes_sociales i {
-    display: flex;
-    line-height: 50px;
+    display: block;
+    line-height: 40px;
     font-size: 30px;
     margin-top: 10px;
 }
 
 .redes_sociales a {
+    text-decoration: none;
     color: #000;
 }
 
@@ -131,9 +136,9 @@ body, html {
 
 .sobre_mi p {
     width: 80%;
-    line-height: 25px;
+    line-height: 28px;
     margin: 10px auto;
-    text-align: center;
+    text-align: justify;
 }
 
 .sobre_mi h3 {
@@ -237,7 +242,7 @@ body, html {
 }
 
 .proyectos .proyecto>div {
-    width: 30%;
+    width: 45%;
     /* Cambiado de 45% a 30% para que quepan tres en una fila */
     margin: 1.5%;
     /* Añadido margen entre los proyectos */
@@ -388,3 +393,60 @@ body, html {
     color: #fff;
 }
 
+@media screen and (max-width: 1150px) {
+
+    .proyectos .proyecto>div {
+        width: 80%;
+    }
+    .view_stack {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin: auto;
+    }
+    .contactame .contacto {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .proyectos .proyecto>div {
+        width: 100%;
+    }
+    .view_stack {
+        width: 100%;
+    }
+    .sobre_mi p {
+        width: 100%;
+    }
+    .sobre_mi h3 {
+        width: 100%;
+    }
+    .contactame .contacto {
+        width: 100%;
+    }
+    .redes_sociales {
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .redes_sociales i {
+        font-size: 30px;
+        margin: 20px; /* Espacio entre los iconos, ajusta según sea necesario */
+        color: #333; /* Color de los iconos, establecido en gris oscuro */
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .redes_sociales i:hover {
+        color: #3498db; /* Color al pasar el ratón */
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+        width: 100%;
+    }
+}

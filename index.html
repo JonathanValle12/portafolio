@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -20,8 +20,8 @@
 
 <body>
 
-    <header class="cabecera">
-        <div class="menus">
+    <section class="container">
+        <div class="sidebar">
             <img class="yo" src="img/yo.jpg" alt="Foto mia">
             <ul>
                 <li><a href="#presentacion">Presentación</a></li>
@@ -30,198 +30,200 @@
                 <li><a href="#contactame">Contacto</a></li>
             </ul>
         </div>
-    </header>
-    <div class="main">
 
-        <!-- Presentación -->
-        <div class="presentacion" id="presentacion">
-            <div class="view_presentacion">
-                <img class="yo_2" src="img/yo.jpg" alt="Foto mia">
-                <h2>Jonathan Valle</h2>
-                <p>Bienvenido a mi portafolio como Desarrollador de Aplicaciónes</p>
-                <div class="botones">
-                    <button id="curriculum">Descargar CV</button>
-                    <a href="#contactame"><button>Contáctame</button></a>
-                </div>
-            </div>
-
-            <div class="redes_sociales">
-                <a href="https://www.linkedin.com/in/jonathan-valle-958118211/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/JonathanValle12" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/patito_milet/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <hr>
-
-        <!-- Sobre Mi -->
-        <div class="sobre_mi" id="sobre-mi">
-            <h2>Sobre mi</h2>
-            <p>Soy Jonathan, un entusiaste del desarrollo web y móvil de Barcelona.
-                Con 21 años y una doble titulación en proceso, disfruto creando soluciones
-                digitales innovadoras. Mi pasión es combinar ceatividad y tecnología para ofrecer experiencias
-                excepcionales. Explora mi portafolio y descubre mi viaje en el desarrollo de aplicaciones.
-            </p>
-            <h3>Actualmente estudio y busco ampliar mi campo laboral en el mundo del desarrollo web y móvil</h3>
-            <div class="view_stack">
-                <div class="frontend">
-                    <img src="img/code_frontend.png" alt="Foto del frontend Codigo">
-                    <h3>Frontend</h3>
-                    <div class="contenedor_stack">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>ReactJS</span>
-                        <span>Jquery</span>
-                        <span>Bootstrap</span>
+        <div class="main">
+            <!-- Presentación -->
+            <div class="presentacion" id="presentacion">
+                <div class="view_presentacion">
+                    <img class="yo_2" src="img/yo.jpg" alt="Foto mia">
+                    <h2>Jonathan Valle</h2>
+                    <p>Bienvenido a mi portafolio como Desarrollador de Aplicaciónes</p>
+                    <div class="botones">
+                        <button id="curriculum">Descargar CV</button>
+                        <a href="#contactame"><button>Contáctame</button></a>
                     </div>
                 </div>
-                <div class="backend">
-                    <img src="img/bbdd_backend.jpg" alt="Foto del backend Codigo">
-                    <h3>Backend</h3>
-                    <div class="contenedor_stack">
-                        <span>Java</span>
-                        <span>PHP</span>
-                        <span>Python</span>
-                        <span>NodeJS</span>
-                        <span>MySQL</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
-                <div class="herramientas">
-                    <img src="img/herramientas.jpg" alt="Foto de Herramientas Codigo">
-                    <h3>Herramientas</h3>
-                    <div class="contenedor_stack">
-                        <span>GitHub</span>
-                        <span>Postman</span>
-                        <span>Scrum</span>
-                        <span>Kanban</span>
-                    </div>
+
+                <div class="redes_sociales">
+                    <a href="https://www.linkedin.com/in/jonathan-valle-958118211/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/JonathanValle12" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/patito_milet/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-        </div>
+            <hr>
 
-        <hr>
-        <!-- Mis Proyectos -->
-        <div class="proyectos" id="proyectos">
-            <p>Algunos de mis proyectos.</p>
-            <h2>Mis proyectos</h2>
-            <hr class="linea">
-            <div class="proyecto">
-                <div class="proyecto_izquierda">
-                    <a href="../snake/index.html" target="_blank">
-                        <img src="proyecto_snake.PNG" alt="Foto Proyecto 1">
-                        <div class="play-icon">
-                            <i class="fas fa-play"></i>
+            <!-- Sobre Mi -->
+            <div class="sobre_mi" id="sobre-mi">
+                <h2>Sobre mi</h2>
+                <p>Soy Jonathan, un entusiaste del desarrollo web y móvil de Barcelona.
+                    Con 21 años y una doble titulación en proceso, disfruto creando soluciones
+                    digitales innovadoras. Mi pasión es combinar ceatividad y tecnología para ofrecer experiencias
+                    excepcionales. Explora mi portafolio y descubre mi viaje en el desarrollo de aplicaciones.
+                </p>
+                <h3>Actualmente estudio y busco ampliar mi campo laboral en el mundo del desarrollo web y móvil</h3>
+                <div class="view_stack">
+                    <div class="frontend">
+                        <img src="img/code_frontend.png" alt="Foto del frontend Codigo">
+                        <h3>Frontend</h3>
+                        <div class="contenedor_stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>ReactJS</span>
+                            <span>Jquery</span>
+                            <span>Bootstrap</span>
                         </div>
-                    </a>
-                    <div class="información_proyecto">
-                        <h2>La Serpiente</h2>
-                        <p class="información_app">Clásico juego de la serpiente. Controla la serpiente, recolecta manzanas y evita colisiones. ¡Revive la diversión retro!</p>
-                        <a href="https://github.com/JonathanValle12/snake.git" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <p class="lenguaje_">HTML5 CSS3 JAVASCRIPT</p>
+                    </div>
+                    <div class="backend">
+                        <img src="img/bbdd_backend.jpg" alt="Foto del backend Codigo">
+                        <h3>Backend</h3>
+                        <div class="contenedor_stack">
+                            <span>Java</span>
+                            <span>PHP</span>
+                            <span>Python</span>
+                            <span>NodeJS</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="herramientas">
+                        <img src="img/herramientas.jpg" alt="Foto de Herramientas Codigo">
+                        <h3>Herramientas</h3>
+                        <div class="contenedor_stack">
+                            <span>GitHub</span>
+                            <span>Postman</span>
+                            <span>Scrum</span>
+                            <span>Kanban</span>
+                        </div>
                     </div>
                 </div>
-                <div class="proyecto_izquierda">
-                    <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
-                    <div class="información_proyecto">
-                        <h2>Name APP</h2>
-                        <p class="información_app">Información de la APP</p>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
-                    </div>
-                </div>
-                <div class="proyecto_izquierda">
-                    <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
-                    <div class="información_proyecto">
-                        <h2>Name APP</h2>
-                        <p class="información_app">Información de la APP</p>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
-                    </div>
-                </div>
-                <div class="proyecto_izquierda">
-                    <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
-                    <div class="información_proyecto">
-                        <h2>Name APP</h2>
-                        <p class="información_app">Información de la APP</p>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
-                    </div>
-                </div>
-                <div class="proyecto_izquierda">
-                    <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
-                    <div class="información_proyecto">
-                        <h2>Name APP</h2>
-                        <p class="información_app">Información de la APP</p>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
-                    </div>
-                </div>
-                <div class="proyecto_izquierda">
-                    <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
-                    <div class="información_proyecto">
-                        <h2>Name APP</h2>
-                        <p class="información_app">Información de la APP</p>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-            <div class="proyecto">
             </div>
 
             <hr>
-            <!-- Contactame Formulario -->
-            <div class="contactame" id="contactame">
-                <p>Ahora o nunca!</p>
-                <h2>Contactame</h2>
+            <!-- Mis Proyectos -->
+            <div class="proyectos" id="proyectos">
+                <p>Algunos de mis proyectos.</p>
+                <h2>Mis proyectos</h2>
                 <hr class="linea">
-                <form class="contacto" id="enviarForm">
-                    <div>
-                        <input type="text" name="name" id="name" placeholder="Nombre" maxlength="50" />
-                        <p id="mensajeName" class="error-message"></p>
+                <div class="proyecto">
+                    <div class="proyecto_izquierda">
+                        <a href="../snake/index.html" target="_blank">
+                            <img src="proyecto_snake.PNG" alt="Foto Proyecto 1">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+                        <div class="información_proyecto">
+                            <h2>La Serpiente</h2>
+                            <p class="información_app">Clásico juego de la serpiente. Controla la serpiente, recolecta
+                                manzanas y evita colisiones. ¡Revive la diversión retro!</p>
+                            <a href="https://github.com/JonathanValle12/snake.git" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <p class="lenguaje_">HTML5 CSS3 JAVASCRIPT</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Email" maxlength="50" />
-                        <p id="mensajeEmail" class="error-message"></p>
+                    <div class="proyecto_izquierda">
+                        <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
+                        <div class="información_proyecto">
+                            <h2>Name APP</h2>
+                            <p class="información_app">Información de la APP</p>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
+                        </div>
                     </div>
-                    <div>
-                        <input type="text" name="subject" id="subject" placeholder="Asunto" maxlength="40" />
-                        <p id="mensajeSubject" class="error-message"></p>
+                    <div class="proyecto_izquierda">
+                        <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
+                        <div class="información_proyecto">
+                            <h2>Name APP</h2>
+                            <p class="información_app">Información de la APP</p>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
+                        </div>
                     </div>
-                    <div>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"
-                            maxlength="300"></textarea>
-                        <p id="mensajeTextarea" class="error-message"></p>
+                    <div class="proyecto_izquierda">
+                        <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
+                        <div class="información_proyecto">
+                            <h2>Name APP</h2>
+                            <p class="información_app">Información de la APP</p>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
+                        </div>
                     </div>
-                    <input type="submit" value="Enviar" />
-                </form>
+                    <div class="proyecto_izquierda">
+                        <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
+                        <div class="información_proyecto">
+                            <h2>Name APP</h2>
+                            <p class="información_app">Información de la APP</p>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="proyecto_izquierda">
+                        <img src="img/peliculas.jpg" alt="Foto Proyecto 1">
+                        <div class="información_proyecto">
+                            <h2>Name APP</h2>
+                            <p class="información_app">Información de la APP</p>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <p class="lenguaje_">ReactJS Html5 Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                </div>
 
-                <p>Si quieres contactar conmigo, puedes hacerlo a través de las
-                    redes sociales o llenando el formulario de contracto. Te responderé lo antes posible. </p>
-            </div>
+                <hr>
+                <!-- Contactame Formulario -->
+                <div class="contactame" id="contactame">
+                    <p>Ahora o nunca!</p>
+                    <h2>Contactame</h2>
+                    <hr class="linea">
+                    <form class="contacto" id="enviarForm">
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Nombre" maxlength="50" />
+                            <p id="mensajeName" class="error-message"></p>
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email" maxlength="50" />
+                            <p id="mensajeEmail" class="error-message"></p>
+                        </div>
+                        <div>
+                            <input type="text" name="subject" id="subject" placeholder="Asunto" maxlength="40" />
+                            <p id="mensajeSubject" class="error-message"></p>
+                        </div>
+                        <div>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"
+                                maxlength="300"></textarea>
+                            <p id="mensajeTextarea" class="error-message"></p>
+                        </div>
+                        <input type="submit" value="Enviar" />
+                    </form>
 
-            <div id="scroll-to-top">
-                <a href="#top">
-                    <i class="fas fa-arrow-up"></i>
-                </a>
+                    <p>Si quieres contactar conmigo, puedes hacerlo a través de las
+                        redes sociales o llenando el formulario de contracto. Te responderé lo antes posible. </p>
+                </div>
+
+                <div id="scroll-to-top">
+                    <a href="#top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
