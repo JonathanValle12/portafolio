@@ -393,6 +393,28 @@ body, html {
     color: #fff;
 }
 
+#ver-mas {
+    width: 100px; /* Ancho fijo para el botón */
+    height: 40px; /* Altura fija para el botón */
+    border: none; /* Eliminar el borde para un aspecto más limpio */
+    border-radius: 5px;
+    background-color: #12588B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s ease; /* Agregar una transición suave para cambiar el color de fondo */
+    margin-top: 20px;
+}
+
+#ver-mas:hover {
+    background-color: #0d4370; /* Cambiar el color de fondo al pasar el ratón */
+}
+/* Agrega una clase "hidden" para ocultar los proyectos */
+.hidden {
+    display: none;
+}
+
+
 @media screen and (max-width: 1150px) {
 
     .proyectos .proyecto>div {
@@ -409,6 +431,15 @@ body, html {
 }
 
 @media screen and (max-width: 900px) {
+    .contactame {
+        width: 80%;
+    }
+    .sidebar {
+        width: 250px;
+    }
+    .main {
+        margin-left: 250px;
+    }
     .proyectos .proyecto>div {
         width: 100%;
     }
@@ -448,5 +479,61 @@ body, html {
 @media screen and (max-width: 750px) {
     .sidebar {
         width: 100%;
+        min-height: 0px;
+        max-height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; 
+
+        z-index: 99999999;
     }
+
+    .sidebar ul li{
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .sidebar img {
+        width: 55px;
+        height: 55px;
+        margin: 20px;
+    }
+    .main {  
+        margin: 80px 0;
+    }
+    .proyectos .proyecto {
+        display: flex;
+        justify-content: center;
+    }
+    .proyectos .proyecto>div {
+        width: 45%;
+    }
+    .view_stack {
+        grid-template-columns: repeat(1, 1fr);
+        width: 93%;
+        margin: auto;
+    }
+    .proyecto .información_proyecto p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .proyectos .proyecto>div {
+        width: 100%;
+    }
+    .view_stack {
+        width: 97%;
+    }
+
+    .sidebar ul li {
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 45px;
+        height: 45px;
+    }
+
 }

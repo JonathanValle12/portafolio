@@ -71,6 +71,30 @@ window.addEventListener("load", () => {
         link.click();
     });  
 
+    const verMasButton = document.getElementById("ver-mas");
+
+    // Número de proyectos a mostrar por clic en "Ver más"
+    const proyectosPorClic = 2;
+
+    // Función para mostrar proyectos adicionales
+    function mostrarProyectos() {
+        const proyectosOcultos = document.querySelectorAll(".proyecto_item.hidden");
+
+        for (let i = 0; i < proyectosPorClic && i < proyectosOcultos.length; i++) {
+            proyectosOcultos[i].classList.remove("hidden");
+        }
+
+        // Ocultar el botón si no hay más proyectos ocultos
+        if (document.querySelectorAll(".proyecto_item.hidden").length === 0) {
+            verMasButton.style.display = "none";
+        }
+    }
+
+    // Mostrar proyectos al cargar la página
+    mostrarProyectos();
+
+    // Manejar clic en el botón "Ver más"
+    verMasButton.addEventListener("click", mostrarProyectos);    
     
 });
 
