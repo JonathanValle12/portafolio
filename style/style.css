@@ -71,7 +71,6 @@ body, html {
     opacity: 0.3;
     bottom: -200px;
     position: absolute;
-    bottom: -200;
 
     animation: burbujas 3s linear infinite;
     position: fixed;
@@ -515,7 +514,20 @@ body, html {
     display: none;
 }
 
+@media screen and (max-width: 1300px) {
+    .burbuja:nth-child(6),
+    .burbuja:nth-child(7),
+    .burbuja:nth-child(2),
+    .burbuja:nth-child(4),
+    .burbuja:nth-child(3),
+    .burbuja:nth-child(1) {
+        display: none;
+    }
 
+    .contactame .contacto {
+        width: 70%;
+    }
+}
 @media screen and (max-width: 1150px) {
 
     .proyectos .proyecto>div {
@@ -578,6 +590,9 @@ body, html {
 }
 
 @media screen and (max-width: 750px) {
+    .burbuja {
+        display: none;
+    }
     .sidebar {
         width: 100%;
         min-height: 0px;
@@ -622,6 +637,7 @@ body, html {
 }
 
 @media screen and (max-width: 600px) {
+
     .proyectos .proyecto>div {
         width: 100%;
     }
