@@ -1,0 +1,66 @@
+.proyectos .card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    margin-bottom: 50px;
+    grid-auto-flow: row;
+}
+.proyectos h2 {
+    color: var(--text-color);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.proyectos .scale-imagen {
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+.proyectos .scale-imagen:hover img {
+    transform: scale(1.1); /* Ajusta el valor según sea necesario */
+    transition: transform 0.5s; /* Agrega una transición suave */
+}
+.proyectos .card-section .card01 {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.proyectos .card-section img {
+    width: 100%;
+}
+.proyectos .card-section h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.proyectos .card-section p {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: var(--text-color)
+}
+
+.proyectos .card-section .botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.proyectos .card-section .botones a {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--text-active-color);
+    padding: 8px 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: background-color .5s, transform .5s;
+    cursor: pointer;
+}
+.proyectos .card-section .botones a:nth-child(2) {
+    background-color: transparent !important;
+    color: var(--text-color);
+}
+.proyectos .card-section .botones a:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-hover-color);
+}

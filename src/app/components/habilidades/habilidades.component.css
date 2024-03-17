@@ -1,0 +1,60 @@
+.habilidades h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+.habilidades .card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+.habilidades .card-section .card-skill {
+    width: 97%;
+    height: 80%;
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.habilidades .card-section .card-skill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(202, 202, 202);
+    transition: width 0.5s;
+    z-index: 40;
+    border-radius: 5px;
+}
+.habilidades .card-section .card-skill:hover::before {
+    width: 100%;
+}
+.habilidades .card-section img  {
+    width: 40px;
+    height: 40px;
+    z-index: 199;
+}
+.habilidades .card-section h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 14px;
+    z-index: 200;
+    color: var(--text-color);
+}
+.habilidades .card-section p {
+    font-size: 14px;
+    z-index: 201;
+    color: var(--text-color);
+}
+.habilidades .card-section .contenido {
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+

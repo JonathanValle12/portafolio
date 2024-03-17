@@ -1,0 +1,43 @@
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--background-color);
+}
+
+.cabecera nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.cabecera nav a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .5s;
+    padding-bottom: 5px;
+    color: var(--text-color);
+}
+.cabecera nav a:hover {
+    color: var(--primary-hover-color);
+    border-bottom: 2px solid var(--primary-hover-color);
+}
+.cabecera h2 {
+    color: var(--primary-color);
+}
+
+.cabecera .menus {
+    display: flex;
+    gap: 30px;
+}
+.cabecera .idioma-select {
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    outline: none;
+    background-color: transparent !important;
+}
+.cabecera i {
+    cursor: pointer;
+    color: var(--primary-color);
+}

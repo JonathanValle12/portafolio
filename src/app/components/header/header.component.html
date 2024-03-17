@@ -1,0 +1,21 @@
+<header class="cabecera">
+    <h2 class="titulo">Jonathan Valle</h2>
+    <section class="menus">
+        <nav>
+            <li><a href="#" >{{ getTranslation('welcome')}}</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </nav>
+
+        <select class="idioma-select" (change)="changeLanguage($event)">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </select>
+        <i class="bi" 
+           [ngClass]="{ 'bi-moon': isLightTheme(), 'bi-sun': !isLightTheme() }" 
+           (click)="toggleTheme()">
+        </i>
+    </section>
+</header>

@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+main {
+    background-color: var(--background-color);
+}
+.contenedor {
+    max-width: 1500px;
+    width: 90%;
+    margin: auto;
+}
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentacion .imagen {
+    display: flex;
+    justify-content: flex-end;
+}
+.presentacion img {
+    width: 300px;
+    height: 400px;
+    padding-left: 50px;
+}
+.presentacion h1 {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--text-color);
+    width: 35%;
+    color: var(--text-color);
+}
+.presentacion p {
+    color: var(--text-color);
+}
+.presentacion .botones {
+    display: flex;
+    gap: 40px;
+}
+.presentacion .botones a:nth-child(1) {
+    background-color: transparent !important;
+    color: var(--button-text-color);
+}
+.presentacion .botones a { 
+    border: 2px solid var(--primary-color);
+    color: var(--text-active-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color .5s, transform .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.presentacion .botones a:nth-child(2) {
+    background-color: var(--primary-color);
+}
+.presentacion .botones a:hover {
+    transform: scale(1.2);
+    background-color: var(--primary-color);
+}
+
+.container {
+    margin: 20px auto;
+}
+.footer {
+    margin-top: 100px;
+    background-color: var(--background-contenedor-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: #fff;
+    padding-top: 20px;
+}
