@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslationService } from '../../services/traductor.service';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class SobreMiComponent{
 
+  constructor(public translationService: TranslationService) {}
+
+  getTranslation(key: string): string {
+    return this.translationService.getTranslation(key);
+  }
 }

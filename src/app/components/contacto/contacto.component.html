@@ -1,14 +1,14 @@
 <div class="contacto">
-    <h2>Contacto</h2>
+    <h2>{{ getTranslation('contact')}}</h2>
     <form action="">
-        <label>Tu Nombre</label>
-        <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+        <label>{{ getTranslation('textLabelName')}}</label>
+        <input type="text" name="nombre" placeholder="{{ getTranslation('textPlaceHolderName')}}" />
 
-        <label>Tu Correo</label>
-        <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+        <label>{{ getTranslation('textLabelEmail')}}</label>
+        <input type="text" name="email" placeholder="{{ getTranslation('textPlaceHolderEmail')}}" />
 
-        <label>Tu Mensaje</label>
-        <textarea placeholder="Escribe tu Mensaje aqui"></textarea>
+        <label>{{ getTranslation('textLabelMessage')}}</label>
+        <textarea name="message" placeholder="{{ getTranslation('textPlaceHolderMessage')}}"></textarea>
 
         <button type="submit" class="btn-enviar">
             Enviar

@@ -4,6 +4,7 @@ import { SobreMiComponent } from '../sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from '../proyectos/proyectos.component';
 import { HabilidadesComponent } from '../habilidades/habilidades.component';
 import { ContactoComponent } from '../contacto/contacto.component';
+import { TranslationService } from '../../services/traductor.service';
 
 @Component({
   selector: 'app-inicio',
@@ -14,4 +15,10 @@ import { ContactoComponent } from '../contacto/contacto.component';
 })
 export class InicioComponent {
 
+  constructor(public translationService: TranslationService) {}
+
+
+  getTranslation(key: string): string {
+    return this.translationService.getTranslation(key);
+  }
 }

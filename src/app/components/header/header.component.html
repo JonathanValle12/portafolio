@@ -3,10 +3,10 @@
     <section class="menus">
         <nav>
             <li><a href="#" >{{ getTranslation('welcome')}}</a></li>
-            <li><a href="#sobre-mi">Sobre mi</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-mi">{{ getTranslation('aboutMe')}}</a></li>
+            <li><a href="#proyectos">{{ getTranslation('projects')}}</a></li>
+            <li><a href="#habilidades">{{ getTranslation('skills')}}</a></li>
+            <li><a href="#contacto">{{ getTranslation('contact')}}</a></li>
         </nav>
 
         <select class="idioma-select" (change)="changeLanguage($event)">

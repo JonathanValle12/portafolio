@@ -3,12 +3,13 @@
     <section class="presentacion">
         <img src="assets/img/yo.png" />
         <h1>Jonathan, Full Stack Developer</h1>
-        <p>Bienvenido a mi portafolio como Desarrollador de Aplicaciones</p>
+        <p>{{ getTranslation('description')}}</p>
         <div class="botones">
-            <a >Curriculum <i class="bi bi-file-text"></i></a>
-            <a href="#proyectos">Proyectos <i class="bi bi-folder"></i></a>
+            <a >{{ getTranslation('buttonCV')}} <i class="bi bi-file-text"></i></a>
+            <a href="#proyectos">{{ getTranslation('buttonProject')}} <i class="bi bi-folder"></i></a>
         </div>
     </section>
+
 
     <app-sobre-mi id="sobre-mi"></app-sobre-mi>
     <section class="container">
