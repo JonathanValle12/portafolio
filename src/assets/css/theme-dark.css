@@ -1,4 +1,5 @@
 :root {
+    --primary-hover-color: #FFA500;
     --primary-color: #FFA500;
     --background-color: #060624;
     --text-color: #fff;
@@ -6,4 +7,10 @@
     --button-text-color: #fff;
     --border-color: #fff;
     --background-contenedor-color: #060624;
+    --background-border-color: #FFA500;
+    --line-color: #FFA500;
+    --fondo-transition-color:  #fcb737;
+    --text-transition-color: #000;
+    --text-placeholder-color: #fff;
+    --card-border-color: #fff;
 }

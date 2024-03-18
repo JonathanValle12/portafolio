@@ -7,4 +7,10 @@
     --button-text-color: #000;
     --border-color: #000;
     --background-contenedor-color: #565656;
+    --background-border-color: #FF4500;
+    --line-color: #FF4500;
+    --fondo-transition-color: #FF4500;
+    --text-transition-color: #fff;
+    --text-placeholder-color: #000;
+    --card-border-color: #000;
 }

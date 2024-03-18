@@ -13,21 +13,26 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
 }
 .presentacion .imagen {
-    display: flex;
-    justify-content: flex-end;
+    background-color: var(--background-border-color);
+    padding: 6px;
+    border-radius: 50%;
 }
-.presentacion img {
-    width: 300px;
-    height: 400px;
-    padding-left: 50px;
+.presentacion .imagen img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
 }
 .presentacion h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-bottom: 20px;
-    border-bottom: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--line-color);
     width: 35%;
     color: var(--text-color);
 }

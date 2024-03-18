@@ -22,7 +22,8 @@ export const TRANSLATIONS_ES = {
     textLabelMessage: 'Tu Mensaje',
     textPlaceHolderName: 'Escribe tu nombre',
     textPlaceHolderEmail: 'Escribe tu email',
-    textPlaceHolderMessage: 'Escribe tu Mensaje aqui'
+    textPlaceHolderMessage: 'Escribe tu Mensaje aqui',
+    buttonTextEnviarForm: 'Enviar'
 }
 export const TRANSLATIONS_EN = {
     greeting: 'Hello',
@@ -41,5 +42,9 @@ export const TRANSLATIONS_EN = {
     buttonGitHub: 'GitHub',
     textLabelName: 'Your Name',
     textLabelEmail: 'Your Email',
-    textLabelMessage: 'Your Message'
+    textLabelMessage: 'Your Message',
+    textPlaceHolderName: 'Enter your name here',
+    textPlaceHolderEmail: 'Enter your email here',
+    textPlaceHolderMessage: 'Enter your message here',
+    buttonTextEnviarForm: 'Submit'
 }
