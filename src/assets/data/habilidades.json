@@ -1,0 +1,72 @@
+[
+    {
+        "lenguaje": "HTML",
+        "descripcion": "language_html_description",
+        "portada": "assets/img/skills/html5.png"
+    },
+    {
+        "lenguaje": "CSS",
+        "descripcion": "language_css_description",
+        "portada": "assets/img/skills/css3.png"
+    },
+    {
+        "lenguaje": "JavaScript",
+        "descripcion": "language_js_description",
+        "portada": "assets/img/skills/javascript.png"
+    },
+    {
+        "lenguaje": "React",
+        "descripcion": "language_react_description",
+        "portada": "assets/img/skills/react.png"
+    },
+    {
+        "lenguaje": "Angular",
+        "descripcion": "language_angular_description",
+        "portada": "assets/img/skills/angular.png"
+    },
+    {
+        "lenguaje": "Bootstrap CSS",
+        "descripcion": "language_bootstrap_description",
+        "portada": "assets/img/skills/bootstrap.png"
+    },
+    {
+        "lenguaje": "SASS",
+        "descripcion": "language_sass_description",
+        "portada": "assets/img/skills/sass.png"
+    },
+    {
+        "lenguaje": "Node.js",
+        "descripcion": "language_node_description",
+        "portada": "assets/img/skills/nodejs.png"
+    },
+    {
+        "lenguaje": "Python",
+        "descripcion": "language_python_description",
+        "portada": "assets/img/skills/python.png"
+    },
+    {
+        "lenguaje": "XML",
+        "descripcion": "language_xml_description",
+        "portada": "assets/img/skills/xml.png"
+    },
+    {
+        "lenguaje": "Spring Boot",
+        "descripcion": "language_springboot_description",
+        "portada": "assets/img/skills/springboot.png"
+    },
+    {
+        "lenguaje": "MongoDB",
+        "descripcion": "language_mongodb_description",
+        "portada": "assets/img/skills/mongodb.png"
+    },
+    {
+        "lenguaje": "MySQL",
+        "descripcion": "language_mysql_description",
+        "portada": "assets/img/skills/mysql.png"
+    },
+    {
+        "lenguaje": "SQL",
+        "descripcion": "language_sql_description",
+        "portada": "assets/img/skills/sql.png"
+    }
+]

@@ -3,7 +3,6 @@ export interface Translations {
 }
 
 export const TRANSLATIONS_ES = {
-    greeting: 'Hola',
     welcome: 'Bienvenido',
     aboutMe: 'Sobre mi',
     projects: 'Proyectos',
@@ -23,12 +22,30 @@ export const TRANSLATIONS_ES = {
     textPlaceHolderName: 'Escribe tu nombre',
     textPlaceHolderEmail: 'Escribe tu email',
     textPlaceHolderMessage: 'Escribe tu Mensaje aqui',
-    buttonTextEnviarForm: 'Enviar'
+    buttonTextEnviarForm: 'Enviar',
+    snake_title: 'La serpiente',
+    snake_description: 'Clásico juego de la serpiente. Controla la serpiente, recolecta manzanas y evita colisiones. ¡Revive la diversión retro!',
+    tetris_title: 'Tetris',
+    tetris_description: 'Tetris dqjdqodjqodjwqodjqdwwd',
+    language_html_description: 'Marcado web',
+    language_css_description: 'Estilos web',
+    language_js_description: 'Interactividad web',
+    language_react_description: 'Librería de JavaScript',
+    language_angular_description: 'Framework de JavaScript',
+    language_bootstrap_description: 'Framework de CSS',
+    language_sass_description: 'Preprocesador CSS',
+    language_node_description: 'Entorno de ejecución de JavaScript',
+    language_python_description: 'Automatización y análisis',
+    language_xml_description: 'Estándar para representación de datos',
+    language_springboot_description: 'Construcción y aplicaciones ágiles',
+    language_mongodb_description: 'Base de datos NoSQL',
+    language_mysql_description: 'Base de datos SQL',
+    language_sql_description: 'Lenguaje para consultas de bases de datos'
 }
 export const TRANSLATIONS_EN = {
     greeting: 'Hello',
     welcome: 'Welcome',
-    about_me: 'About me',
+    aboutMe: 'About me',
     projects: 'Projects',
     skills: 'Skills',
     contact: 'Contact',
@@ -46,5 +63,23 @@ export const TRANSLATIONS_EN = {
     textPlaceHolderName: 'Enter your name here',
     textPlaceHolderEmail: 'Enter your email here',
     textPlaceHolderMessage: 'Enter your message here',
-    buttonTextEnviarForm: 'Submit'
+    buttonTextEnviarForm: 'Submit',
+    snake_title: 'The snake',
+    snake_description: 'Classic snake game. Control the snake, collect apples and avoid collisions. Relive the retro fun!',
+    tetris_title: 'Tetris',
+    tetris_description: 'Cdawdwaddwadawdawdsrvsfec eda wad a dadwdd',
+    language_html_description: 'Web Markup',
+    language_css_description: 'Web styles',
+    language_js_description: 'Web interactivity',
+    language_react_description: 'JavaScript library',
+    language_angular_description: 'Javascript framework',
+    language_bootstrap_description: 'CSS framework',
+    language_sass_description: 'Preprocesador CSS',
+    language_node_description: 'JavaScript runtime',
+    language_python_description: 'Automation and analysis',
+    language_xml_description: 'Standard for data representation',
+    language_springboot_description: 'Agile construction and applications',
+    language_mongodb_description: 'NoSQL database',
+    language_mysql_description: 'SQL database',
+    language_sql_description: 'Database query language'
 }

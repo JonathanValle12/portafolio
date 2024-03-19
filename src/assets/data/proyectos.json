@@ -1,0 +1,122 @@
+[
+    {
+        "titulo_key": "snake_title",
+        "imagen": "assets/img/proyectos/proyecto_snake.png",
+        "descripcion_key": "snake_description",
+        "github": "https://github.com/JonathanValle12/snake.git",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/html5.png",
+                "descripcion": "language_html_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/css3.png",
+                "descripcion": "language_css_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/javascript.png",
+                "descripcion": "language_js_description"
+            }
+        ]
+    },
+    {
+        "titulo_key": "tetris_title",
+        "imagen": "assets/img/proyectos/tetris.png",
+        "descripcion_key": "tetris_description",
+        "github": "https://github.com/JonathanValle12/tetris.git",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/html5.png",
+                "descripcion": "language_html_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/css3.png",
+                "descripcion": "language_css_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/javascript.png",
+                "descripcion": "language_js_description"
+            }
+        ]
+    },
+    {
+        "titulo_key": "La serpiente",
+        "imagen": "assets/img/proyectos/proyecto_snake.png",
+        "descripcion_key": "snake_description",
+        "github": "https://github.com/JonathanValle12/snake.git",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/html5.png",
+                "descripcion": "language_html_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/css3.png",
+                "descripcion": "language_css_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/javascript.png",
+                "descripcion": "language_js_description"
+            }
+        ]
+    },
+    {
+        "titulo_key": "La serpiente",
+        "imagen": "assets/img/proyectos/proyecto_snake.png",
+        "descripcion_key": "snake_description",
+        "github": "https://github.com/JonathanValle12/snake.git",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/html5.png",
+                "descripcion": "language_html_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/css3.png",
+                "descripcion": "language_css_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/javascript.png",
+                "descripcion": "language_js_description"
+            }
+        ]
+    },
+    {
+        "titulo_key": "La serpiente",
+        "imagen": "assets/img/proyectos/proyecto_snake.png",
+        "descripcion_key": "snake_description",
+        "github": "https://github.com/JonathanValle12/snake.git",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/html5.png",
+                "descripcion": "language_html_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/css3.png",
+                "descripcion": "language_css_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/javascript.png",
+                "descripcion": "language_js_description"
+            }
+        ]
+    },
+    {
+        "titulo_key": "La serpiente",
+        "imagen": "assets/img/proyectos/proyecto_snake.png",
+        "descripcion_key": "snake_description",
+        "github": "https://github.com/JonathanValle12/snake.git",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/html5.png",
+                "descripcion": "language_html_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/css3.png",
+                "descripcion": "language_css_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/javascript.png",
+                "descripcion": "language_js_description"
+            }
+        ]
+    }
+]

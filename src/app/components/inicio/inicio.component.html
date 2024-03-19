@@ -7,7 +7,7 @@
         <h1>Jonathan, Full Stack Developer</h1>
         <p>{{ getTranslation('description')}}</p>
         <div class="botones">
-            <a >{{ getTranslation('buttonCV')}} <i class="bi bi-file-text"></i></a>
+            <button (click)="downloadCV()" id="curriculum" >{{ getTranslation('buttonCV')}} <i class="bi bi-file-text"></i></button>
             <a href="#proyectos">{{ getTranslation('buttonProject')}} <i class="bi bi-folder"></i></a>
         </div>
     </section>

@@ -1,103 +1,15 @@
 <div class="habilidades">
     <h2>{{ getTranslation('skills')}}</h2>
     <section class="card-section">
-        <article class="card-skill">
-            <img src="assets/img/skills/html5.png" alt="logo HTML5" />
-            <div class="contenido">
-                <h3>HTML</h3>
-                <p>Marcado web</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/css3.png" alt="logo CSS3"/>
-            <div class="contenido">
-                <h3>CSS</h3>
-                <p>Estilos web</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/javascript.png" alt="logo Javascript"/>
-            <div class="contenido">
-                <h3>JavaScript</h3>
-                <p>Interactividad web</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/react.png" alt="logo de React"/>
-            <div class="contenido">
-                <h3>React</h3>
-                <p>Libreria de JavaScript</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/angular.png" alt="Logo de angular"/>
-            <div class="contenido">
-                <h3>Angular</h3>
-                <p>Framework de JavaScript</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/bootstrap.png" alt="Logo de Bootstrap"/>
-            <div class="contenido">
-                <h3>Bootstrap CSS</h3>
-                <p>Framework de JavaScript</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/sass.png" alt="Logo de SASS"/>
-            <div class="contenido">
-                <h3>SASS</h3>
-                <p>Preprocesador CSS</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/nodejs.png"/>
-            <div class="contenido">
-                <h3>Node.js</h3>
-                <p>Entorno de ejecución de JavaScript</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/python.png"/>
-            <div class="contenido">
-                <h3>Python</h3>
-                <p>Automatización y análisis</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/xml.png"/>
-            <div class="contenido">
-                <h3>XML</h3>
-                <p>Estándar para representación de datos</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/springboot.png"/>
-            <div class="contenido">
-                <h3>Spring Boot</h3>
-                <p>Construcción de aplicaciones ágiles</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/mongodb.png"/>
-            <div class="contenido">
-                <h3>MongoDB</h3>
-                <p>Base de datos NoSQL</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/mysql.png"/>
-            <div class="contenido">
-                <h3>MySQL</h3>
-                <p>Base de datos SQL</p>
-            </div>
-        </article>
-        <article class="card-skill">
-            <img src="assets/img/skills/sql.png"/>
-            <div class="contenido">
-                <h3>SQL</h3>
-                <p>Lenguaje para consultas de bases de datos</p>
-            </div>
-        </article>
+
+        <ng-container *ngFor="let habilidad of habilidades">
+            <article class="card-skill">
+                <img [src]="habilidad.portada" alt="logo HTML5" />
+                <div class="contenido">
+                    <h3>{{habilidad.lenguaje}}</h3>
+                    <p>{{ getTranslation(habilidad.descripcion)}}</p>
+                </div>
+            </article>
+        </ng-container>
     </section>
 </div>
