@@ -1,5 +1,5 @@
 <div class="proyectos">
-    <h2>{{ getTranslation('projects')}}</h2>
+    <h2 class="titulo_proyectos">{{ getTranslation('projects')}}</h2>
     <section class="card-section">
         
         <ng-container *ngFor="let proyecto of proyectos">
@@ -17,8 +17,8 @@
                 <h2>{{ getTranslation(proyecto.titulo_key)}}</h2>
                 <p>{{ getTranslation(proyecto.descripcion_key)}}</p>
                 <div class="botones">
-                    <a>{{ getTranslation('buttonWeb')}} <i class="bi bi-globe"></i></a>
-                    <a>{{ getTranslation('buttonGitHub')}} <i class="bi bi-github"></i></a>
+                    <a href="{{proyecto.web_site}}" target="_blank">{{ getTranslation('buttonWeb')}} <i class="bi bi-globe"></i></a>
+                    <a href="{{proyecto.github}}" target="_blank">{{ getTranslation('buttonGitHub')}} <i class="bi bi-github"></i></a>
                 </div>
             </article>
         </ng-container>

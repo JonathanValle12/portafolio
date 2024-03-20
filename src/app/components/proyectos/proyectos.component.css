@@ -5,10 +5,10 @@
     margin-bottom: 50px;
     grid-auto-flow: row;
 }
-.proyectos h2 {
+.proyectos .titulo_proyectos {
     color: var(--text-color);
-    margin-top: 120px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 65px;
     font-size: 3.5rem;
 }
 .proyectos .tecnologias {
@@ -25,6 +25,8 @@
     width: 50px;
     height: 50px;
     color: #fff;
+    object-fit: cover;
+
 }
 .proyectos .card01 .tecnologias .container-images {
     height: 100%;
@@ -38,6 +40,7 @@
 .proyectos .card01:hover .tecnologias .container-images:hover img {
     transition: all .5s;
 }
+
 .proyectos .card01:hover .tecnologias {
     display: block;
 }
@@ -55,9 +58,16 @@
     overflow: hidden;
     position: relative;
 }
+.proyectos .scale-imagen img {
+    object-fit: cover;
+    object-position: top;
+}
+
 .proyectos .scale-imagen:hover img {
     transform: scale(1.1);
     transition: transform 0.5s;
+    object-fit: cover;
+    object-position: top;
 }
 .proyectos .card-section .card01 {
     border: 1px solid var(--card-border-color);
@@ -71,6 +81,7 @@
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    margin-top: 30px;
 }
 .proyectos .card-section p {
     text-align: center;
@@ -86,6 +97,7 @@
     gap: 20px;
 }
 .proyectos .card-section .botones a {
+    text-decoration: none;
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
     color: var(--text-active-color);
