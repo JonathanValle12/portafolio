@@ -2,24 +2,239 @@
     margin-top: 150px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 50%;
     margin-left: auto; 
     margin-right: auto;
 }
 
 .sobre-mi h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
-    border-bottom: 2px solid var(--line-color);
     padding-bottom: 25px;
     text-align: center;
     color: var(--text-color);
 }
+.sobre-mi .contenedor-sobre-mi {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 100px;
+}
+.sobre-mi .contenedor-sobre-mi .card {
+    border: 1px solid #000;
+    background: linear-gradient(#282828, #8e8e8e);
+    width: 290px;
+    height: 380px;
+    rotate: -15deg;
+    border-radius: 10px;
+    filter: drop-shadow(0px -8px 5px rgba(45, 45, 45, 0.5));
+}
+.sobre-mi .contenedor-sobre-mi .card-contenedor {
+    margin: 30px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 5px;
+}
+.sobre-mi .contenedor-sobre-mi .card-contenedor .imagen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+}
 
-.sobre-mi p {
+.sobre-mi .contenedor-sobre-mi .line {
+    width: 40px;
+    height: 250px;
+    background-color: var(--primary-color);
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.sobre-mi .contenedor-sobre-mi .imagen img {
+    width: 100%;
+    height: 100%; 
+}
+.sobre-mi .contenedor-sobre-mi .imagen p {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.sobre-mi .contenedor-sobre-mi .imagen p:nth-child(2) {
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sobre-mi .contenedor-sobre-mi .imagen p:nth-child(3) {
+    font-size: 14px;
+}
+
+.sobre-mi .bio-container p {
     font-size: 1.2rem;
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
+    text-wrap: balance;
     color: var(--text-color);
+    width:  100%;
+}
+.sobre-mi .bio-container {
+    flex: .55;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sobre-mi .bio-container button {
+    width: 25%;
+    background-color: transparent !important;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 7px;
+    color: #828282;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden; /* Asegura que el reflejo no se muestre fuera del botón */
+}
+.sobre-mi .bio-container button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%; /* Inicia fuera del botón */
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Gradiente para el reflejo */
+    animation: animated 1s linear infinite; /* Duración de la animación */
+    animation-delay: 0s, 15s; /* Delay inicial y delay después de cada ciclo */
+}
+
+@keyframes animated {
+    0% {
+        transform: translateX(-50%); /* Comienza fuera del botón */
+    }
+    100% {
+        transform: translateX(150%); /* Termina fuera del botón */
+    }
+}
+.sobre-mi .webPortafolio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid var(--primary-color);
+    width: 80%;
+    margin: auto;
+}
+.sobre-mi .webPortafolio p {
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1700px) {
+    .sobre-mi .bio-container button {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1210px) {
+    .sobre-mi .contenedor-sobre-mi {
+        gap: 40px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card {
+        width: 260px;
+        height: 350px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .card-contenedor {
+        margin: 15px;
+        margin-top: 30px;
+    }
+    .sobre-mi .contenedor-sobre-mi .bio-container{
+        flex: .8;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .sobre-mi .contenedor-sobre-mi {
+        gap: 70px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card{
+        width: 200px;
+        height: 280px;
+    }
+    .sobre-mi .bio-container button {
+        width: 50%;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .card-contenedor .imagen {
+        width: 170px;
+        height: 150px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .card-contenedor p {
+        line-height: 5px;
+        font-size: 16px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .card-contenedor p:nth-child(3) {
+        font-size: 11px;
+    }
+    .sobre-mi .contenedor-sobre-mi .bio-container p {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .sobre-mi .contenedor-sobre-mi .bio-container p {
+        width: 100%;
+    }
+    .sobre-mi .contenedor-sobre-mi .bio-container{
+        flex: .9;
+    }
+    .sobre-mi .bio-container button {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 700px) {
+    
+    .sobre-mi .contenedor-sobre-mi {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-mi .contenedor-sobre-mi .card{
+        width: 300px;
+        height: 430px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .card-contenedor{
+        margin: 40px 25px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .card-contenedor .imagen {
+        width: 250px;
+        height: 250px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card-contenedor .imagen p {
+        font-size: 25px;
+        line-height: 10px;
+        margin-top: 15px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card-contenedor .imagen p:nth-child(3) {
+        font-size: 15px;
+    }
+    .sobre-mi .contenedor-sobre-mi .card .webPortafolio p {
+        text-align: center;
+    }
+    .sobre-mi .contenedor-sobre-mi .card-contenedor .line {
+        height: 300px;
+    }
+    .sobre-mi .contenedor-sobre-mi .bio-container{
+        width: 100%;
+    }
+    .sobre-mi .contenedor-sobre-mi .bio-container p {   
+        text-wrap: wrap;
+    }
+
+    .sobre-mi .bio-container button {
+        width: 40%;
+    }
 }

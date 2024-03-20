@@ -15,4 +15,5 @@ export class SobreMiComponent{
   getTranslation(key: string): string {
     return this.translationService.getTranslation(key);
   }
+
 }
