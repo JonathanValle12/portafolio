@@ -24,7 +24,6 @@
 .proyectos .card01:hover .tecnologias img {
     width: 50px;
     height: 50px;
-    color: #fff;
     object-fit: cover;
 
 }
@@ -41,7 +40,7 @@
     transition: all .5s;
 }
 
-.proyectos .card01:hover .tecnologias {
+.proyectos .card01 .scale-imagen:hover .tecnologias {
     display: block;
 }
 .proyectos .tecnologias .container-images img {
@@ -82,6 +81,7 @@
     text-align: center;
     font-weight: bold;
     margin-top: 30px;
+    color: var(--text-color);
 }
 .proyectos .card-section p {
     text-align: center;
@@ -116,4 +116,10 @@
 .proyectos .card-section .botones a:hover {
     transform: scale(1.1);
     background-color: var(--primary-hover-color);
+}
+
+@media screen and (max-width: 950px) {
+    .proyectos .titulo_proyectos {
+        text-align: center;
+    }
 }

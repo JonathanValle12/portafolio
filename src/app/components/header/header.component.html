@@ -1,6 +1,6 @@
 <header class="cabecera" >
     <h2 class="titulo">Jonathan Valle</h2>
-    <section class="menus">
+    <section class="menus" [ngClass]="{'show-menu': showMenu}">
         <nav>
             <li><a href="#" >{{ getTranslation('welcome')}}</a></li>
             <li><a href="#sobre-mi">{{ getTranslation('aboutMe')}}</a></li>
@@ -20,5 +20,5 @@
             </i>
         </div>
     </section>
-    <img class="icon-menu" id="menu" src="assets/img/menu.png" (click)="abrirMenu()" />
+    <img class="icon-menu" id="menu" src="assets/img/menu.png" (click)="toggleMenu()" />
 </header>

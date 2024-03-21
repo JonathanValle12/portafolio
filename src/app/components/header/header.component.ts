@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
 
+  showMenu: boolean = false;
+
   constructor(private themeService: ThemeService, public translationService: TranslationService) {
     this.translationService.setLanguage('es');
    }
@@ -37,14 +39,7 @@ export class HeaderComponent {
     return this.translationService.getTranslation(key);
   }
 
-  abrirMenu(): any {
-    const icono = document.getElementById('menu');
-    icono?.addEventListener('click', () => {
-      
-        if (document.querySelector<HTMLElement>('#menus')) {
-          
-        //document.querySelector<HTMLElement>('#menus')?.style.backgroundColor = 'block';
-        }
-    });
+  toggleMenu(): any {
+    this.showMenu = !this.showMenu;
   }
 }

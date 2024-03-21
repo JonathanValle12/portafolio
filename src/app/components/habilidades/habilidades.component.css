@@ -65,3 +65,8 @@
     line-height: 10px;
 }
 
+@media screen and (max-width: 950px) {
+    .habilidades h2 {
+        text-align: center;
+    }
+}

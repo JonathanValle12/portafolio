@@ -8,7 +8,7 @@ import { TranslationService } from '../../services/traductor.service';
   templateUrl: './sobre-mi.component.html',
   styleUrl: './sobre-mi.component.css'
 })
-export class SobreMiComponent{
+export class SobreMiComponent {
 
   constructor(public translationService: TranslationService) {}
 

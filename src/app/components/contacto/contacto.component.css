@@ -4,7 +4,8 @@
     width: 100%;
 }
 .contacto form {
-    width: 50%;
+    width: 100%;
+    max-width: 450px;
     margin: auto;
 }
 .contacto h2 {
@@ -69,3 +70,4 @@
 .contacto button:hover {
     background-color: var(--primary-hover-color);
 }
+

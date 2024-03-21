@@ -1,21 +1,46 @@
 <section class="sobre-mi">
-    <h2>Sobre mi</h2>
+    <h2 class="titulo-sobre-mi">Sobre mi</h2>
     <div class="contenedor-sobre-mi">
-        <div>
-            <article class="card">
-                <div class="card-contenedor">
-                    <div class="imagen">
-                        <img src="assets/img/yo.png" />
-                        <p>Jonathan Valle</p>
-                        <p>FullStack Developer</p>
+        <article class="movie-card" >
+            <div class="card-linkedin">
+                <header class="menu-superior">
+                    <i class="bi bi-arrow-left"></i>
+                    <div class="search">
+                        
+                        <input type="search" name="buscador" value="Jonathan valle" />
+                        <i class="bi bi-search"></i>
                     </div>
-                    <div class="line"></div>
-                </div>
-                <div class="webPortafolio">
-                    <p>www.jvalle.dev</p>
-                </div>
-            </article>
-        </div>
+                    <i class="bi bi-gear"></i>
+                </header>
+                <main class="perfil-linkedin">
+                    <div class="banner">
+                        <img src="assets/img/banner.avif" alt="foto Banner de mi" />
+                        <div class="logo">
+                            <img src="assets/img/foto_mia.jpg" alt="foto perfil" />
+                        </div>
+                    </div>
+                    <section class="informacion-perfil">
+                        <h2>Jonathan valle</h2>
+                        <p>Desarrollador web (Angular, React, NodeJS, HTML, CSS, Bootstrap, Spring boot, bbdd..) en busca de practicas y actualmente cursando 2n de DAM</p>
+                        <p class="centro-educativo">Institut TIC de Barcelona</p>
+                        <p>Barcelona, Cataluña, España</p>
+                        <div class="butones">
+                            <button>Tengo interés en</button>
+                            <button>Añadire sección</button>
+                            <button><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <div class="busca-empleo">
+                            <div class="titulo-header">
+                                <h3>En busca de empleo</h3>
+                                <i class="bi bi-pencil"></i>
+                            </div>
+                            <p>Cargos de Desarrollador de aplicaciones y Desarrollador web</p>
+                            <p>Mostrar detalles</p>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </article>
         <div class="bio-container">
             <p>{{ getTranslation('textBioAboutMe')}}</p>
             <button>Disponible para trabajar</button>
