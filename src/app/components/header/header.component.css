@@ -5,20 +5,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: var(--background-color);
+    background-color: var(--fondo-header-color);
     position: fixed;
     z-index: 99999;
+    border-bottom: 1px solid #ccc;
     
 }
-.cabecera.scrolling-down {
-    background: rgba(0, 0, 0, .7);
-    transition: background-color .5s ease;
-}
-.cabecera.scrolling-down nav a {
+.cabecera nav a {
     color: #fff;
     font-weight: bold;
 }
-
+.cabecera .select-icon {
+    display: flex;
+    gap: 25px;
+}
 .cabecera nav li {
     display: inline-block;
     padding: 0 20px;
@@ -53,4 +53,54 @@
 .cabecera i {
     cursor: pointer;
     color: var(--primary-color);
+}
+.cabecera .icon-menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .cabecera .icon-menu {
+        display: block;
+    }
+    .cabecera .menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        right: -300px;
+        padding: 15px;
+        height: 100vh;
+        width: 170px;
+        background-color: #FC4B08;
+    }
+    .cabecera nav {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .cabecera nav a {
+        color: #fff;
+    }
+    .cabecera nav a:hover {
+        color: #000;
+    }
+    .cabecera .idioma-select,
+    .cabecera i {
+        color: #fff;
+    }
+    .cabecera .select-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 20px;
+    }
+    .cabecera .idioma-select option {
+        background-color: #000;
+    }
+    
 }

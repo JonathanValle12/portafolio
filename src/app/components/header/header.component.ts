@@ -12,25 +12,10 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
 
-  isScrollingDown: boolean = false;
-
   constructor(private themeService: ThemeService, public translationService: TranslationService) {
     this.translationService.setLanguage('es');
    }
 
-   @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: Event) {
-    const scrollPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const fullHeight = document.body.scrollHeight;
-
-    // Calcula el porcentaje de desplazamiento
-    const scrollPercentage = (scrollPosition / (fullHeight - windowHeight)) * 100;
-
-    // Aplica la clase scrolling-down si el porcentaje es mayor que el 10%
-    this.isScrollingDown = scrollPercentage > 30;
-  }
-   
   toggleTheme() {
     const currentTheme = this.themeService.getCurrentTheme();
     // Cambiar al tema oscuro
@@ -50,5 +35,16 @@ export class HeaderComponent {
 
   getTranslation(key: string): string {
     return this.translationService.getTranslation(key);
+  }
+
+  abrirMenu(): any {
+    const icono = document.getElementById('menu');
+    icono?.addEventListener('click', () => {
+      
+        if (document.querySelector<HTMLElement>('#menus')) {
+          
+        //document.querySelector<HTMLElement>('#menus')?.style.backgroundColor = 'block';
+        }
+    });
   }
 }

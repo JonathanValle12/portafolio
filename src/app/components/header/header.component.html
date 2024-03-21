@@ -1,4 +1,4 @@
-<header class="cabecera" [class.scrolling-down]="isScrollingDown">
+<header class="cabecera" >
     <h2 class="titulo">Jonathan Valle</h2>
     <section class="menus">
         <nav>
@@ -9,13 +9,16 @@
             <li><a href="#contacto">{{ getTranslation('contact')}}</a></li>
         </nav>
 
-        <select class="idioma-select" (change)="changeLanguage($event)">
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-        </select>
-        <i class="bi" 
-           [ngClass]="{ 'bi-moon': isLightTheme(), 'bi-sun': !isLightTheme() }" 
-           (click)="toggleTheme()">
-        </i>
+        <div class="select-icon">
+            <select class="idioma-select" (change)="changeLanguage($event)">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+            <i class="bi" 
+               [ngClass]="{ 'bi-moon': isLightTheme(), 'bi-sun': !isLightTheme() }" 
+               (click)="toggleTheme()">
+            </i>
+        </div>
     </section>
+    <img class="icon-menu" id="menu" src="assets/img/menu.png" (click)="abrirMenu()" />
 </header>
