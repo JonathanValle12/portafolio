@@ -238,18 +238,6 @@
     color: #fff;
 }
 
-@media screen and (max-width: 1700px) {
-
-    .sobre-mi {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 1250px){
-
-    .sobre-mi {
-        width: 100%;
-    }
-}
 @media screen and (max-width: 1210px) {
 
     .sobre-mi .contenedor-sobre-mi .card {
@@ -260,6 +248,7 @@
         margin: 15px;
         margin-top: 30px;
     }
+    
 }
 @media screen and (max-width: 990px) {
     .sobre-mi .contenedor-sobre-mi{
@@ -274,7 +263,6 @@
 
 @media screen and (max-width: 950px) {
 
-
     .sobre-mi .contenedor-sobre-mi .card{
         width: 200px;
         height: 280px;
@@ -285,6 +273,7 @@
     }
 
 }
+
 @media screen and (max-width: 700px) {
 
     .sobre-mi .contenedor-sobre-mi {

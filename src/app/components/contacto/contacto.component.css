@@ -63,6 +63,7 @@
     padding: 5px 20px;
     transition: background-color .5s;
     font-weight: bold;
+    margin-bottom: 50px;
 }
 .contacto .button-enviar {
     position: relative;

@@ -7,19 +7,24 @@
     background-color: var(--fondo-header-color);
     position: fixed;
     border-bottom: 1px solid #ccc;
+    height: 90px;
     z-index: 99999;
 }
+
 .cabecera nav a {
     color: #fff;
 }
+
 .cabecera .select-icon {
     display: flex;
     gap: 25px;
 }
+
 .cabecera nav li {
     display: inline-block;
     padding: 0 20px;
 }
+
 .cabecera nav a {
     text-decoration: none;
     cursor: pointer;
@@ -27,10 +32,12 @@
     padding-bottom: 5px;
     color: var(--text-color);
 }
+
 .cabecera nav a:hover {
     color: var(--primary-hover-color);
     border-bottom: 2px solid var(--primary-hover-color);
 }
+
 .cabecera h2 {
     color: var(--primary-color);
     margin-top: 15px;
@@ -49,13 +56,15 @@
     outline: none;
     background-color: transparent !important;
 }
+
 .cabecera i {
     cursor: pointer;
     color: var(--primary-color);
 }
-.cabecera .icon-menu {
-    width: 30px;
-    height: 30px;
+
+.cabecera .bi-list,
+.cabecera .bi-x-lg {
+    font-size: 24px;
     display: none;
     cursor: pointer;
 }
@@ -64,56 +73,133 @@
     .cabecera .menus {
         width: 80%;
     }
+
     .cabecera nav a {
         font-size: 12px;
     }
-    
+
 }
+
 @media screen and (max-width: 850px) {
-    .cabecera .icon-menu {
+
+    .cabecera .bi-list,
+    .cabecera .bi-x-lg {
+        color: var(--primary-color);
         display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
     }
+
+    .cabecera .bi-x-lg {
+        font-size: 20px;
+        top: 32px;
+        right: 12px;
+    }
+
+    .cabecera .show-titulo {
+        display: none;
+    }
+
     .cabecera .menus {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         position: absolute;
-        top: 0px;
-        right: -300px;
-        padding: 15px;
-        height: 100vh;
-        width: 170px;
-        background-color: #FC4B08;
-        transition: right .5s ease;
+        top: 30px;
+        left: -300%;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: left .5s ease;
     }
-    
+
     .cabecera .show-menu {
-        right: 0;
+        left: -4%;
     }
+
     .cabecera nav {
         display: flex;
-        flex-direction: column;
-        gap: 40px;
+        flex-direction: row;
+        gap: 4px;
     }
+
+    .cabecera nav li {
+        padding: 6px 8px;
+        background-color: var(--background-color);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .cabecera nav li::before {
+        content: '';
+        width: 0%;
+        height: 100%;
+        background-color: var(--text-color);
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        opacity: .3;
+    }
+
+    .cabecera nav li:hover::before {
+        animation: animation2 1s;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+    }
+
+    @keyframes animation2 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
     .cabecera nav a {
-        color: #fff;
+        color: var(--text-color);
     }
+
     .cabecera nav a:hover {
-        color: #000;
+        color: var(--text-color);
+        border-bottom: 0;
     }
+
+    .cabecera .select-icon {
+        margin-top: -20px;
+    }
+
     .cabecera .idioma-select,
     .cabecera i {
-        color: #fff;
+        color: var(--primary-color);
     }
-    .cabecera .select-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+
+    .cabecera .select-icon i {
+       position: absolute;
+       left: 60px;
+       bottom: -70px;
+       border-radius: 50%;
+       width: 30px;
+       height: 30px;
+       padding: 5px 8px;
+       background-color: var(--border-color);
+       color: var(--button-active-text-color);
+       transition: scale .5s ease;
+    }
+    .cabecera .select-icon i:hover {
+        scale: 1.2;
+    }
+    .cabecera .select-icon i,
+    .cabecera .select-icon select {
         margin-top: 20px;
+        margin-left: -15px;
     }
+
     .cabecera .idioma-select option {
         background-color: #000;
     }
-    
+
 }
