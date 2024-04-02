@@ -17,7 +17,7 @@
     color: var(--text-color);
 }
 .sobre-mi .contenedor-sobre-mi {
-    margin-top: 70px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,14 +25,14 @@
 }
 .sobre-mi .movie-card {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     background-color: #fff;
     margin: auto;
     border-radius: 50px;
     box-shadow: 0 14px 6px -6px rgba(0,0,0,0.5);
     
     border: 10px solid #000;
-    height: 430px;
+    height: 470px;
 
     overflow-y: scroll;
 }
@@ -42,19 +42,6 @@
     height: 100%;
 }
 
-
-.sobre-mi .movie-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 20px;
-    margin: auto;
-    border-radius: 0 0 15px 15px;
-    background-color: #000;
-}
 .sobre-mi .movie-card .menu-superior {
     display: flex;
     flex-direction: row;
@@ -92,7 +79,7 @@
 }
 .sobre-mi .movie-card .banner .logo {
     background-color: #fff;
-    width: 25%;
+    width: 23%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     position: absolute;
