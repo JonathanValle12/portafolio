@@ -24,10 +24,13 @@ export const TRANSLATIONS_ES = {
     textPlaceHolderMessage: 'Escribe tu Mensaje aqui',
     buttonTextEnviarForm: 'Enviar',
     snake_title: 'La serpiente',
-    snake_description: 'Clásico juego de la serpiente. Controla la serpiente, recolecta manzanas y evita colisiones. ¡Revive la diversión retro!',
+    snake_description: 'Revive la diversión retro con este clásico juego de la serpiente. Controla la serpiente, recolecta manzanas y evita colisiones en este desafiante juego de habilidad.',
     tetris_title: 'Tetris',
-    tetris_description: 'Tetris dqjdqodjqodjwqodjqdwwd',
+    tetris_description: 'Tetris es un juego de rompecabezas donde los jugadores manipulan piezas para completar lineas horizontales y evitar el llenado de pantalla con bloques',
     buscaminas_description: 'Buscaminas djqodjqodwqd',
+    pokemon_description: 'Explora y descubre información detallada sobre Pokémon utilizando la PokeAPI, Filtra por tipo y busca Pokémon especificos',
+    spotify_description: 'He creado un clon de Spotify con acceso a biblioteca de música y reproducción de canciones de artistas seguidos, además de listas de reproducción filtradas por categorías.',
+    plataforma_cursos_description: "Accede a cursos online, edita tu perfil y crea tus propios cursos. Además, cuenta con un panel administrativo para validar a los instructores antes de que impartan clases.",
     language_html_description: 'Marcado web',
     language_css_description: 'Estilos web',
     language_js_description: 'Interactividad web',
@@ -41,7 +44,8 @@ export const TRANSLATIONS_ES = {
     language_springboot_description: 'Construcción y aplicaciones ágiles',
     language_mongodb_description: 'Base de datos NoSQL',
     language_mysql_description: 'Base de datos SQL',
-    language_sql_description: 'Lenguaje para consultas de bases de datos'
+    language_sql_description: 'Lenguaje para consultas de bases de datos',
+    language_tailwindcss_description: 'Framework CSS para desarrollo web ágil'
 }
 export const TRANSLATIONS_EN = {
     greeting: 'Hello',
@@ -68,8 +72,11 @@ export const TRANSLATIONS_EN = {
     snake_title: 'The snake',
     snake_description: 'Classic snake game. Control the snake, collect apples and avoid collisions. Relive the retro fun!',
     tetris_title: 'Tetris',
-    tetris_description: 'Cdawdwaddwadawdawdsrvsfec eda wad a dadwdd',
+    tetris_description: 'Tetris is a puzzle game where players manipulate pieces to complete horizontal lines and avoid filling the screen with blocks',
     buscaminas_description: "jdqodjqodjwdojwdqd",
+    pokemon_description: 'Explore and discover detailed information about Pokémon using the PokeAPI, Filter by type and search for specific Pokémon',
+    spotify_description: 'I have created a Spotify clone with access to a music library and playback of followed artists songs, as well as playlists filtered by categories.',
+    plataforma_cursos_description: 'Access online courses, edit your profile, and create your own courses. It also features an administrative panel to validate instructors before they teach.',
     language_html_description: 'Web Markup',
     language_css_description: 'Web styles',
     language_js_description: 'Web interactivity',
@@ -83,5 +90,6 @@ export const TRANSLATIONS_EN = {
     language_springboot_description: 'Agile construction and applications',
     language_mongodb_description: 'NoSQL database',
     language_mysql_description: 'SQL database',
-    language_sql_description: 'Database query language'
+    language_sql_description: 'Database query language',
+    language_tailwindcss_description: 'CSS framework for agile web development'
 }
