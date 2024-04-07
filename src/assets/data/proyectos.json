@@ -1,7 +1,7 @@
 [
     {
         "titulo_key": "Trello",
-        "imagen": "assets/img/proyectos/trello.png",
+        "imagen": "assets/img/proyectos/trello.webp",
         "descripcion_key": "trello_description",
         "github": "https://github.com/JonathanValle12/Trello.git",
         "web_site": "https://trello-two-lilac.vercel.app/",
@@ -18,7 +18,7 @@
     },
     {
         "titulo_key": "Clon Spotify",
-        "imagen": "assets/img/proyectos/clonSpotify.png",
+        "imagen": "assets/img/proyectos/clonSpotify.webp",
         "descripcion_key": "spotify_description",
         "github": "https://github.com/JonathanValle12/clon_spotify.git",
         "web_site": "https://clon-spotify-alpha.vercel.app/",
@@ -35,7 +35,7 @@
     },
     {
         "titulo_key": "Pokemon API",
-        "imagen": "assets/img/proyectos/pokemonAPI.png",
+        "imagen": "assets/img/proyectos/pokemonAPI.webp",
         "descripcion_key": "pokemon_description",
         "github": "https://github.com/JonathanValle12/pokemonAPI.git",
         "web_site": "https://jonathanvalle12.github.io/pokemonAPI/",
@@ -56,7 +56,7 @@
     },
     {
         "titulo_key": "Plataforma Cursos Online",
-        "imagen": "assets/img/proyectos/plataforma_cursos.png",
+        "imagen": "assets/img/proyectos/plataforma_cursos.webp",
         "descripcion_key": "plataforma_cursos_description",
         "github": "https://github.com/JonathanValle12/Plataforma_Cursos_Online.git",
         "web_site": "https://plataforma-cursos-online-navy.vercel.app/",
@@ -81,7 +81,7 @@
     },
     {
         "titulo_key": "snake_title",
-        "imagen": "assets/img/proyectos/proyecto_snake.png",
+        "imagen": "assets/img/proyectos/proyecto_snake.webp",
         "descripcion_key": "snake_description",
         "github": "https://github.com/JonathanValle12/snake.git",
         "web_site": "https://jonathanvalle12.github.io/snake/",
@@ -102,7 +102,7 @@
     },
     {
         "titulo_key": "tetris_title",
-        "imagen": "assets/img/proyectos/tetris.png",
+        "imagen": "assets/img/proyectos/tetris.webp",
         "descripcion_key": "tetris_description",
         "github": "https://github.com/JonathanValle12/tetris.git",
         "web_site": "#",
@@ -123,7 +123,7 @@
     },
     {
         "titulo_key": "Buscaminas",
-        "imagen": "assets/img/proyectos/buscaminas.png",
+        "imagen": "assets/img/proyectos/buscaminas.webp",
         "descripcion_key": "buscaminas_description",
         "github": "https://github.com/JonathanValle12/buscaminas.git",
         "web_site": "https://jonathanvalle12.github.io/buscaminas/",
