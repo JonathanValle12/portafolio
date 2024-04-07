@@ -31,6 +31,7 @@ export const TRANSLATIONS_ES = {
     pokemon_description: 'Explora y descubre información detallada sobre Pokémon utilizando la PokeAPI, Filtra por tipo y busca Pokémon especificos',
     spotify_description: 'He creado un clon de Spotify con acceso a biblioteca de música y reproducción de canciones de artistas seguidos, además de listas de reproducción filtradas por categorías.',
     plataforma_cursos_description: "Accede a cursos online, edita tu perfil y crea tus propios cursos. Además, cuenta con un panel administrativo para validar a los instructores antes de que impartan clases.",
+    trello_description: 'Cree un sistema similar a Trello que emplea tableros para visualizar nuestras tareas pendientes y en curso, ofrece dos modos de visualización: board y tabla',
     language_html_description: 'Marcado web',
     language_css_description: 'Estilos web',
     language_js_description: 'Interactividad web',

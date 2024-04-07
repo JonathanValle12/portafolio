@@ -2,9 +2,9 @@
     {
         "titulo_key": "Trello",
         "imagen": "assets/img/proyectos/trello.png",
-        "descripcion_key": "En proceso...",
+        "descripcion_key": "trello_description",
         "github": "https://github.com/JonathanValle12/Trello.git",
-        "web_site": "https://plataforma-cursos-online-navy.vercel.app/",
+        "web_site": "https://trello-two-lilac.vercel.app/",
         "tecnologias": [
             {
                 "tecnologia": "assets/img/skills/angular.png",
