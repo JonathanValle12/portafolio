@@ -15,6 +15,7 @@
     padding-bottom: 15px;
     text-align: center;
     color: var(--text-color);
+    font-family: "Montserrat", serif;
 }
 .sobre-mi .contenedor-sobre-mi {
     margin-top: 50px;
@@ -97,15 +98,20 @@
     margin-top: 20px;
     margin-left: 10px;
     max-height: 400px;
+    
+    font-family: "Montserrat", serif;
 }
 .sobre-mi .movie-card .informacion-perfil h2 {
     font-size: 15px;
     text-align: left;
+    font-family: "Montserrat", serif;
+    
 }
 .sobre-mi .movie-card .informacion-perfil p {
     text-wrap: balance;
     font-size: 13px;
     margin-top: -15px;
+    
 }
 .sobre-mi .movie-card .informacion-perfil .centro-educativo {
     margin-top: 0;
@@ -128,6 +134,7 @@
     background-color: rgb(21, 25, 240);
     color: #fff;
     text-overflow: ellipsis;
+    
 
 }
 .sobre-mi .movie-card .informacion-perfil .butones button:nth-child(2),
@@ -153,6 +160,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 12px;
+    font-family: "Montserrat", serif;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo p {
     font-size: 12px;
@@ -177,6 +185,7 @@
     text-align: left;
     color: var(--text-color);
     width: 100%;
+    font-family: "Montserrat", serif;
 }
 .sobre-mi .bio-container button {
     width: 100%;
@@ -223,6 +232,7 @@
     width: 100%;
     font-size: 13px;
     color: #fff;
+    
 }
 
 @media screen and (max-width: 1210px) {

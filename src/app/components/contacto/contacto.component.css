@@ -15,11 +15,13 @@
     margin-bottom: 30px;
     padding-bottom: 20px;
     color: var(--text-color);
+    font-family: "Montserrat", serif;
 }
 .contacto label {
     color: var(--primary-color);
     font-weight: 600;
     margin-left: 10px;
+    font-family: "Montserrat", serif;
 }
 
 .contacto input[type="text"],
@@ -34,10 +36,13 @@
     color: var(--text-color);
     margin-bottom: 35px;
     
+    
 }
 .contacto input[type="text"]::placeholder,
 .contacto textarea::placeholder {
     color: var(--text-placeholder-color);
+    
+    font-family: "Montserrat", serif;
 }
 .contacto textarea {
     min-height: 70px;
@@ -64,6 +69,7 @@
     transition: background-color .5s;
     font-weight: bold;
     margin-bottom: 50px;
+    
 }
 .contacto .button-enviar {
     position: relative;

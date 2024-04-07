@@ -3,6 +3,7 @@
     margin-top: 100px;
     margin-bottom: 40px;
     color: var(--text-color);
+    font-family: "Montserrat", serif;
 }
 
 .habilidades .card-section {
@@ -68,12 +69,14 @@
     margin-top: 14px;
     z-index: 200;
     color: var(--text-color);
+    font-family: "Montserrat", serif;
 }
 
 .habilidades .card-section p {
     font-size: 14px;
     z-index: 201;
     color: var(--text-color);
+    font-family: "Montserrat", serif;
 }
 
 .habilidades .card-section .contenido {
@@ -94,6 +97,7 @@
     transition: opacity 0.3s ease-in-out;
 
     z-index: 99999;
+    font-family: "Montserrat", serif;
 }
 
 .habilidades .card-skill:hover .text-porcentaje {

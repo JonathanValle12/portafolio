@@ -37,9 +37,12 @@ main {
     width: 100%;
     max-width: 100%;
     color: var(--text-color);
+    font-family: "Montserrat", serif;
+    
 }
 .presentacion p {
     color: var(--text-color);
+    font-family: "Montserrat", serif;
 }
 .presentacion .botones {
     display: flex;
