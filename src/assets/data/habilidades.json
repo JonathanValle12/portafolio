@@ -2,71 +2,85 @@
     {
         "lenguaje": "HTML",
         "descripcion": "language_html_description",
-        "portada": "assets/img/skills/html5.webp"
+        "portada": "assets/img/skills/html5.webp",
+        "porcentaje": 100
     },
     {
         "lenguaje": "CSS",
         "descripcion": "language_css_description",
-        "portada": "assets/img/skills/css3.webp"
+        "portada": "assets/img/skills/css3.webp",
+        "porcentaje": 95
     },
     {
         "lenguaje": "JavaScript",
         "descripcion": "language_js_description",
-        "portada": "assets/img/skills/javascript.webp"
+        "portada": "assets/img/skills/javascript.webp",
+        "porcentaje": 90
     },
     {
         "lenguaje": "React",
         "descripcion": "language_react_description",
-        "portada": "assets/img/skills/react.webp"
+        "portada": "assets/img/skills/react.webp",
+        "porcentaje": 90
     },
     {
         "lenguaje": "Angular",
         "descripcion": "language_angular_description",
-        "portada": "assets/img/skills/angular.webp"
+        "portada": "assets/img/skills/angular.webp",
+        "porcentaje": 75
     },
     {
         "lenguaje": "Bootstrap CSS",
         "descripcion": "language_bootstrap_description",
-        "portada": "assets/img/skills/bootstrap.webp"
+        "portada": "assets/img/skills/bootstrap.webp",
+        "porcentaje": 50
     },
     {
         "lenguaje": "SASS",
         "descripcion": "language_sass_description",
-        "portada": "assets/img/skills/sass.webp"
+        "portada": "assets/img/skills/sass.webp",
+        "porcentaje": 100
     },
     {
         "lenguaje": "Node.js",
         "descripcion": "language_node_description",
-        "portada": "assets/img/skills/nodejs.webp"
+        "portada": "assets/img/skills/nodejs.webp",
+        "porcentaje": 80
     },
     {
         "lenguaje": "Python",
         "descripcion": "language_python_description",
-        "portada": "assets/img/skills/python.webp"
+        "portada": "assets/img/skills/python.webp",
+        "porcentaje": 50
     },
     {
         "lenguaje": "XML",
         "descripcion": "language_xml_description",
-        "portada": "assets/img/skills/xml.webp"
+        "portada": "assets/img/skills/xml.webp",
+        "porcentaje": 75
     },
     {
         "lenguaje": "Spring Boot",
         "descripcion": "language_springboot_description",
-        "portada": "assets/img/skills/springboot.webp"
+        "portada": "assets/img/skills/springboot.webp",
+        "porcentaje": 60
     },
     {
         "lenguaje": "MongoDB",
         "descripcion": "language_mongodb_description",
-        "portada": "assets/img/skills/mongodb.webp"
+        "portada": "assets/img/skills/mongodb.webp",
+        "porcentaje": 90
     },
     {
         "lenguaje": "MySQL",
         "descripcion": "language_mysql_description",
-        "portada": "assets/img/skills/mysql.webp"
+        "portada": "assets/img/skills/mysql.webp",
+        "porcentaje": 90
     },
     {
         "lenguaje": "SQL",
         "descripcion": "language_sql_description",
-        "portada": "assets/img/skills/sql.webp"
+        "portada": "assets/img/skills/sql.webp",
+        "porcentaje": 65
     }
 ]

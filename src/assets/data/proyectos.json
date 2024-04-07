@@ -7,11 +7,11 @@
         "web_site": "https://trello-two-lilac.vercel.app/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/angular.png",
+                "tecnologia": "assets/img/skills/angular.webp",
                 "descripcion": "language_react_description"
             },
             {
-                "tecnologia": "assets/img/skills/tailwindcss.png",
+                "tecnologia": "assets/img/skills/tailwindcss.webp",
                 "descripcion": "language_tailwindcss_description"
             }
         ]
@@ -24,11 +24,11 @@
         "web_site": "https://clon-spotify-alpha.vercel.app/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/react.png",
+                "tecnologia": "assets/img/skills/react.webp",
                 "descripcion": "language_react_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.png",
+                "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
             }
         ]
@@ -41,15 +41,15 @@
         "web_site": "https://jonathanvalle12.github.io/pokemonAPI/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/html5.png",
+                "tecnologia": "assets/img/skills/html5.webp",
                 "descripcion": "language_html_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.png",
+                "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
             },
             {
-                "tecnologia": "assets/img/skills/javascript.png",
+                "tecnologia": "assets/img/skills/javascript.webp",
                 "descripcion": "language_js_description"
             }
         ]
@@ -62,19 +62,19 @@
         "web_site": "https://plataforma-cursos-online-navy.vercel.app/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/react.png",
+                "tecnologia": "assets/img/skills/react.webp",
                 "descripcion": "language_react_description"
             },
             {
-                "tecnologia": "assets/img/skills/nodejs.png",
+                "tecnologia": "assets/img/skills/nodejs.webp",
                 "descripcion": "language_node_descriptio"
             },
             {
-                "tecnologia": "assets/img/skills/mongodb.png",
+                "tecnologia": "assets/img/skills/mongodb.webp",
                 "descripcion": "language_mongodb_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.png",
+                "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
             }
         ]
@@ -87,15 +87,15 @@
         "web_site": "https://jonathanvalle12.github.io/snake/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/html5.png",
+                "tecnologia": "assets/img/skills/html5.webp",
                 "descripcion": "language_html_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.png",
+                "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
             },
             {
-                "tecnologia": "assets/img/skills/javascript.png",
+                "tecnologia": "assets/img/skills/javascript.webp",
                 "descripcion": "language_js_description"
             }
         ]
@@ -108,15 +108,15 @@
         "web_site": "#",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/html5.png",
+                "tecnologia": "assets/img/skills/html5.webp",
                 "descripcion": "language_html_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.png",
+                "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
             },
             {
-                "tecnologia": "assets/img/skills/javascript.png",
+                "tecnologia": "assets/img/skills/javascript.webp",
                 "descripcion": "language_js_description"
             }
         ]
@@ -129,15 +129,15 @@
         "web_site": "https://jonathanvalle12.github.io/buscaminas/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/html5.png",
+                "tecnologia": "assets/img/skills/html5.webp",
                 "descripcion": "language_html_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.png",
+                "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
             },
             {
-                "tecnologia": "assets/img/skills/javascript.png",
+                "tecnologia": "assets/img/skills/javascript.webp",
                 "descripcion": "language_js_description"
             }
         ]
