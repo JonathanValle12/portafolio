@@ -15,13 +15,13 @@
     margin-bottom: 30px;
     padding-bottom: 20px;
     color: var(--text-color);
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
 .contacto label {
     color: var(--primary-color);
     font-weight: 600;
     margin-left: 10px;
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
 
 .contacto input[type="text"],
@@ -41,9 +41,9 @@
 .contacto input[type="text"]::placeholder,
 .contacto textarea::placeholder {
     color: var(--text-placeholder-color);
-    
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
+
 .contacto textarea {
     min-height: 70px;
     max-height: 150px;

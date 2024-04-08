@@ -15,7 +15,7 @@
     padding-bottom: 15px;
     text-align: center;
     color: var(--text-color);
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
 .sobre-mi .contenedor-sobre-mi {
     margin-top: 50px;
@@ -99,12 +99,12 @@
     margin-left: 10px;
     max-height: 400px;
     
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
 .sobre-mi .movie-card .informacion-perfil h2 {
     font-size: 15px;
     text-align: left;
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
     
 }
 .sobre-mi .movie-card .informacion-perfil p {
@@ -160,7 +160,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 12px;
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo p {
     font-size: 12px;
@@ -185,7 +185,7 @@
     text-align: left;
     color: var(--text-color);
     width: 100%;
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", monospace;
 }
 .sobre-mi .bio-container button {
     width: 100%;

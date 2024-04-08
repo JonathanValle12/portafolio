@@ -13,6 +13,7 @@
 
 .cabecera nav a {
     color: #fff;
+    font-family: 'Montserrat', monospace;
 }
 
 .cabecera .select-icon {
@@ -22,7 +23,7 @@
 
 .cabecera nav li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .cabecera nav a {
@@ -41,6 +42,7 @@
 .cabecera h2 {
     color: var(--primary-color);
     margin-top: 15px;
+    font-family: 'Montserrat', monospace;
 }
 
 .cabecera .menus {
@@ -125,7 +127,7 @@
     }
 
     .cabecera nav li {
-        padding: 6px 8px;
+        padding: 6px 3px;
         background-color: var(--background-color);
         border-radius: 10px;
         position: relative;
@@ -161,6 +163,7 @@
 
     .cabecera nav a {
         color: var(--text-color);
+        font-size: 12px;
     }
 
     .cabecera nav a:hover {
