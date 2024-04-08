@@ -17,6 +17,7 @@ main {
 }
 .presentacion .imagen {
     background-color: var(--background-border-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     padding: 6px;
     border-radius: 50%;
 }
@@ -36,9 +37,12 @@ main {
     width: 100%;
     max-width: 100%;
     color: var(--text-color);
+    font-family: "Montserrat", monospace;
+    
 }
 .presentacion p {
     color: var(--text-color);
+    font-family: "Montserrat", monospace;
 }
 .presentacion .botones {
     display: flex;
