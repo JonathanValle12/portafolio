@@ -1,6 +1,6 @@
 [
     {
-        "titulo_key": "Trello",
+        "titulo_key": "trello_title",
         "imagen": "assets/img/proyectos/trello.webp",
         "descripcion_key": "trello_description",
         "github": "https://github.com/JonathanValle12/Trello.git",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "titulo_key": "Clon Spotify",
+        "titulo_key": "clon_spotify_title",
         "imagen": "assets/img/proyectos/clonSpotify.webp",
         "descripcion_key": "spotify_description",
         "github": "https://github.com/JonathanValle12/clon_spotify.git",
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "titulo_key": "Pokemon API",
+        "titulo_key": "pokemon_api_title",
         "imagen": "assets/img/proyectos/pokemonAPI.webp",
         "descripcion_key": "pokemon_description",
         "github": "https://github.com/JonathanValle12/pokemonAPI.git",
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "titulo_key": "Plataforma Cursos Online",
+        "titulo_key": "plataforma_cursos_online_title",
         "imagen": "assets/img/proyectos/plataforma_cursos.webp",
         "descripcion_key": "plataforma_cursos_description",
         "github": "https://github.com/JonathanValle12/Plataforma_Cursos_Online.git",
@@ -122,7 +122,7 @@
         ]
     },
     {
-        "titulo_key": "Buscaminas",
+        "titulo_key": "buscaminas_title",
         "imagen": "assets/img/proyectos/buscaminas.webp",
         "descripcion_key": "buscaminas_description",
         "github": "https://github.com/JonathanValle12/buscaminas.git",

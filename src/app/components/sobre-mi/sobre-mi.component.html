@@ -21,21 +21,21 @@
                     </div>
                     <section class="informacion-perfil">
                         <h2>Jonathan valle</h2>
-                        <p>Desarrollador web (Angular, React, NodeJS, HTML, CSS, Bootstrap, Spring boot, bbdd..) en busca de practicas y actualmente cursando 2n de DAM</p>
-                        <p class="centro-educativo">Institut TIC de Barcelona</p>
+                        <p>{{getTranslation('textDescriptionMe')}}</p>
+                        <p class="centro-educativo">{{getTranslation('textLocationMe')}}</p>
                         <p>Barcelona, Cataluña, España</p>
                         <div class="butones">
-                            <button>Tengo interés en</button>
-                            <button>Añadire sección</button>
+                            <button>{{getTranslation('textInterest')}}</button>
+                            <button>{{getTranslation('textAddSection')}}</button>
                             <button><i class="bi bi-three-dots"></i></button>
                         </div>
                         <div class="busca-empleo">
                             <div class="titulo-header">
-                                <h3>En busca de empleo</h3>
+                                <h3>{{getTranslation('textJobSearch')}}</h3>
                                 <i class="bi bi-pencil"></i>
                             </div>
-                            <p>Cargos de Desarrollador de aplicaciones y Desarrollador web</p>
-                            <p>Mostrar detalles</p>
+                            <p>{{getTranslation('textJobPositions')}}</p>
+                            <p>{{getTranslation('textShowDetails')}}</p>
                         </div>
                     </section>
                 </main>
@@ -43,7 +43,7 @@
         </article>
         <div class="bio-container">
             <p>{{ getTranslation('textBioAboutMe')}}</p>
-            <button>Disponible para trabajar</button>
+            <button>{{getTranslation('textAvailibity')}}</button>
         </div>
     </div>
 
