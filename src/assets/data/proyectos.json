@@ -105,7 +105,7 @@
         "imagen": "assets/img/proyectos/tetris.webp",
         "descripcion_key": "tetris_description",
         "github": "https://github.com/JonathanValle12/tetris.git",
-        "web_site": "#",
+        "web_site": "https://tetris-alpha-teal.vercel.app/",
         "tecnologias": [
             {
                 "tecnologia": "assets/img/skills/html5.webp",
