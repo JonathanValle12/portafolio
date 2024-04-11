@@ -1,4 +1,3 @@
-
 .sobre-mi {
     margin-top: 130px;
     border-radius: 10px;
@@ -9,7 +8,6 @@
     justify-content: center;
     width: 95%;
 }
-
 .sobre-mi .titulo-sobre-mi {
     font-size: 3.5rem;
     padding-bottom: 15px;
@@ -34,15 +32,12 @@
     
     border: 10px solid #000;
     height: 470px;
-
     overflow-y: scroll;
 }
-
 .sobre-mi .movie-card::-webkit-scrollbar {
     width: 0px;
     height: 100%;
 }
-
 .sobre-mi .movie-card .menu-superior {
     display: flex;
     flex-direction: row;
@@ -97,8 +92,7 @@
 .sobre-mi .movie-card .informacion-perfil {
     margin-top: 20px;
     margin-left: 10px;
-    max-height: 400px;
-    
+    max-height: 400px;  
     font-family: "Montserrat", monospace;
 }
 .sobre-mi .movie-card .informacion-perfil h2 {
@@ -110,8 +104,7 @@
 .sobre-mi .movie-card .informacion-perfil p {
     text-wrap: balance;
     font-size: 13px;
-    margin-top: -15px;
-    
+    margin-top: -15px;  
 }
 .sobre-mi .movie-card .informacion-perfil .centro-educativo {
     margin-top: 0;
@@ -134,8 +127,6 @@
     background-color: rgb(21, 25, 240);
     color: #fff;
     text-overflow: ellipsis;
-    
-
 }
 .sobre-mi .movie-card .informacion-perfil .butones button:nth-child(2),
 .sobre-mi .movie-card .informacion-perfil .butones button:nth-child(3) {
@@ -210,7 +201,6 @@
     animation: animated 1s linear infinite; /* Duración de la animación */
     animation-delay: 0s, 15s; /* Delay inicial y delay después de cada ciclo */
 }
-
 @keyframes animated {
     0% {
         transform: translateX(-50%); /* Comienza fuera del botón */
@@ -231,12 +221,9 @@
 .sobre-mi .webPortafolio p {
     width: 100%;
     font-size: 13px;
-    color: #fff;
-    
+    color: #fff;   
 }
-
 @media screen and (max-width: 1210px) {
-
     .sobre-mi .contenedor-sobre-mi .card {
         width: 260px;
         height: 350px;
@@ -244,8 +231,7 @@
     .sobre-mi .contenedor-sobre-mi .card .card-contenedor {
         margin: 15px;
         margin-top: 30px;
-    }
-    
+    } 
 }
 @media screen and (max-width: 990px) {
     .sobre-mi .contenedor-sobre-mi{
@@ -257,9 +243,7 @@
         flex-direction: column;
     }
 }
-
 @media screen and (max-width: 950px) {
-
     .sobre-mi .contenedor-sobre-mi .card{
         width: 200px;
         height: 280px;
@@ -268,11 +252,8 @@
         width: 170px;
         height: 150px;
     }
-
 }
-
 @media screen and (max-width: 700px) {
-
     .sobre-mi .contenedor-sobre-mi {
         flex-direction: column;
         align-items: center;
@@ -305,5 +286,4 @@
     .sobre-mi .contenedor-sobre-mi .bio-container p {
         font-size: 16px;
     }
-
 }

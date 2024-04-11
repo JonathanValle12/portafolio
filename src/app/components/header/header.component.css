@@ -10,22 +10,18 @@
     height: 90px;
     z-index: 99999;
 }
-
 .cabecera nav a {
     color: #fff;
     font-family: 'Montserrat', monospace;
 }
-
 .cabecera .select-icon {
     display: flex;
     gap: 25px;
 }
-
 .cabecera nav li {
     display: inline-block;
     padding: 0 15px;
 }
-
 .cabecera nav a {
     text-decoration: none;
     cursor: pointer;
@@ -33,24 +29,20 @@
     padding-bottom: 5px;
     color: var(--text-color);
 }
-
 .cabecera nav a:hover {
     color: var(--primary-hover-color);
     border-bottom: 2px solid var(--primary-hover-color);
 }
-
 .cabecera h2 {
     color: var(--primary-color);
     margin-top: 15px;
     font-family: 'Montserrat', monospace;
 }
-
 .cabecera .menus {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-
 .cabecera .idioma-select {
     border: none;
     color: var(--primary-color);
@@ -58,32 +50,25 @@
     outline: none;
     background-color: transparent !important;
 }
-
 .cabecera i {
     cursor: pointer;
     color: var(--primary-color);
 }
-
 .cabecera .bi-list,
 .cabecera .bi-x-lg {
     font-size: 24px;
     display: none;
     cursor: pointer;
 }
-
 @media screen and (max-width: 1100px) {
     .cabecera .menus {
         width: 80%;
     }
-
     .cabecera nav a {
         font-size: 12px;
     }
-
 }
-
 @media screen and (max-width: 850px) {
-
     .cabecera .bi-list,
     .cabecera .bi-x-lg {
         color: var(--primary-color);
@@ -92,17 +77,14 @@
         top: 30px;
         right: 10px;
     }
-
     .cabecera .bi-x-lg {
         font-size: 20px;
         top: 32px;
         right: 12px;
     }
-
     .cabecera .show-titulo {
         display: none;
     }
-
     .cabecera .menus {
         display: flex;
         flex-direction: row;
@@ -115,23 +97,19 @@
         border-bottom-right-radius: 10px;
         transition: left .5s ease;
     }
-
     .cabecera .show-menu {
         left: -4%;
     }
-
     .cabecera nav {
         display: flex;
         flex-direction: row;
     }
-
     .cabecera nav li {
         padding: 6px 3px;
         background-color: var(--background-color);
         border-radius: 10px;
         position: relative;
     }
-
     .cabecera nav li::before {
         content: '';
         width: 0%;
@@ -142,23 +120,19 @@
         left: 0;
         opacity: .3;
     }
-
     .cabecera nav li:hover::before {
         animation: animation2 1s;
         animation-fill-mode: forwards;
         cursor: pointer;
     }
-
     @keyframes animation2 {
         from {
             width: 0;
         }
-
         to {
             width: 100%;
         }
     }
-
     .cabecera nav a {
         color: var(--text-color);
         font-size: 12px;
@@ -167,11 +141,9 @@
         color: var(--text-color);
         border-bottom: 0;
     }
-
     .cabecera .select-icon {
         margin-top: -20px;
     }
-
     .cabecera .select-icon i {
        position: absolute;
        left: 60px;
@@ -193,6 +165,4 @@
         margin-top: 20px;
         margin-left: -15px;
     }
-
-
 }
