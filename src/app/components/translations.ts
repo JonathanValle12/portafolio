@@ -11,8 +11,8 @@ export const TRANSLATIONS_ES = {
     description: 'Bienvenido a mi portafolio como Desarrollador de Aplicaciones',
     buttonCV: 'Curriculum',
     buttonProject: 'Projectos',
-    textBioAboutMe: 'Soy Jonathan, un entusiaste del desarrollo web y móvil de Barcelona. Con 21 años y una doble titulación en proceso, disfruto creando soluciones digitales innovadoras. Mi pasión es combinar creatividad y tecnología para ofrecer experiencias excepcionales. Explora mi portafolio y descubre mi viaje en el desarrollo de aplicaciones.',
-    textDescriptionMe: 'Desarrollador web (Angular, React, NodeJS, HTML, CSS, Bootstrap, Spring boot, bbdd..) en busca de practicas y actualmente cursando 2n de DAM.',
+    textBioAboutMe: 'Soy Jonathan, un entusiaste del desarrollo web y móvil de Barcelona. Con 21 años y una doble titulación, disfruto creando soluciones digitales innovadoras. Mi pasión es combinar creatividad y tecnología para ofrecer experiencias excepcionales. Explora mi portafolio y descubre mi viaje en el desarrollo de aplicaciones.',
+    textDescriptionMe: 'Desarrollador web con experiencia en Angular, React, NodeJS, y más. Graduado en DAM y DAW, buscando nuevos desafíos.',
     textLocationMe: 'Institut TIC de Barcelona',
     textJobSearch: 'En busca de empleo',
     textJobPositions: 'Cargos de Desarrollador de aplicaciones y Desarrollador web',
@@ -59,7 +59,12 @@ export const TRANSLATIONS_ES = {
     language_mongodb_description: 'Base de datos NoSQL',
     language_mysql_description: 'Base de datos SQL',
     language_sql_description: 'Lenguaje para consultas de bases de datos',
-    language_tailwindcss_description: 'Framework CSS para desarrollo web ágil'
+    language_tailwindcss_description: 'Framework CSS para desarrollo web ágil',
+    errorMessageRequired: 'Campo requerido',
+    errorMessageMinLength: 'Minimo 3 caracteres',
+    errorMessageMaxLength: 'Maximo 50 caracteres',
+    errorMessageMaxLength2: 'Maximo 300 caracteres',
+    errorMessageEmailFormat: 'El formato del email es incorrecto'
 }
 export const TRANSLATIONS_EN = {
     greeting: 'Hello',
@@ -119,5 +124,10 @@ export const TRANSLATIONS_EN = {
     language_mongodb_description: 'NoSQL database',
     language_mysql_description: 'SQL database',
     language_sql_description: 'Database query language',
-    language_tailwindcss_description: 'CSS framework for agile web development'
+    language_tailwindcss_description: 'CSS framework for agile web development',
+    errorMessageRequired: 'Required field',
+    errorMessageMinLength: 'Minimum 3 characters',
+    errorMessageMaxLength: 'Maximum 50 characters',
+    errorMessageMaxLength2: 'Maximum 300 characters',
+    errorMessageEmailFormat: 'Invalid email format'
 }

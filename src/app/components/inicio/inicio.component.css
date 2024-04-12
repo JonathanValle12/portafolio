@@ -3,7 +3,9 @@ html {
 }
 main {
     background-color: var(--background-color);
+    overflow: auto;
 }
+
 .contenedor {
     max-width: 1500px;
     width: 90%;
@@ -95,15 +97,22 @@ main {
     left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    background-color: rgba(255, 255, 255, 0.8);
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    z-index: 9999999999;
+}
+
+.container-icons:hover {
+    transform: translateY(-10px);
 }
 
 .container-icons i {
-    font-size: 30px;
+    font-size: 24px;
     color: #333;
     transition: color 0.3s ease;
     cursor: pointer;
@@ -112,3 +121,5 @@ main {
 .container-icons i:hover {
     color: #007bff;
 }
+
+

@@ -1,16 +1,45 @@
 <div class="contacto">
     <h2>{{ getTranslation('contact')}}</h2>
-    <form action="">
-        <label>{{ getTranslation('textLabelName')}}</label>
-        <input type="text" name="nombre" placeholder="{{ getTranslation('textPlaceHolderName')}}" />
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm()" action="" id="contactForm">
+        <div class="label-text">
+            <label>{{ getTranslation('textLabelName')}}</label>
+            <div *ngIf="contactForm.get('nombre')?.invalid && (contactForm.get('nombre')?.dirty || contactForm.get('nombre')?.touched)"
+                class="error-message">
+                <i class="bi bi-exclamation-circle"></i>
+                <span *ngIf="contactForm.get('nombre')?.errors?.['required']">{{ getTranslation('errorMessageRequired')}}</span>
+                <span *ngIf="contactForm.get('nombre')?.errors?.['minlength']">{{ getTranslation('errorMessageMinLength')}}</span>
+                <span *ngIf="contactForm.get('nombre')?.errors?.['maxlength']">{{ getTranslation('errorMessageMaxLength')}}</span>
+            </div>
+        </div>
+        <input formControlName="nombre" type="text" name="name"
+            placeholder="{{ getTranslation('textPlaceHolderName')}}" />
 
-        <label>{{ getTranslation('textLabelEmail')}}</label>
-        <input type="text" name="email" placeholder="{{ getTranslation('textPlaceHolderEmail')}}" />
+            <div class="label-text">
+                <label>{{ getTranslation('textLabelEmail')}}</label>
+                <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)"
+                    class="error-message">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <span *ngIf="contactForm.get('email')?.errors?.['required']">{{ getTranslation('errorMessageRequired')}}</span>
+                    <span *ngIf="contactForm.get('email')?.errors?.['pattern']">{{ getTranslation('errorMessageEmailFormat')}}</span>
+                </div>
+            </div>
+        <input formControlName="email" type="text" name="email"
+            placeholder="{{ getTranslation('textPlaceHolderEmail')}}" />
 
-        <label>{{ getTranslation('textLabelMessage')}}</label>
-        <textarea name="message" placeholder="{{ getTranslation('textPlaceHolderMessage')}}"></textarea>
+            <div class="label-text">
+                <label>{{ getTranslation('textLabelMessage')}}</label>
+                <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)"
+                    class="error-message">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <span *ngIf="contactForm.get('message')?.errors?.['required']">{{ getTranslation('errorMessageRequired')}}</span>
+                    <span *ngIf="contactForm.get('message')?.errors?.['minlength']">{{ getTranslation('errorMessageMinLength')}}</span>
+                    <span *ngIf="contactForm.get('message')?.errors?.['maxlength']">{{ getTranslation('errorMessageMaxLength2')}}</span>
+                </div>
+            </div>
+        <textarea formControlName="message" name="message"
+            placeholder="{{ getTranslation('textPlaceHolderMessage')}}"></textarea>
 
-        <button type="submit" class="btn-enviar">
+        <button type="submit" class="btn-enviar" [disabled]="!contactForm.valid">
             {{ getTranslation('buttonTextEnviarForm')}}
             <i class="bi bi-send"></i>
         </button>
