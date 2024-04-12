@@ -24,8 +24,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/theme-light.css",
-              "src/theme-dark.css",
-              "public"
+              "src/theme-dark.css"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
