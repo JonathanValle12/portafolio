@@ -109,3 +109,19 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 390px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    }
+}
+@media screen and (max-width: 375px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+    }
+}
+@media screen and (max-width: 360px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    }
+}
