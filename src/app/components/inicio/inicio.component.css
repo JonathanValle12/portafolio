@@ -127,13 +127,12 @@ main {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 430px) {
     .presentacion p {
         width: 95%;
         text-align: center;
      }
 }
-
 @media screen and (max-width: 375px) {
     .presentacion h1 {
         font-size: 22px;

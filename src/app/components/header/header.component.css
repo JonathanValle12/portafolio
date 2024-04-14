@@ -216,7 +216,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 365px) {
     .cabecera .show-menu a {
         font-size: 11px;
     }

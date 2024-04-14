@@ -110,19 +110,24 @@
     }
 }
 
-@media screen and (max-width: 402px) {
+@media screen and (max-width: 404px) {
     .habilidades .card-section {
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 393px) {
     .habilidades .card-section {
         grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 378px) {
     .habilidades .card-section {
         grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+    }
+}
+@media screen and (max-width: 366px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 }
 @media screen and (max-width: 360px) {
