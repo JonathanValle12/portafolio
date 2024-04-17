@@ -109,3 +109,40 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 404px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    }
+}
+@media screen and (max-width: 395px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+}
+@media screen and (max-width: 378px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+    }
+}
+@media screen and (max-width: 366px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+@media screen and (max-width: 360px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    }
+}
+@media screen and (max-width: 338px) {
+    .habilidades .card-section {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}

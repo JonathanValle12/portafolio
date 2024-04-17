@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 95%;
+    width: 100%;
 }
 .sobre-mi .titulo-sobre-mi {
     font-size: 3.5rem;
@@ -279,4 +279,5 @@
     .sobre-mi .contenedor-sobre-mi .bio-container p {
         font-size: 16px;
     }
+
 }

@@ -54,12 +54,6 @@
         "porcentaje": 50
     },
     {
-        "lenguaje": "XML",
-        "descripcion": "language_xml_description",
-        "portada": "assets/img/skills/xml.webp",
-        "porcentaje": 75
-    },
-    {
         "lenguaje": "Spring Boot",
         "descripcion": "language_springboot_description",
         "portada": "assets/img/skills/springboot.webp",

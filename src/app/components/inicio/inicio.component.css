@@ -122,4 +122,32 @@ main {
     color: #007bff;
 }
 
+<<<<<<< HEAD
 
+=======
+@media screen and (max-width: 430px) {
+    .presentacion .imagen img {
+        width: 170px;
+        height: 170px;
+    }
+    .presentacion h1 {
+        font-size: 24px;
+    }
+    .presentacion p {
+        width: 90%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .presentacion p {
+        width: 95%;
+        text-align: center;
+     }
+}
+@media screen and (max-width: 375px) {
+    .presentacion h1 {
+        font-size: 22px;
+    }
+}
+>>>>>>> 6a8b7f6757c41d193cd964e9c609c9437f89b8d7

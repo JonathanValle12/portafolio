@@ -98,7 +98,7 @@
         transition: left .5s ease;
     }
     .cabecera .show-menu {
-        left: -4%;
+        left: -7%;
     }
     .cabecera nav {
         display: flex;
@@ -146,7 +146,7 @@
     }
     .cabecera .select-icon i {
        position: absolute;
-       left: 60px;
+       left: 65px;
        bottom: -70px;
        border-radius: 50%;
        width: 30px;
@@ -165,4 +165,33 @@
         margin-top: 20px;
         margin-left: -15px;
     }
+<<<<<<< HEAD
+=======
+
+    .cabecera .idioma-select option {
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .cabecera .show-menu {
+        left: -4%;
+    }
+    .cabecera .bi-x-lg {
+        font-size: 18px;
+    }
+    .cabecera .select-icon i {
+        left: 45px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .cabecera .show-menu a {
+        font-size: 11px;
+    }
+    .cabecera .select-icon select {
+        font-size: 12px;
+        margin-left: -23px;
+    }
+>>>>>>> 6a8b7f6757c41d193cd964e9c609c9437f89b8d7
 }
