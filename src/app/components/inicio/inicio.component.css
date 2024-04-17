@@ -122,9 +122,6 @@ main {
     color: #007bff;
 }
 
-<<<<<<< HEAD
-
-=======
 @media screen and (max-width: 430px) {
     .presentacion .imagen img {
         width: 170px;
@@ -150,4 +147,3 @@ main {
         font-size: 22px;
     }
 }
->>>>>>> 6a8b7f6757c41d193cd964e9c609c9437f89b8d7
