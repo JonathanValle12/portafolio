@@ -20,18 +20,18 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 60px;
+    gap: 120px;
 }
 .sobre-mi .movie-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 330px;
     background-color: #fff;
     margin: auto;
     border-radius: 50px;
     box-shadow: 0 14px 6px -6px rgba(0,0,0,0.5);
     
     border: 10px solid #000;
-    height: 470px;
+    height: 490px;
     overflow-y: scroll;
 }
 .sobre-mi .movie-card::-webkit-scrollbar {
@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     gap: 13px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 8px;
 }
 .sobre-mi .movie-card .menu-superior .search {
@@ -71,7 +71,7 @@
 }
 .sobre-mi .movie-card .banner img {
     width: 100%;
-    height: 55px;
+    height: 85px;
 }
 .sobre-mi .movie-card .banner .logo {
     background-color: #fff;
@@ -82,28 +82,30 @@
     left: 8px;
 }
 .sobre-mi .movie-card .banner .logo img {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
-    margin: 5px 7px;
+    margin: 6px;
     object-fit: cover;
 }
 .sobre-mi .movie-card .informacion-perfil {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 10px;
     max-height: 400px;  
     font-family: "Montserrat", monospace;
 }
 .sobre-mi .movie-card .informacion-perfil h2 {
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
     font-family: "Montserrat", monospace;
-    
+}
+.sobre-mi .movie-card .informacion-perfil p:nth-child(2) {
+    font-size: 13px;
 }
 .sobre-mi .movie-card .informacion-perfil p {
     width: 97%;
     font-size: 12px;
-    margin-top: -15px;  
+    margin-top: -8px;  
 }
 .sobre-mi .movie-card .informacion-perfil .centro-educativo {
     margin-top: 0;
@@ -116,8 +118,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3px;
-    margin-right: 15px;
+    gap: 10px;
+    margin: 15px 0;
 }
 .sobre-mi .movie-card .informacion-perfil .butones button {
     font-size: 11px;
@@ -167,6 +169,7 @@
 .sobre-mi .movie-card .informacion-perfil .busca-empleo p:nth-child(3) {
     font-size: 12px;
     color: rgb(18, 55, 203);
+    padding-bottom: 8px;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo .titulo-header {
     display: flex;
@@ -179,8 +182,9 @@
     color: var(--text-color);
     width: 100%;
     font-family: "Montserrat", monospace;
+    margin-bottom: 25px;
 }
-.sobre-mi .bio-container button {
+.sobre-mi .bio-container span {
     width: 100%;
     max-width: 180px;
     background-color: transparent !important;
@@ -190,25 +194,25 @@
     color: #828282;
     margin-top: 10px;
     position: relative;
-    overflow: hidden; /* Asegura que el reflejo no se muestre fuera del botón */
+    overflow: hidden;
 }
-.sobre-mi .bio-container button::before {
+.sobre-mi .bio-container span::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -50%; /* Inicia fuera del botón */
-    width: 150%;
+    width: 20%;
     height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Gradiente para el reflejo */
-    animation: animated 1s linear infinite; /* Duración de la animación */
-    animation-delay: 0s, 15s; /* Delay inicial y delay después de cada ciclo */
+    animation: animated 1s linear infinite;
+    animation-delay: 0s, 15s;
+    border-radius: 15px;
 }
 @keyframes animated {
     0% {
-        transform: translateX(-50%); /* Comienza fuera del botón */
+        transform: translateX(-50%);
     }
     100% {
-        transform: translateX(150%); /* Termina fuera del botón */
+        transform: translateX(150%);
     }
 }
 .sobre-mi .webPortafolio {
