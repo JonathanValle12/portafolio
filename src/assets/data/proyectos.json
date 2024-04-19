@@ -30,6 +30,32 @@
             {
                 "tecnologia": "assets/img/skills/css3.webp",
                 "descripcion": "language_css_description"
+            },
+            
+            {
+                "tecnologia": "assets/img/skills/vite.png",
+                "descripcion": "language_vite_description"
+            }
+        ]
+    },
+    {
+        "titulo_key": "CRIPTOclave_title",
+        "imagen": "assets/img/proyectos/CRIPTOclave.webp",
+        "descripcion_key": "CRIPTOclave_description",
+        "github": "https://github.com/JonathanValle12/generador-clave.git",
+        "web_site": "https://generador-clave.vercel.app/",
+        "tecnologias": [
+            {
+                "tecnologia": "assets/img/skills/react.webp",
+                "descripcion": "language_react_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/tailwindcss.webp",
+                "descripcion": "language_tailwindcss_description"
+            },
+            {
+                "tecnologia": "assets/img/skills/vite.png",
+                "descripcion": "language_vite_description"
             }
         ]
     },
