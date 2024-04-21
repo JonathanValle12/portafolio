@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { TranslationService } from '../../services/traductor.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-contacto',
   standalone: true,
@@ -15,6 +16,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class ContactoComponent implements OnInit {
 
   contactForm!: FormGroup;
+  backendUrl: string = environment.backendUrl
 
   constructor(
     private formBuilder: FormBuilder,
@@ -43,7 +45,7 @@ export class ContactoComponent implements OnInit {
       const formData = {
         templateParams: this.contactForm.value // Asegúrate de que esto corresponda a lo que tu plantilla necesita
       };
-      this.http.post('https://emailjs-api.vercel.app/send-email', formData).subscribe({
+      this.http.post(`${this.backendUrl}/send-email`, formData).subscribe({
         next: (response) => {
           Swal.fire({
             title: '¡Mensaje enviado!',
