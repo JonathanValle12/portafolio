@@ -21,7 +21,6 @@ export class HabilidadesComponent implements OnInit {
   ngOnInit(): void {
     this._habilidadesService.getHabilidades().subscribe((habilidades) => {
       this.habilidades = habilidades;
-      console.log(habilidades);
     })
   }
 

@@ -45,8 +45,18 @@ export class ContactoComponent implements OnInit {
       const formData = {
         templateParams: this.contactForm.value // Asegúrate de que esto corresponda a lo que tu plantilla necesita
       };
+      // Muestra un Swal de carga
+      Swal.fire({
+        title: 'Enviando...',
+        text: 'Por favor espera mientras se envía el mensaje.',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
       this.http.post(`${this.backendUrl}/send-email`, formData).subscribe({
         next: (response) => {
+          Swal.close();
           Swal.fire({
             title: '¡Mensaje enviado!',
             text: 'Tu mensaje ha sido enviado con exito.',
@@ -56,7 +66,7 @@ export class ContactoComponent implements OnInit {
           });
         },
         error: (response) => {
-          console.log(response);
+          Swal.close();
           Swal.fire({
             title: '¡Error!',
             text: 'Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.',

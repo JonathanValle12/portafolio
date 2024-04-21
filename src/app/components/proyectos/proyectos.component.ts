@@ -23,7 +23,6 @@ export class ProyectosComponent implements OnInit {
   ngOnInit(): void {
     this._proyectosService.getProyectos().subscribe((proyectos) => {
       this.proyectos = proyectos;
-      console.log(proyectos);
     })
   }
   getTranslation(key: string): string {
