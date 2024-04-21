@@ -4,10 +4,11 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { CommonModule } from '@angular/common';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule ],
+  imports: [ReactiveFormsModule, CommonModule, HttpClientModule],
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css'
 })
@@ -17,7 +18,8 @@ export class ContactoComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    public translationService: TranslationService
+    public translationService: TranslationService,
+    private http: HttpClient
   ) { }
 
   ngOnInit(): void {
@@ -38,27 +40,31 @@ export class ContactoComponent implements OnInit {
 
   async submitForm() {
     if (this.contactForm.valid) {
-      try {
-        Swal.fire({
-          title: '¡Mensaje enviado!',
-          text: 'Tu mensaje ha sido enviado con exito.',
-          icon: 'success',
-          showConfirmButton: false,
-          timer: 1500
-        });
-        await emailjs.sendForm('service_em8tgrd', 'template_hhp2kks', '#contactForm', 'lKK99BxN9KkK-KQ5F');
-
-        this.contactForm.reset();
-      } catch (error) {
-        Swal.fire({
-          title: '¡Error!',
-          text: 'Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.',
-          icon: 'error',
-          showConfirmButton: false,
-          timer: 1000
-        })
-      }
+      const formData = {
+        templateParams: this.contactForm.value // Asegúrate de que esto corresponda a lo que tu plantilla necesita
+      };
+      this.http.post('https://emailjs-api.vercel.app/send-email', formData).subscribe({
+        next: (response) => {
+          Swal.fire({
+            title: '¡Mensaje enviado!',
+            text: 'Tu mensaje ha sido enviado con exito.',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 1500
+          });
+        },
+        error: (response) => {
+          console.log(response);
+          Swal.fire({
+            title: '¡Error!',
+            text: 'Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.',
+            icon: 'error',
+            showConfirmButton: false,
+            timer: 1000
+          })
+        }
+      })
+      this.contactForm.reset();
     }
   }
 }
-
