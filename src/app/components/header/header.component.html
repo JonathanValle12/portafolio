@@ -15,10 +15,11 @@
             </select>
             <i class="bi" 
                [ngClass]="{ 'bi-moon': isLightTheme(), 'bi-sun': !isLightTheme() }" 
-               (click)="toggleTheme()">
+               (click)="toggleTheme()"
+               role="button">
             </i>
         </div>
     </section>
-    <i *ngIf="showMenu" class="bi bi-x-lg" id="menu" (click)="toggleMenu()"></i>
-    <i *ngIf="!showMenu" class="bi bi-list" id="menu" (click)="toggleMenu()"></i>
+    <i *ngIf="showMenu" class="bi bi-x-lg" id="menu" (click)="toggleMenu()" aria-label="Close menu" role="button"></i>
+    <i *ngIf="!showMenu" class="bi bi-list" id="menu" (click)="toggleMenu()" aria-label="Open menu" role="button"></i>
 </header>

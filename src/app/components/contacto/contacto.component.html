@@ -39,7 +39,7 @@
         <textarea formControlName="message" name="message"
             placeholder="{{ getTranslation('textPlaceHolderMessage')}}"></textarea>
 
-        <button type="submit" class="btn-enviar" [disabled]="!contactForm.valid">
+        <button type="submit" class="btn-enviar" [disabled]="!contactForm.valid" aria-label="Enviar formulario">
             {{ getTranslation('buttonTextEnviarForm')}}
             <i class="bi bi-send"></i>
         </button>

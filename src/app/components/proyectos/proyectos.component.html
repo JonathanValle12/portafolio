@@ -5,7 +5,7 @@
         <ng-container *ngFor="let proyecto of proyectos">
             <article class="card01">
                 <div class="scale-imagen">
-                    <img [src]="proyecto.imagen" />
+                    <img [src]="proyecto.imagen" [alt]="getTranslation(proyecto.titulo)"/>
                     <div class="tecnologias">
                         <div class="container-images">
                             <ng-container *ngFor="let imagen of proyecto.tecnologias">

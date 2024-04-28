@@ -2,12 +2,12 @@
 <main >
     <section class="presentacion">
         <div class="imagen">
-            <img src="assets/img/yo.webp" />
+            <img src="assets/img/yo.webp" alt="Mi foto de avatar" />
         </div>
         <h1>Jonathan, Full Stack Developer</h1>
         <p>{{ getTranslation('description')}}</p>
         <div class="botones">
-            <button (click)="downloadCV()" id="curriculum" >{{ getTranslation('buttonCV')}} <i class="bi bi-file-text"></i></button>
+            <button (click)="downloadCV()" id="curriculum">{{ getTranslation('buttonCV')}} <i class="bi bi-file-text"></i></button>
             <a href="#proyectos">{{ getTranslation('buttonProject')}} <i class="bi bi-folder"></i></a>
         </div>
     </section>
@@ -20,7 +20,7 @@
     </section>
 
     <section class="container-icons">
-        <a href="https://github.com/JonathanValle12" target="_blank"><i class="bi bi-github" ></i></a>
-        <a href="https://www.linkedin.com/in/jonathan-valle-958118211/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/JonathanValle12" target="_blank" aria-label="Github de Jonathan"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/jonathan-valle-958118211/" target="_blank" aria-label="LinkedIn de Jonathan"><i class="bi bi-linkedin"></i></a>
     </section>
 </main>

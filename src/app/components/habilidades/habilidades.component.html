@@ -4,7 +4,7 @@
 
         <ng-container *ngFor="let habilidad of habilidades">
             <article class="card-skill">
-                <img [src]="habilidad.portada" alt="logo HTML5" />
+                <img [src]="habilidad.portada" [alt]="getTranslation(habilidad.descripcion)" />
                 <div class="contenido">
                     <h3>{{habilidad.lenguaje}}</h3>
                     <p>{{ getTranslation(habilidad.descripcion)}}</p>
