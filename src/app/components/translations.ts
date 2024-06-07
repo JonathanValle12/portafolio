@@ -11,7 +11,7 @@ export const TRANSLATIONS_ES = {
     description: 'Bienvenido a mi portafolio como Desarrollador de Aplicaciones',
     buttonCV: 'Curriculum',
     buttonProject: 'Proyectos',
-    textBioAboutMe: 'Soy Jonathan, un entusiasta del desarrollo web y móvil de Barcelona. Con 21 años y una doble titulación en proceso, disfruto creando soluciones digitales innovadoras. Mi pasión es combinar creatividad y tecnología para ofrecer experiencias excepcionales. Explora mi portafolio y descubre mi viaje en el desarrollo de aplicaciones.',
+    textBioAboutMe: 'Soy Jonathan, un entusiasta del desarrollo web y móvil de Barcelona. Con 22 años y una doble titulación en proceso, disfruto creando soluciones digitales innovadoras. Mi pasión es combinar creatividad y tecnología para ofrecer experiencias excepcionales. Explora mi portafolio y descubre mi viaje en el desarrollo de aplicaciones.',
     textDescriptionMe: 'Desarrollador web con experiencia en: Angular | React | NodeJS | HTML5 | CSS3 | Tailwind CSS | BBDD..',
     textLocationMe: 'Institut TIC de Barcelona',
     textJobSearch: 'En busca de empleo',

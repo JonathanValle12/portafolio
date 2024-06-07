@@ -107,31 +107,6 @@
         ]
     },
     {
-        "titulo_key": "plataforma_cursos_online_title",
-        "imagen": "assets/img/proyectos/plataforma_cursos.webp",
-        "descripcion_key": "plataforma_cursos_description",
-        "github": "https://github.com/JonathanValle12/Plataforma_Cursos_Online.git",
-        "web_site": "https://plataforma-cursos-online-navy.vercel.app/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/react.webp",
-                "descripcion": "language_react_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/nodejs.webp",
-                "descripcion": "language_node_descriptio"
-            },
-            {
-                "tecnologia": "assets/img/skills/mongodb.webp",
-                "descripcion": "language_mongodb_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/css3.webp",
-                "descripcion": "language_css_description"
-            }
-        ]
-    },
-    {
         "titulo_key": "snake_title",
         "imagen": "assets/img/proyectos/proyecto_snake.webp",
         "descripcion_key": "snake_description",
