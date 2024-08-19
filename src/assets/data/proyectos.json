@@ -86,74 +86,11 @@
         ]
     },
     {
-        "titulo_key": "pokemon_api_title",
-        "imagen": "assets/img/proyectos/pokemonAPI.webp",
-        "descripcion_key": "pokemon_description",
-        "github": "https://github.com/JonathanValle12/pokemonAPI.git",
-        "web_site": "https://jonathanvalle12.github.io/pokemonAPI/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/html5.webp",
-                "descripcion": "language_html_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/css3.webp",
-                "descripcion": "language_css_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/javascript.webp",
-                "descripcion": "language_js_description"
-            }
-        ]
-    },
-    {
-        "titulo_key": "snake_title",
-        "imagen": "assets/img/proyectos/proyecto_snake.webp",
-        "descripcion_key": "snake_description",
-        "github": "https://github.com/JonathanValle12/snake.git",
-        "web_site": "https://jonathanvalle12.github.io/snake/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/html5.webp",
-                "descripcion": "language_html_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/css3.webp",
-                "descripcion": "language_css_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/javascript.webp",
-                "descripcion": "language_js_description"
-            }
-        ]
-    },
-    {
-        "titulo_key": "tetris_title",
-        "imagen": "assets/img/proyectos/tetris.webp",
-        "descripcion_key": "tetris_description",
-        "github": "https://github.com/JonathanValle12/tetris.git",
-        "web_site": "https://tetris-alpha-teal.vercel.app/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/html5.webp",
-                "descripcion": "language_html_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/css3.webp",
-                "descripcion": "language_css_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/javascript.webp",
-                "descripcion": "language_js_description"
-            }
-        ]
-    },
-    {
-        "titulo_key": "buscaminas_title",
-        "imagen": "assets/img/proyectos/buscaminas.webp",
-        "descripcion_key": "buscaminas_description",
-        "github": "https://github.com/JonathanValle12/buscaminas.git",
-        "web_site": "https://jonathanvalle12.github.io/buscaminas/",
+        "titulo_key": "js_game_title",
+        "imagen": "assets/img/proyectos/JSGames.webp",
+        "descripcion_key": "jsGame_description",
+        "github": "https://github.com/JonathanValle12/JSGames",
+        "web_site": "https://js-games-one.vercel.app/",
         "tecnologias": [
             {
                 "tecnologia": "assets/img/skills/html5.webp",
@@ -169,4 +106,5 @@
             }
         ]
     }
+    
 ]
