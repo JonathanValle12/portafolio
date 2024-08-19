@@ -93,16 +93,12 @@
         "web_site": "https://js-games-one.vercel.app/",
         "tecnologias": [
             {
-                "tecnologia": "assets/img/skills/html5.webp",
+                "tecnologia": "assets/img/skills/astro.png",
                 "descripcion": "language_html_description"
             },
             {
-                "tecnologia": "assets/img/skills/css3.webp",
+                "tecnologia": "assets/img/skills/tailwindcss.webp",
                 "descripcion": "language_css_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/javascript.webp",
-                "descripcion": "language_js_description"
             }
         ]
     }
