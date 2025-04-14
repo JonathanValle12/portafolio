@@ -122,7 +122,7 @@ main {
     position: relative;
     width: 30%;
 }
-.presentacion .contenedor-imagen .line-top {
+.line-top {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,7 +130,7 @@ main {
     width: 100px;
     height: 2px;
 }
-.presentacion .contenedor-imagen .line-left {
+.line-left {
     position: absolute;
     top: 0;
     left: 0;
@@ -138,7 +138,7 @@ main {
     width: 2px;
     height: 100px;
 }
-.presentacion .contenedor-imagen .line-right {
+.line-right {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -146,7 +146,7 @@ main {
     width: 2px;
     height: 100px;
 }
-.presentacion .contenedor-imagen .line-bottom {
+.line-bottom {
     position: absolute;
     right: 0;
     bottom: 0;

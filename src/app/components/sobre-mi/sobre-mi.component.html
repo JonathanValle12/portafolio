@@ -1,46 +1,53 @@
 <section class="sobre-mi">
+    <hr>
     <h2 class="titulo-sobre-mi">Sobre mi</h2>
+    <p class="subtitulo">Desarrollador apasionado por crear soluciones digitales innovadoras</p>
     <div class="contenedor-sobre-mi">
-        <article class="movie-card" >
-            <div class="card-linkedin">
-                <header class="menu-superior">
-                    <i class="bi bi-arrow-left" aria-label="Volver"></i>
-                    <div class="search">
-                        
-                        <input type="search" name="buscador" value="Jonathan valle" aria-label="Buscar en LinkedIn Solo diseño" />
-                        <i class="bi bi-search"></i>
-                    </div>
-                    <i class="bi bi-gear" aria-label="Configuración"></i>
-                </header>
-                <main class="perfil-linkedin">
-                    <div class="banner">
-                        <img src="assets/img/banner.webp" alt="foto Banner de mi" />
-                        <div class="logo">
-                            <img src="assets/img/foto_mia.webp" alt="foto perfil" />
+        <div class="lineas-card">
+            <div class="line-top"></div>
+            <div class="line-left"></div>
+            <div class="line-right"></div>
+            <div class="line-bottom"></div>
+            <article class="movie-card" >
+                <div class="card-linkedin">
+                    <header class="menu-superior">
+                        <i class="bi bi-arrow-left" aria-label="Volver"></i>
+                        <div class="search">
+                            
+                            <input type="search" name="buscador" value="Jonathan valle" aria-label="Buscar en LinkedIn Solo diseño" />
+                            <i class="bi bi-search"></i>
                         </div>
-                    </div>
-                    <section class="informacion-perfil">
-                        <h2>Jonathan valle</h2>
-                        <p><i class="bi bi-rocket" style="color: #007bff;"></i> {{getTranslation('textDescriptionMe')}}</p>
-                        <p class="centro-educativo">{{getTranslation('textLocationMe')}}</p>
-                        <p>Barcelona, Cataluña, España</p>
-                        <div class="butones">
-                            <button>{{getTranslation('textInterest')}}</button>
-                            <button>{{getTranslation('textAddSection')}}</button>
-                            <button aria-label="Ver más opciones"><i class="bi bi-three-dots" aria-label="Más opciones"></i></button>
-                        </div>
-                        <div class="busca-empleo">
-                            <div class="titulo-header">
-                                <h3>{{getTranslation('textJobSearch')}}</h3>
-                                <i class="bi bi-pencil"></i>
+                        <i class="bi bi-gear" aria-label="Configuración"></i>
+                    </header>
+                    <main class="perfil-linkedin">
+                        <div class="banner">
+                            <img src="assets/img/banner.webp" alt="foto Banner de mi" />
+                            <div class="logo">
+                                <img src="assets/img/foto_mia.webp" alt="foto perfil" />
                             </div>
-                            <p>{{getTranslation('textJobPositions')}}</p>
-                            <p>{{getTranslation('textShowDetails')}}</p>
                         </div>
-                    </section>
-                </main>
-            </div>
-        </article>
+                        <section class="informacion-perfil">
+                            <h2>Jonathan valle</h2>
+                            <p>{{getTranslation('textDescriptionMe')}}</p>
+                            <p>Barcelona, España</p>
+                            
+                            <p class="centro-educativo">{{getTranslation('connectionsLinkedin')}} · {{getTranslation('textLocationMe')}}</p>
+                            <div class="butones">
+                                <button>{{getTranslation('textConnectLinkedin')}}</button>
+                                <button>{{getTranslation('textMessageLinkedin')}}</button>
+                                <button aria-label="Ver más opciones"><i class="bi bi-three-dots" aria-label="Más opciones"></i></button>
+                            </div>
+                            <div class="busca-empleo">
+                                <div class="titulo-header">
+                                    <h3>{{getTranslation('textAcercaDeLinkedin')}}</h3>
+                                </div>
+                                <p>{{getTranslation('textDescriptionLinkedin')}}</p>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </article>
+        </div>
         <div class="bio-container">
             <p>{{ getTranslation('textBioAboutMe')}}</p>
             <span>{{getTranslation('textAvailibity')}}</span>
