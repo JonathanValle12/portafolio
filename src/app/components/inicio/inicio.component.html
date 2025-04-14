@@ -1,16 +1,45 @@
 <app-header></app-header>
 <main >
+
     <section class="presentacion">
-        <div class="imagen">
-            <img src="assets/img/yo.webp" alt="Mi foto de avatar" />
+        <div class="descripcion">
+            <span class="desarrollador01">Desarrollador Full Stack</span>
+            <h1>Hola, soy <span>Jonathan</span></h1>
+            <svg width="41%" height="20"
+                viewBox="0 0 200 8"
+                preserveAspectRatio="none"
+            >
+                <path d="M0,5 C50,0 150,0 200,5" stroke="currentColor" strokeWidth="6" fill="none" />
+            </svg>
+            <p>{{ getTranslation('description')}} y creatividad desde Barcelona</p>
+            <div class="botones">
+                <a href="#contacto"><i class="bi bi-envelope"></i> {{ getTranslation('buttonContact')}}</a>
+                <button (click)="downloadCV()" id="curriculum"><i class="bi bi-download"></i> {{ getTranslation('buttonCV')}}</button>
+            </div>
+            <div class="text-line">
+                <span>{{ getTranslation('availableToWork')}}</span>
+              </div>
         </div>
-        <h1>Jonathan, Full Stack Developer</h1>
-        <p>{{ getTranslation('description')}}</p>
-        <div class="botones">
-            <button (click)="downloadCV()" id="curriculum">{{ getTranslation('buttonCV')}} <i class="bi bi-file-text"></i></button>
-            <a href="#proyectos">{{ getTranslation('buttonProject')}} <i class="bi bi-folder"></i></a>
+        <div class="contenedor-imagen">
+            <div class="line-top"></div>
+            <div class="line-left"></div>
+            <div class="line-right"></div>
+            <div class="line-bottom"></div>
+            <div class="box">
+                <div class="developerNameTag"><i class="bi bi-code"></i>Full Stack Developer</div>
+            </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
 
     <section class="container">
         <app-sobre-mi id="sobre-mi"></app-sobre-mi>
