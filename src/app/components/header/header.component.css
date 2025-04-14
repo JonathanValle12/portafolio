@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 0px 40px;
     background-color: var(--fondo-header-color);
     position: fixed;
-    border-bottom: 1px solid #ccc;
-    height: 90px;
+    border-bottom: 1px solid #f1f1f1;
+    height: 70px;
     z-index: 99999;
 }
 .cabecera nav a {
@@ -28,6 +28,7 @@
     transition: color .5s;
     padding-bottom: 5px;
     color: var(--text-color);
+    font-size: 13px;
 }
 .cabecera nav a:hover {
     color: var(--primary-hover-color);
@@ -36,12 +37,18 @@
 .cabecera h2 {
     color: var(--primary-color);
     margin-top: 15px;
+    font-weight: bold;
     font-family: 'Montserrat', monospace;
 }
-.cabecera .menus {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.cabecera h2 > span {
+    background-color: #FF6B35;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+    vertical-align: bottom;
 }
 .cabecera .idioma-select {
     border: none;

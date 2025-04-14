@@ -1,20 +1,20 @@
 :root {
-    --primary-hover-color: #d63a01;
-    --primary-color: #FC4B08;
-    --text-color: #000;
+    --primary-hover-color: #FF6B35;
+    --primary-color: #FF6B35;
+    --text-color: #2c2c2c;
     --text-active-color: #fff;
     --button-active-text-color: #fff;
-    --button-text-color: #000;
-    --border-color: #000;
+    --button-text-color: #2c2c2c;
+    --border-color: #2c2c2c;
     --background-contenedor-color: #565656;
     --background-border-color: #FF4500;
     --line-color: #FF4500;
     --fondo-transition-color: #FF4500;
     --text-transition-color: #fff;
-    --text-placeholder-color: #000;
-    --card-border-color: #000;
+    --text-placeholder-color: #2c2c2c;
+    --card-border-color: #2c2c2c;
     --fondo-header-color: #fff;
-    --icon-color: #000;
+    --icon-color: #2c2c2c;
     --background-color: #fff;
     --background-card-border: rgb(225, 226, 255);
     --text-color-card: rgb(18, 55, 203);

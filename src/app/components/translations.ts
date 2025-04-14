@@ -4,6 +4,7 @@ export interface Translations {
 
 export const TRANSLATIONS_ES = {
     welcome: 'Bienvenido',
+    home: 'Inicio',
     aboutMe: 'Sobre mi',
     projects: 'Proyectos',
     skills: 'Habilidades',
@@ -70,6 +71,7 @@ export const TRANSLATIONS_ES = {
 export const TRANSLATIONS_EN = {
     greeting: 'Hello',
     welcome: 'Welcome',
+    home: 'Home',
     aboutMe: 'About me',
     projects: 'Projects',
     skills: 'Skills',
