@@ -1,22 +1,19 @@
 .sobre-mi {
-    margin-top: 130px;
     border-radius: 10px;
     margin-left: auto; 
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    width: 90%;
 }
-.sobre-mi hr {
-    width: 7%;
-    border: 2px solid #ff4907;
-    margin: auto;
-    margin-bottom: 25px;
+.sobre-mi .line-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin-bottom: 15px;
+    margin: 20px auto;
 }
 .sobre-mi .titulo-sobre-mi {
     font-size: 2.2rem;
-    padding-bottom: 15px;
+    margin-bottom: 40px;
     text-align: center;
     color: var(--text-color);
     font-family: "Montserrat", monospace;
@@ -28,25 +25,57 @@
     color: #5f5f5f;
 }
 .sobre-mi .contenedor-sobre-mi {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 120px;
+    gap: 100px;
+    margin: 50px 400px 0 400px;
 }
 .sobre-mi .movie-card {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1050px;
     background-color: #fff;
     margin: auto;
     border-radius: 30px;
     box-shadow: 0 14px 6px -6px rgba(46, 46, 46, 0.5);
     
     border: 10px solid #222222;
-    height: 510px;
-    overflow-y: scroll;
+    height: 545px;
 
+    overflow: hidden;
     position: relative;
+}
+.sobre-mi .movie-card::before {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #222222;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sobre-mi .movie-card .parte-superior {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 15px;
+    height: 21px;
+}
+.sobre-mi .movie-card .parte-superior p {
+    color: #fff;
+    font-size: 10px;
+}
+.sobre-mi .movie-card .parte-superior .circulos {
+    display: flex;
+    gap: 3px;
+    margin-top: 3px;
+}
+.sobre-mi .movie-card .parte-superior .circulos .circulo {
+    background-color: rgb(168, 168, 168);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
 }
 .sobre-mi .lineas-card {
     position: relative;
@@ -94,7 +123,7 @@
     justify-content: center;
     align-items: center;
     gap: 13px;
-    margin-top: 15px;
+    margin-top: 7px;
     margin-bottom: 8px;
 }
 .sobre-mi .movie-card .menu-superior .search {
@@ -121,7 +150,7 @@
 }
 .sobre-mi .movie-card .banner img {
     width: 100%;
-    height: 85px;
+    height: 100px;
 }
 .sobre-mi .movie-card .banner .logo {
     background-color: #fff;
@@ -129,25 +158,27 @@
     border-top-right-radius: 50%;
     position: absolute;
     bottom: -25px;
-    left: 8px;
+    left: 10px;
 }
 .sobre-mi .movie-card .banner .logo img {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    margin: 6px;
+    margin: 4px;
     object-fit: cover;
 }
 .sobre-mi .movie-card .informacion-perfil {
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 10px;
     max-height: 400px;  
     font-family: "Montserrat", monospace;
 }
 .sobre-mi .movie-card .informacion-perfil h2 {
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     font-family: "Montserrat", monospace;
+    font-weight: bold;
+    color: #2b2b2b;
 }
 .sobre-mi .movie-card .informacion-perfil p {
     width: 97%;
@@ -225,8 +256,20 @@
     display: flex;
     justify-content: space-between;
 }
+.sobre-mi .bio-container .line {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin: 20px 0;
+}
+.sobre-mi .bio-container h2 {
+    font-weight: bold;
+    font-size: 23px;
+}
+.sobre-mi .bio-container .bio-text {
+    font-size: 16px;
+}
 .sobre-mi .bio-container p {
-    font-size: 1.2rem;
     line-height: 1.6;
     text-align: left;
     color: var(--text-color);
@@ -256,6 +299,56 @@
     animation: animated 1s linear infinite;
     animation-delay: 0s, 15s;
     border-radius: 15px;
+}
+
+.sobre-mi .bio-container .experiencia {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.sobre-mi .bio-container .boxExp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sobre-mi .bio-container .boxExp i {
+    font-size: 17px;
+    background-color: #ffe6dd;
+    border-radius: 50%;
+    color: #FF6B35;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.sobre-mi .bio-container .boxExp h3 {
+    font-size: 15px;
+    margin: auto;
+}
+.sobre-mi .bio-container .boxExp p {
+    line-height: 1;
+    font-size: 12px;
+}
+.sobre-mi .bio-container .botones {
+    margin-top: 50px;
+}
+.sobre-mi .bio-container .botones a {
+    border: 1px solid #FF6B35;
+    border-radius: 50px;
+    padding: 12px 30px;
+    margin-right: 20px;
+    color: #FF6B35;
+    cursor: pointer;
+}
+.sobre-mi .bio-container .botones i {
+    margin-right: 10px;
+}
+.sobre-mi .bio-container .botones a:hover {
+    background-color: #ffe7de ;
+    color: #242424;
 }
 @keyframes animated {
     0% {

@@ -6,19 +6,14 @@ main {
     overflow: auto;
 }
 
-.contenedor {
-    max-width: 1500px;
-    width: 90%;
-    margin: auto;
-}
 .presentacion {
     display: flex;
     justify-content: space-between;
     padding-top: 160px;
-    margin: 50px 200px;
+    margin: 130px 200px 80px 200px;
 
     background: radial-gradient(circle at 60% 100%, rgba(255, 145, 0, 0.2) 2%, rgba(255, 136, 0, 0) 50%), #ffffff;
-    padding-bottom: 130px;
+    padding-bottom: 165px;
 }
 .presentacion .desarrollador01 {
     background-color: #ffe4d4;
@@ -36,14 +31,15 @@ main {
     font-family: "Montserrat", monospace;
     font-size: 65px;
     font-weight: bold;
-    width: 60%;
+    width: 100%;
     line-height: 75px;
 }
 
 .presentacion .descripcion svg {
-    margin-top: -70px;
+    margin-top: -80px;
     color: #ffd3c3;
     stroke-width: 2px;
+    margin-left: 310px;
 }
 .presentacion h1 > span {
     color: #FF6B35;
@@ -51,9 +47,9 @@ main {
 .presentacion p {
     color: var(--text-color);
     font-family: "Montserrat", monospace;
-    margin: -20px 0 0 0;
+    margin: -25px 0 0 0;
     width: 80%;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
 }
 .presentacion .botones {
@@ -66,7 +62,7 @@ main {
     padding: 10px 20px;
     border-radius: 50px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 50px;
     transition: background-color .2s, transform .2s;
     cursor: pointer;
     text-decoration: none;
@@ -98,7 +94,7 @@ main {
     font-size: 20px;
     width: 80%;
 
-    margin-top: 55px;
+    margin-top: 70px;
 }
 .presentacion .text-line span {
     background-color: transparent;
@@ -121,6 +117,7 @@ main {
 .presentacion .contenedor-imagen {
     position: relative;
     width: 30%;
+    height: 480px;
 }
 .line-top {
     position: absolute;
@@ -177,9 +174,6 @@ main {
     vertical-align: top;
     margin-right: 5px;
     color: #FF6B35;
-}
-.container {
-    margin: 20px auto;
 }
 .footer {
     margin-top: 100px;
