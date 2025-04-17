@@ -1,5 +1,7 @@
 <div class="habilidades">
+    <div class="line-separador"></div>
     <h2>{{ getTranslation('skills')}}</h2>
+    <p class="subtitulo">Tecnologias que utilizo para crear soluciones digitales</p>
     <section class="card-section">
 
         <ng-container *ngFor="let habilidad of habilidades">
@@ -7,9 +9,7 @@
                 <img [src]="habilidad.portada" [alt]="getTranslation(habilidad.descripcion)" />
                 <div class="contenido">
                     <h3>{{habilidad.lenguaje}}</h3>
-                    <p>{{ getTranslation(habilidad.descripcion)}}</p>
                 </div>
-                <div class="porcentaje"></div>
             </article>
         </ng-container>
     </section>

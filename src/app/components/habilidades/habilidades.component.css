@@ -1,32 +1,59 @@
+.habilidades .line-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin-bottom: 15px;
+    margin: 20px auto;
+}
+
 .habilidades h2 {
-    font-size: 40px;
-    margin-top: 100px;
+    font-size: 2.2rem;
     margin-bottom: 40px;
+    text-align: center;
     color: var(--text-color);
     font-family: "Montserrat", monospace;
+    font-weight: bold;
+}
+.habilidades .subtitulo {
+    text-align: center;
+    font-size: 15px;
+    color: #5f5f5f;
 }
 
 .habilidades .card-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-top: 20px;
-    grid-auto-flow: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border: 7px solid #FFE8E0;
+    border-radius: 15px;
 }
 
 .habilidades .card-section .card-skill {
-    width: 97%;
-    height: 80%;
-    border: 1px solid var(--border-color);
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
     position: relative;
-    overflow: hidden; /* Añadir para ocultar el ::before */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(16.666% - 10px);
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
 }
 
+
+.habilidades .card-section .card-skill:hover {
+    transform: translateY(-5px); 
+}
+.habilidades .card-section .card-skill h3 {
+    font-size: 0.815rem;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 6px;
+}
 .habilidades .card-section .card-skill::before {
     content: '';
     position: absolute;
@@ -39,41 +66,31 @@
     z-index: 40;
     border-radius: 5px;
 }
-
-.habilidades .card-section .card-skill .porcentaje {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--fondo-transition-color);
-    border-radius: 5px;
-    transition: width 0.5s;
+.habilidades .card-section .card-skill img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin-bottom: 6px;
+    padding: 6px;
+    background-color: #fef2e9;/* Fondo suave y sutil, similar a blanco pero no completamente */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.habilidades .card-section .card-skill:hover::before,
-.habilidades .card-section .card-skill:hover .porcentaje {
-    width: 100%;
+.habilidades .card-section .card-skill:hover img {
+    background-color: #fcdace;
+    box-shadow: 0 6px 12px rgba(255, 232, 224, 0.5), 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.habilidades .card-section .card-skill:hover h3 {
+    color: #FF6B35;
 }
 
-.habilidades .card-section img  {
-    width: 40px;
-    height: 40px;
-    z-index: 199;
-}
 
 .habilidades .card-section h3 {
     font-size: 16px;
     line-height: 16px;
     margin-top: 14px;
     z-index: 200;
-    color: var(--text-color);
-    font-family: "Montserrat", monospace;
-}
-
-.habilidades .card-section p {
-    font-size: 14px;
-    z-index: 201;
     color: var(--text-color);
     font-family: "Montserrat", monospace;
 }
