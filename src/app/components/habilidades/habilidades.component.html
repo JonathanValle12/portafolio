@@ -2,15 +2,35 @@
     <div class="line-separador"></div>
     <h2>{{ getTranslation('skills')}}</h2>
     <p class="subtitulo">Tecnologias que utilizo para crear soluciones digitales</p>
-    <section class="card-section">
+    <div class="contenedor">
+        <section class="card-section">
 
-        <ng-container *ngFor="let habilidad of habilidades">
-            <article class="card-skill">
-                <img [src]="habilidad.portada" [alt]="getTranslation(habilidad.descripcion)" />
-                <div class="contenido">
-                    <h3>{{habilidad.lenguaje}}</h3>
-                </div>
+            <ng-container *ngFor="let habilidad of habilidades">
+                <article class="card-skill">
+                    <img [src]="habilidad.portada" [alt]="getTranslation(habilidad.descripcion)" />
+                    <div class="contenido">
+                        <h3>{{habilidad.lenguaje}}</h3>
+                    </div>
+                </article>
+            </ng-container>
+        </section>
+    
+        <section class="card02">
+            <article class="card">
+                    <i class="bi bi-laptop"></i>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Creación de interfaces de usuario atractivas y responsivas utilizando las últimas tecnologías web.</p>
             </article>
-        </ng-container>
-    </section>
+            <article class="card">
+                    <i class="bi bi-cloud"></i>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Construcción de APIs robustas y sistemas escalables que potencian aplicaciones modernas.</p>
+            </article>
+            <article class="card">
+                    <i class="bi bi-list-task"></i>
+                    <h3>Gestión de Proyectos</h3>
+                    <p>Planificación y ejecución de proyectos digitales con metodologías ágiles para resultados óptimos.</p>
+            </article>
+        </section>
+    </div>
 </div>
