@@ -111,6 +111,7 @@
     padding: 25px 10px 30px 20px;
     background-color: #FFFAF5;
     transition: border .3s ease;
+    margin-bottom: 130px;
 }
 .habilidades .card02 .card:hover {
     border: 1px solid #FF6B35;
