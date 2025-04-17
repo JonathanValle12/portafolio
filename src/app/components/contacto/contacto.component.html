@@ -1,5 +1,7 @@
 <div class="contacto">
-    <h2>{{ getTranslation('contact')}}</h2>
+    <div class="line-separador"></div>
+    <h2 class="titulo_proyectos">{{ getTranslation('contact')}}</h2>
+    <p class="desc-proyectos">Estoy interesado en nuevas oportunidades y proyectos</p>
     <form [formGroup]="contactForm" (ngSubmit)="submitForm()" action="" id="contactForm">
         <div class="label-text">
             <label>{{ getTranslation('textLabelName')}}</label>

@@ -3,10 +3,30 @@
     margin-bottom: 50px;
     width: 100%;
 }
+.contacto .line-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin-bottom: 15px;
+    margin: 20px auto;
+}
+.contacto .titulo_proyectos {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Montserrat", monospace;
+    font-weight: bold;
+}
+.contacto .desc-proyectos {
+    text-align: center;
+    font-size: 15px;
+    color: #5f5f5f;
+}
 .contacto form {
     width: 100%;
     max-width: 450px;
-    margin: auto;
+    margin: 50px auto;
 }
 .error-message {
     color: #dc3545;
@@ -27,16 +47,6 @@
 input.ng-invalid,
 textarea.ng-invalid {
     border-color: #dc3545;
-}
-
-.contacto h2 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    color: var(--text-color);
-    font-family: "Montserrat", monospace;
 }
 .contacto label {
     color: var(--primary-color);
