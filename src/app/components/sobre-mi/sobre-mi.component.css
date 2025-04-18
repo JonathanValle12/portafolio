@@ -27,18 +27,18 @@
 .sobre-mi .contenedor-sobre-mi {
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    margin: 50px 400px 130px 400px;
+    gap: 150px;
+    margin: 50px 300px 130px 350px;
 }
 .sobre-mi .movie-card {
     width: 100%;
-    max-width: 1050px;
+    max-width: 1200px;
     background-color: #fff;
     margin: auto;
     border-radius: 30px;
     box-shadow: 0 14px 6px -6px rgba(46, 46, 46, 0.5);
     
-    border: 10px solid #222222;
+    border: 10px solid #333333;
     height: 545px;
 
     overflow: hidden;
@@ -48,7 +48,7 @@
     content: '';
     width: 100px;
     height: 4px;
-    background-color: #222222;
+    background-color: #333333;
     border-radius: 5px;
     position: absolute;
     bottom: 0;
@@ -56,7 +56,7 @@
     transform: translateX(-50%);
 }
 .sobre-mi .movie-card .parte-superior {
-    background-color: #000;
+    background-color: #1B1B1B;
     display: flex;
     justify-content: space-between;
     padding: 1px 15px;
@@ -72,7 +72,7 @@
     margin-top: 3px;
 }
 .sobre-mi .movie-card .parte-superior .circulos .circulo {
-    background-color: rgb(168, 168, 168);
+    background-color: #D1D1D1;
     width: 11px;
     height: 11px;
     border-radius: 50%;
@@ -181,7 +181,7 @@
     color: #2b2b2b;
 }
 .sobre-mi .movie-card .informacion-perfil p {
-    width: 97%;
+    width: 95%;
     font-size: 11px;
     margin-top: -20px;  
 }
@@ -193,8 +193,8 @@
     margin-bottom: 25px;
 }
 .sobre-mi .movie-card .informacion-perfil p:nth-child(4) {
-    font-size: 10px;
-    color: rgb(30, 165, 255);
+    font-size: 11px;
+    color: #1EA5FF;
     font-weight: bold;
 }
 .sobre-mi .movie-card .informacion-perfil .butones {
@@ -208,7 +208,7 @@
     height: 25px;
     border-radius: 15px;
     border: none;
-    background-color: rgb(0, 76, 190);
+    background-color: #0077B5;
     color: #fff;
     overflow: hidden;
     text-wrap: nowrap;
@@ -218,8 +218,8 @@
 .sobre-mi .movie-card .informacion-perfil .butones button:nth-child(2),
 .sobre-mi .movie-card .informacion-perfil .butones button:nth-child(3) {
     background-color: transparent;
-    border: 1px solid rgb(0, 76, 190);
-    color: rgb(0, 76, 190);
+    border: 1px solid #0077B5;
+    color: #0077B5;
 }
 .sobre-mi .movie-card .informacion-perfil .butones button:nth-child(3) {
     width: 11%;
@@ -236,21 +236,15 @@
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo h3 {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px;
     font-family: "Montserrat", monospace;
     margin-bottom: 25px;
     color: #414141;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo p {
-    font-size: 10px;
+    font-size: 11px;
     width: 100%;
-}
-.sobre-mi .movie-card .informacion-perfil .busca-empleo p:nth-child(3) {
-    font-size: 12px;
-    color: rgb(18, 55, 203);
-    padding-bottom: 8px;
-    
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo .titulo-header {
     display: flex;
@@ -264,30 +258,17 @@
 }
 .sobre-mi .bio-container h2 {
     font-weight: bold;
-    font-size: 23px;
+    font-size: 26px;
 }
 .sobre-mi .bio-container .bio-text {
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 .sobre-mi .bio-container p {
-    line-height: 1.6;
-    text-align: left;
+    line-height: 1.8;
     color: var(--text-color);
     width: 100%;
     font-family: "Montserrat", monospace;
-    margin-bottom: 25px;
-}
-.sobre-mi .bio-container span {
-    width: 100%;
-    max-width: 180px;
-    background-color: transparent !important;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 7px;
-    color: #828282;
-    margin-top: 10px;
-    position: relative;
-    overflow: hidden;
 }
 .sobre-mi .bio-container span::before {
     content: '';
