@@ -165,11 +165,11 @@ main {
     left: -25px;
     background-color: #fff;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 5px;
 }
 .presentacion .contenedor-imagen .box .developerNameTag i {
-    font-size: 20px;
+    font-size: 22px;
     vertical-align: top;
     margin-right: 5px;
     color: #FF6B35;
