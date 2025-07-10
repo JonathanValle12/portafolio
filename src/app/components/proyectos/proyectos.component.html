@@ -18,11 +18,11 @@
                     <p>{{ getTranslation(proyecto.descripcion_key)}}</p>
                     <div class="botones">
                         <a *ngIf="!proyecto.estado" href="{{proyecto.web_site}}" target="_blank"><i
-                                class="bi bi-globe"></i>{{ getTranslation('buttonWeb')}}</a>
+                                class="bi bi-box-arrow-up-right"></i>{{ getTranslation('buttonWeb')}}</a>
                         <a *ngIf="!proyecto.estado" href="{{proyecto.github}}" target="_blank"><i
                                 class="bi bi-github"></i>{{ getTranslation('buttonGitHub')}}</a>
                         <a *ngIf="proyecto.estado" class="disabled-link"><i
-                                class="bi bi-globe"></i>{{ getTranslation('buttonWeb')}}</a>
+                                class="bi bi-box-arrow-up-right"></i>{{ getTranslation('buttonWeb')}}</a>
                         <a *ngIf="proyecto.estado" class="disabled-link"><i
                                 class="bi bi-github"></i>{{ getTranslation('buttonGitHub')}}</a>
                     </div>

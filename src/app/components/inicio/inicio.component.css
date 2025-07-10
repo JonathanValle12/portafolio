@@ -123,6 +123,7 @@ main {
 .presentacion .contenedor-imagen {
     position: relative;
     padding: 25px;
+    margin: 0 80px;
 }
 .line-top {
     position: absolute;
