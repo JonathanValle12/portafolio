@@ -27,8 +27,10 @@
 .sobre-mi .contenedor-sobre-mi {
     display: flex;
     flex-direction: row;
-    gap: 150px;
-    margin: 50px 300px 130px 350px;
+    gap: 140px;
+    width: auto;
+    max-width: 1100px;
+    margin: 30px auto;
 }
 .sobre-mi .movie-card {
     width: 100%;
@@ -39,7 +41,7 @@
     box-shadow: 0 14px 6px -6px rgba(46, 46, 46, 0.5);
     
     border: 10px solid #333333;
-    height: 545px;
+    height: 580px;
 
     overflow: hidden;
     position: relative;
@@ -79,7 +81,7 @@
 }
 .sobre-mi .lineas-card {
     position: relative;
-    padding: 20px;
+    padding: 25px;
 }
 .line-top {
     position: absolute;
@@ -181,7 +183,7 @@
     color: #2b2b2b;
 }
 .sobre-mi .movie-card .informacion-perfil p {
-    width: 95%;
+    width: 90%;
     font-size: 11px;
     margin-top: -20px;  
 }
@@ -244,7 +246,7 @@
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo p {
     font-size: 11px;
-    width: 100%;
+    width: 95%;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo .titulo-header {
     display: flex;
@@ -285,8 +287,8 @@
 .sobre-mi .bio-container .experiencia {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 40px;
-    margin-right: 70px;
 }
 
 .sobre-mi .bio-container .boxExp {
@@ -295,7 +297,7 @@
     gap: 15px;
 }
 .sobre-mi .bio-container .boxExp i {
-    font-size: 17px;
+    font-size: 20px;
     background-color: #ffe6dd;
     border-radius: 50%;
     color: #FF6B35;
@@ -306,12 +308,12 @@
     margin-bottom: 18px;
 }
 .sobre-mi .bio-container .boxExp h3 {
-    font-size: 15px;
+    font-size: 17px;
     margin: auto;
 }
 .sobre-mi .bio-container .boxExp p {
     line-height: 1;
-    font-size: 12px;
+    font-size: 13px;
 }
 .sobre-mi .bio-container .botones {
     margin-top: 50px;
@@ -354,58 +356,29 @@
     color: #fff;   
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
     .sobre-mi .contenedor-sobre-mi{
-        flex-direction: column;
-        gap: 50px;
+        display: block;
+        width: 100%;
+    }
+    .sobre-mi .movie-card {
+        width: 100%;
+        margin: auto;
     }
     .sobre-mi .contenedor-sobre-mi .bio-container{
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        
     }
-}
-@media screen and (max-width: 950px) {
-    .sobre-mi .contenedor-sobre-mi .card{
-        width: 200px;
-        height: 280px;
+    .sobre-mi .lineas-card {
+        max-width: 370px;
+        width: 100%;
+        margin: 0 auto;
     }
-    .sobre-mi .contenedor-sobre-mi .card .card-contenedor .imagen {
-        width: 170px;
-        height: 150px;
+    .sobre-mi .bio-container p {
+        width: 90%;
     }
-}
-@media screen and (max-width: 700px) {
-    .sobre-mi .contenedor-sobre-mi {
-        flex-direction: column;
-        align-items: center;
+    .sobre-mi .bio-container .experiencia p {
+        width: 100%;
     }
-    .sobre-mi .contenedor-sobre-mi .card{
-        width: 300px;
-        height: 430px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .card-contenedor{
-        margin: 40px 25px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .card-contenedor .imagen {
-        width: 250px;
-        height: 250px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card-contenedor .imagen p {
-        font-size: 25px;
-        line-height: 10px;
-        margin-top: 15px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card-contenedor .imagen p:nth-child(3) {
-        font-size: 15px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .webPortafolio p {
-        text-align: center;
-    }
-    .sobre-mi .contenedor-sobre-mi .card-contenedor .line {
-        height: 300px;
-    }
-    .sobre-mi .contenedor-sobre-mi .bio-container p {
-        font-size: 16px;
-    }
-
+    
 }
