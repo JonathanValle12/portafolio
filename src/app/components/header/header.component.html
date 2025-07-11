@@ -1,12 +1,12 @@
 <header class="cabecera">
     <h2 class="titulo" [ngClass]="{'show-titulo': showMenu}"><span>JV</span>Jonathan Valle</h2>
     <section>
-        <nav class="nav-container">
-            <li><a href="javascript:void(0)" (click)="scrollToSection('inicio')" [class.active]="activeSection === 'inicio'">{{ getTranslation('home')}}</a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('sobre-mi')" [class.active]="activeSection === 'sobre-mi'">{{ getTranslation('aboutMe')}}</a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('proyectos')" [class.active]="activeSection === 'proyectos'">{{ getTranslation('projects')}}</a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('habilidades')" [class.active]="activeSection === 'habilidades'">{{ getTranslation('skills')}}</a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('contacto')" [class.active]="activeSection === 'contacto'">{{ getTranslation('contact')}}</a></li>
+        <nav class="nav-container" [ngClass]="{'show-menu' : showMenu}">
+            <li><a href="javascript:void(0)" (click)="scrollToSection('inicio'); toggleMenu()" [class.active]="activeSection === 'inicio'">{{ getTranslation('home')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
+            <li><a href="javascript:void(0)" (click)="scrollToSection('sobre-mi'); toggleMenu()" [class.active]="activeSection === 'sobre-mi'">{{ getTranslation('aboutMe')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
+            <li><a href="javascript:void(0)" (click)="scrollToSection('proyectos'); toggleMenu()" [class.active]="activeSection === 'proyectos'">{{ getTranslation('projects')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
+            <li><a href="javascript:void(0)" (click)="scrollToSection('habilidades'); toggleMenu()" [class.active]="activeSection === 'habilidades'">{{ getTranslation('skills')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
+            <li><a href="javascript:void(0)" (click)="scrollToSection('contacto'); toggleMenu()" [class.active]="activeSection === 'contacto'">{{ getTranslation('contact')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
         </nav>
     </section>
     <section>
