@@ -2,6 +2,7 @@
     margin-top: 50px;
     margin-bottom: 110px;
     width: 100%;
+    padding: 0 20px;
 }
 .contacto .line-separador {
     width: 80px;
@@ -24,14 +25,14 @@
     color: #5f5f5f;
 }
 .contacto .contenedor {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 50px auto;
     border-radius: 15px;
     display: flex;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 .contacto .contenedor .informacion {
-    background-color: #FF8C48;
+    background-color: #FF8548;
     width: 50%;
     color: #fff;
     padding: 50px;
@@ -39,12 +40,12 @@
     border-bottom-left-radius: 15px;
 }
 .contacto .informacion h2 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 .contacto .informacion p{
-    line-height: 25px;
-    font-size: 17px;
+    line-height: 28px;
+    font-size: 18px;
     color: #FFD5C3;
 }
 
@@ -134,7 +135,7 @@ textarea.ng-invalid {
 
 .contacto input[type="text"]:focus,
 .contacto textarea:focus {
-    border: 2px solid #FF6B35;
+    border: 2px solid #FF8548;
 }
 .contacto button {
     width: 100%;
@@ -142,7 +143,7 @@ textarea.ng-invalid {
     background-color: var(--primary-color);
     border-radius: 50px;
     color: #fff;
-    padding: 15px 20px;
+    padding: 17px 20px;
     transition: background-color .3s;
     font-weight: bold;
     margin-top: 20px;
@@ -154,3 +155,31 @@ textarea.ng-invalid {
     background-color: #e64911;
 }
 
+
+@media screen and (max-width: 1100px) {
+    .contacto .contenedor {
+        display: block;
+    }
+    .contacto .contenedor .informacion {
+        width: 100%;
+    }
+    .contacto .informacion h2 {
+        font-size: 35px;
+    }
+    .contacto .informacion p {
+        font-size: 20px;
+    }
+    .contacto .informacion i {
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+    }
+    .contacto .informacion .text-info {
+        font-size: 18px;
+    }
+
+    .contacto form {
+        width: 95%;
+        margin: 40px 20px;
+    }
+}
