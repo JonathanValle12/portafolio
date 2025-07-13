@@ -1,35 +1,37 @@
 <header class="cabecera">
-    <h2 class="titulo" [ngClass]="{'show-titulo': showMenu}"><span>JV</span>Jonathan Valle</h2>
-    <section>
-        <nav class="nav-container" [ngClass]="{'show-menu' : showMenu}">
-            <li><a href="javascript:void(0)" (click)="scrollToSection('inicio'); toggleMenu()" [class.active]="activeSection === 'inicio'">{{ getTranslation('home')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('sobre-mi'); toggleMenu()" [class.active]="activeSection === 'sobre-mi'">{{ getTranslation('aboutMe')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('proyectos'); toggleMenu()" [class.active]="activeSection === 'proyectos'">{{ getTranslation('projects')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('habilidades'); toggleMenu()" [class.active]="activeSection === 'habilidades'">{{ getTranslation('skills')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
-            <li><a href="javascript:void(0)" (click)="scrollToSection('contacto'); toggleMenu()" [class.active]="activeSection === 'contacto'">{{ getTranslation('contact')}}<i *ngIf="activeSection === 'inicio'" class="bi bi-arrow-right icono-derecha"></i></a></li>
-        </nav>
-    </section>
-    <section>
-        <div class="select-icon">
-            <i class="bi" [ngClass]="{ 'bi-moon': isLightTheme(), 'bi-sun': !isLightTheme() }" (click)="toggleTheme()"
-                role="button">
-            </i>
-            <div class="language-selector">
-                <div
-                    class="language-option"
-                    [class.selected]="selectedLanguage === 'es'"
-                    (click)="changeLanguage('es')">
-                    ES
-                </div>
-                <div
-                    class="language-option"
-                    [class.selected]="selectedLanguage === 'en'"
-                    (click)="changeLanguage('en')">
-                    EN
+    <div class="cabecera-contenido">
+        <h2 class="titulo" [ngClass]="{'show-titulo': showMenu}"><span>JV</span>Jonathan Valle</h2>
+        <section>
+            <nav class="nav-container" [ngClass]="{'show-menu' : showMenu}">
+                <li><a href="javascript:void(0)" (click)="scrollToSection('inicio'); toggleMenu()" [class.active]="activeSection === 'inicio'">{{ getTranslation('home')}}<i class="bi bi-arrow-right icono-derecha"></i></a></li>
+                <li><a href="javascript:void(0)" (click)="scrollToSection('sobre-mi'); toggleMenu()" [class.active]="activeSection === 'sobre-mi'">{{ getTranslation('aboutMe')}}<i class="bi bi-arrow-right icono-derecha"></i></a></li>
+                <li><a href="javascript:void(0)" (click)="scrollToSection('proyectos'); toggleMenu()" [class.active]="activeSection === 'proyectos'">{{ getTranslation('projects')}}<i class="bi bi-arrow-right icono-derecha"></i></a></li>
+                <li><a href="javascript:void(0)" (click)="scrollToSection('habilidades'); toggleMenu()" [class.active]="activeSection === 'habilidades'">{{ getTranslation('skills')}}<i class="bi bi-arrow-right icono-derecha"></i></a></li>
+                <li><a href="javascript:void(0)" (click)="scrollToSection('contacto'); toggleMenu()" [class.active]="activeSection === 'contacto'">{{ getTranslation('contact')}}<i class="bi bi-arrow-right icono-derecha"></i></a></li>
+            </nav>
+        </section>
+        <section>
+            <div class="select-icon">
+                <i class="bi" [ngClass]="{ 'bi-moon': isLightTheme(), 'bi-sun': !isLightTheme() }" (click)="toggleTheme()"
+                    role="button">
+                </i>
+                <div class="language-selector">
+                    <div
+                        class="language-option"
+                        [class.selected]="selectedLanguage === 'es'"
+                        (click)="changeLanguage('es')">
+                        ES
+                    </div>
+                    <div
+                        class="language-option"
+                        [class.selected]="selectedLanguage === 'en'"
+                        (click)="changeLanguage('en')">
+                        EN
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <i *ngIf="showMenu" class="bi bi-x-lg" id="menu" (click)="toggleMenu()" aria-label="Close menu" role="button"></i>
-    <i *ngIf="!showMenu" class="bi bi-list" id="menu" (click)="toggleMenu()" aria-label="Open menu" role="button"></i>
+        </section>
+        <i *ngIf="showMenu" class="bi bi-x-lg" id="menu" (click)="toggleMenu()" aria-label="Close menu" role="button"></i>
+        <i *ngIf="!showMenu" class="bi bi-list" id="menu" (click)="toggleMenu()" aria-label="Open menu" role="button"></i>
+    </div>
 </header>

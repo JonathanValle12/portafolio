@@ -1,20 +1,22 @@
 :root {
     --primary-hover-color: #c37f00;
     --primary-color: #FFA500;
-    --background-color: #060624;
+    --background-color: #121212;
     --text-color: #fff;
     --text-active-color: #fff;
     --button-text-color: #fff;
     --border-color: #fff;
-    --background-contenedor-color: #060624;
+    --background-contenedor-color: #121212;
     --background-border-color: #FFA500;
     --line-color: #FFA500;
     --fondo-transition-color:  #fcb737;
     --text-transition-color: #000;
     --text-placeholder-color: #fff;
     --card-border-color: #fff;
-    --fondo-header-color: #060624;
+    --fondo-header-color: #121212;
     --icon-color: #fff;
     --background-card-border: rgb(95, 89, 89);
     --text-color-card: #014296;
+    --text-color-nav: #ffffff;
+    --background-nav-select-icon: #2a2a2a;
 }
