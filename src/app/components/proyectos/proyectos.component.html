@@ -1,7 +1,7 @@
 <div class="proyectos">
     <div class="line-separador"></div>
     <h2 class="titulo_proyectos">{{ getTranslation('projects')}}</h2>
-    <p class="desc-proyectos">Una selección de mis trabajos más destacados</p>
+    <p class="desc-proyectos">{{ getTranslation('selectProjectTitle') }}</p>
     <section class="card-section">
 
         <ng-container *ngFor="let proyecto of proyectos">
@@ -34,5 +34,7 @@
         </ng-container>
     </section>
     
-    <p class="ver-proyectos">Ver más proyectos <i class="bi bi-arrow-right"></i></p>
+    <div class="contenedor-ver-proyectos">
+        <a class="ver-proyectos">{{ getTranslation('moreButtonProject') }} <i class="bi bi-arrow-right"></i></a>
+    </div>
 </div>

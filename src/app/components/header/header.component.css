@@ -2,17 +2,17 @@
   width: 100%;
   background-color: var(--fondo-header-color);
   position: fixed;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid var(--background-border-bottom-header);
   height: 65px;
   z-index: 99999;
   display: flex;
-  justify-content: center; /* 👈 centramos el contenedor */
+  justify-content: center;
 }
 
 .cabecera-contenido {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* reparte logo - nav - selector */
+  justify-content: space-between;
   width: 100%;
   max-width: 1500px;
   margin: 0 20px;
@@ -32,6 +32,7 @@
     color: #FF6B35 !important;
     border-bottom: 3px solid #FF6B35;
     font-weight: bold;
+    padding-bottom: 3px;
 }
 .cabecera .select-icon {
     display: flex;
@@ -43,7 +44,6 @@
 }
 .cabecera nav a:hover {
     color: var(--primary-hover-color);
-    border-bottom: 2px solid var(--primary-hover-color);
 }
 .cabecera h2 {
     color: var(--primary-color);
@@ -116,9 +116,9 @@
         left: 0;
         width: 100%;
         height: calc(100vh - 65px);
-        background-color: #fff;
+        background-color: var(--background-color);
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 9999999;
         display: none;
@@ -136,22 +136,21 @@
         align-items: center;
         padding-bottom: 15px;
         font-size: 18px;
+        border-bottom: 1px solid var(--header-nav-underline);
+    }
+    .cabecera nav.nav-container a:hover {
+        color: var(--text-color-nav) !important;
     }
     .cabecera a.active{
         color: #FF6B35 !important;
-        border-bottom: 2px solid #FF6B35 !important;
-    }
-    .cabecera nav a:hover {
-        color: #000;
-        border-bottom: none;
+        border-bottom: 1px solid #FF6B35 !important;
     }
     .cabecera .bi-list,
     .cabecera .bi-x-lg {
-        color: var(--primary-color);
+        color: var(--text-color-nav);
         display: block;
-        background-color: rgb(236, 236, 236);
+        background-color: var(--background-nav-select-icon);
         border-radius: 50%;
-        color: #000;
         padding: 6px;
         font-size: 20px;
         margin-left: 12px;
@@ -163,7 +162,10 @@
         float: right;
         font-size: 16px;
         color: #cecece;
-        background-color: #fff;
+        background-color: var(--background-color);
         display: inline;
     }
+     .cabecera nav a.active .icono-derecha {
+        color: #FF6B35;
+     }
 }

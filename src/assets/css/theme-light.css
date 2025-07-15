@@ -1,11 +1,21 @@
 :root {
     --primary-hover-color: #FF6B35;
     --primary-color: #FF6B35;
+    --text-primary-color: #505050;
     --text-color: #2c2c2c;
+    --text-info: #1A1A1A;
     --text-active-color: #fff;
+    --background-in-icon: #ffe6dd;
+    --background-img-card-languaje: #FFFAF5;
+    --header-nav-underline: #d8d8d8;
     --button-active-text-color: #fff;
+    --background-nav-menu: #ECECEC;
+    --border-card-color: #fff;
     --button-text-color: #2c2c2c;
     --border-color: #2c2c2c;
+    --box-shadow-card: 0 6px 12px rgba(255, 232, 224, 0.5), 0 2px 6px rgba(0, 0, 0, 0.1);
+    --background-nametags: #F0E6DD;
+    --color-namestags-text: #000;
     --background-contenedor-color: #565656;
     --background-border-color: #FF4500;
     --line-color: #FF4500;
@@ -16,9 +26,32 @@
     --fondo-header-color: #fff;
     --icon-color: #2c2c2c;
     --background-color: #fff;
+    --text-languaje-color: #636363;
     --background-card-border: rgb(225, 226, 255);
     --text-color-card: rgb(18, 55, 203);
     --background-color: #fff;
+    --main-background-color: linear-gradient(to bottom, #FFFFFF 0%, #FFFAF5 100%);
+    --background-body-primary: #FFFAF5;
     --text-color-nav: #000000;
     --background-nav-select-icon: #f0e6dd;
+    --color-linea-nombre: #FFC9B5;
+    --background-main-role: #FFECE1;
+    --color-main-role-text: #FF6B35;
+    --color-description-presentation: #2c2c2c;
+    --background-button-download-cv: #ffeae3;
+    --color-button-download-cv: #535353;
+    --background-tag-developer: #FFF;
+    --background-line-available-job: #F0E6DD;
+    --background-border-bottom-header: #f1f1f1;
+    --background-about-me: #FFF;
+
+
+    --contact-text-color: #fff;
+    --contact-sub-text-color: #FFD5C3;
+    --contact-input-border: #e0e0e0;
+    --contact-form-text-color: #414141;
+    --contact-background-container: #ff7b23;
+
+    --icons-container-float: #ffffff;
+    --icons-container-float-text: #333;
 }

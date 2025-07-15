@@ -1,7 +1,7 @@
 <section class="sobre-mi">
     <div class="line-separador"></div>
-    <h2 class="titulo-sobre-mi">Sobre mi</h2>
-    <p class="subtitulo">Desarrollador apasionado por crear soluciones digitales innovadoras</p>
+    <h2 class="titulo-sobre-mi">{{ getTranslation('textAboutMe')}}</h2>
+    <p class="subtitulo">{{ getTranslation('aboutDescription')}}</p>
     <div class="contenedor-sobre-mi">
         <div class="lineas-card">
             <div class="line-top"></div>
@@ -37,13 +37,13 @@
                         <section class="informacion-perfil">
                             <h2>Jonathan valle</h2>
                             <p>{{getTranslation('textDescriptionMe')}}</p>
-                            <p>Barcelona, España</p>
+                            <p>{{ getTranslation('location')}}</p>
                             
                             <p class="centro-educativo">{{getTranslation('connectionsLinkedin')}} · {{getTranslation('textLocationMe')}}</p>
                             <div class="butones">
-                                <button>{{getTranslation('textConnectLinkedin')}}</button>
-                                <button>{{getTranslation('textMessageLinkedin')}}</button>
-                                <button aria-label="Ver más opciones"><i class="bi bi-three-dots" aria-label="Más opciones"></i></button>
+                                <span>{{getTranslation('textConnectLinkedin')}}</span>
+                                <span>{{getTranslation('textMessageLinkedin')}}</span>
+                                <span aria-label="Ver más opciones">Más</span>
                             </div>
                             <div class="busca-empleo">
                                 <div class="titulo-header">
@@ -53,7 +53,16 @@
                             </div>
                             <div class="busca-empleo">
                                 <div class="titulo-header">
-                                    <h3>{{getTranslation('textExperienciaLinkedin')}}</h3>
+                                    <h3>{{ getTranslation('textActivityLinkedin') }}</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="icon-circle icon-like">👍</div>
+                                        <div class="activity-content">
+                                            <p class="activity-text">{{ getTranslation('activityLiked') }}</p>
+                                            <span class="timestamp">{{ getTranslation('activityTime2h') }}</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -71,15 +80,15 @@
                 <article class="boxExp">
                     <i class="bi bi-clock"></i>
                     <div class="tiempoExp">
-                        <h3>+1 años</h3>
-                        <p>Experiencia</p>
+                        <h3>{{ getTranslation('textTimeExperiencie') }}</h3>
+                        <p>{{ getTranslation('textExperienciaLinkedin') }}</p>
                     </div>
                 </article>
                 <article class="boxExp">
                     <i class="bi bi-journal-bookmark"></i>
                     <div class="tiempoExp">
-                        <h3>Doble titulación</h3>
-                        <p>Institut TIC Barcelona</p>
+                        <h3>{{ getTranslation('textDegreeTitle') }}</h3>
+                        <p>{{ getTranslation('textDegreeInstitution') }}</p>
                     </div>
                 </article>
             </section>

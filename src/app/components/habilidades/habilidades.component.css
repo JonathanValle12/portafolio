@@ -1,9 +1,14 @@
+.habilidades {
+    background-color: var(--background-about-me);
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
 .habilidades .line-separador {
     width: 80px;
     height: 4px;
     background-color: #FF6B35;
-    margin-bottom: 15px;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-bottom: 20px;
 }
 .habilidades h2 {
     font-size: 2.2rem;
@@ -16,7 +21,7 @@
 .habilidades .subtitulo {
     text-align: center;
     font-size: 15px;
-    color: #5f5f5f;
+    color: var(--text-primary-color);
 }
 .habilidades .contenedor {
     max-width: 1140px;
@@ -28,7 +33,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 25px 0;
-    border: 7px solid #FFE8E0;
+    border: 7px solid var(--background-in-icon);
     border-radius: 15px;
 }
 .habilidades .card-section .card-skill {
@@ -39,7 +44,6 @@
     width: calc(16.666% - 10px);
     box-sizing: border-box;
     padding: 8px;
-    background-color: #fff;
     transition: transform 0.3s ease-in-out;
 }
 .habilidades .card-section .card-skill:hover {
@@ -47,7 +51,7 @@
 }
 .habilidades .card-section .card-skill h3 {
     font-size: 0.815rem;
-    color: #555555;
+    color: var(--text-languaje-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-top: 6px;
@@ -71,12 +75,12 @@
     object-fit: contain;
     margin-bottom: 6px;
     padding: 6px;
-    background-color: #fef2e9;
+    background-color: var(--background-img-card-languaje);
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .habilidades .card-section .card-skill:hover img {
-    background-color: #fcdace;
-    box-shadow: 0 6px 12px rgba(255, 232, 224, 0.5), 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-in-icon);
+    box-shadow: var(--box-shadow-card);
 }
 .habilidades .card-section .card-skill:hover h3 {
     color: #FF6B35;
@@ -100,10 +104,11 @@
     margin-top: 35px;
 }
 .habilidades .card02 .card {
+    flex: 1;
     padding: 25px 30px 30px 20px;
-    background-color: #FFFAF5;
+    background-color: var(--background-img-card-languaje);
     transition: border .3s ease;
-    margin-bottom: 130px;
+    margin-bottom: 40px;
 }
 .habilidades .card02 .card:hover {
     border: 1px solid #FF6B35;
@@ -111,16 +116,17 @@
 .habilidades .card02 .card h3 {
     font-weight: bold;
     font-size: 20px;
+    color: var(--text-color);
     margin: 15px 0 10px 0;
 }
 .habilidades .card02 .card p {
-    color: #717170;
+    color: var(--text-primary-color);
     font-size: 16px;
     line-height: 23px;
 }
 .habilidades .card02 .card i {
     color: #FF6B35;
-    background-color: #FFECE1;
+    background-color: var(--background-in-icon);
     border-radius: 50px;
     font-size: 26px;
     width: 3rem;

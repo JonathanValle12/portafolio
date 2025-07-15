@@ -1,3 +1,8 @@
+.proyectos {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: var(--background-body-primary);
+}
 .proyectos .card-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -27,11 +32,11 @@
 .proyectos .desc-proyectos {
     text-align: center;
     font-size: 15px;
-    color: #5f5f5f;
+    color: var(--text-primary-color);
     margin-bottom: 50px;
 }
 .proyectos .card-section .card01 {
-    border: 1px solid #e6e6e6;
+    border: 1px solid var(--border-card-color);
     border-radius: 12px;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -63,8 +68,8 @@
     margin-top: 25px;
 }
 .proyectos .contenedor-info .etiquetas-lenguajes p {
-    background-color: #F0E6DD;
-    color: #2A2A2A;
+    background-color: var(--background-nametags);
+    color: var(--color-nametags-text);
     font-weight: bold;
     opacity: .8;
     padding: 2px 8px;
@@ -82,7 +87,7 @@
 .proyectos .card-section p {
     margin-top: -5px;
     margin-bottom: 25px;
-    color: var(--text-color);
+    color: var(--text-info);
     font-family: "Montserrat", monospace;
     font-size: 13px;
 }
@@ -117,8 +122,8 @@
     border: 1px solid #dd4c18;
 }
 .proyectos .card-section .botones a:nth-child(2):hover {
-    background-color: #ffe4da !important;
-    color: #3f3f3f;
+    background-color: var(--background-in-icon) !important;
+    color: var(--button-text-color);
 }
 .proyectos .card-section .botones .disabled-link {
     pointer-events: none;
@@ -142,14 +147,21 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.proyectos .ver-proyectos {
-    color: #FF6B35;
-    font-weight: bold;
+.contenedor-ver-proyectos {
     text-align: center;
-    cursor: pointer;
-    font-size: 15px;
-    margin-bottom: 130px;
-    margin-top: 40px;
+}
+.ver-proyectos {
+  display: inline-block;
+  color: #FF6B35;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.proyectos .ver-proyectos:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 912px) {
