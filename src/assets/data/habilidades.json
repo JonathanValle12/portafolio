@@ -30,11 +30,6 @@
         "portada": "assets/img/skills/tailwindcss.webp"
     },
     {
-        "lenguaje": "SASS",
-        "descripcion": "language_sass_description",
-        "portada": "assets/img/skills/sass.webp"
-    },
-    {
         "lenguaje": "Node.js",
         "descripcion": "language_node_description",
         "portada": "assets/img/skills/nodejs.webp"

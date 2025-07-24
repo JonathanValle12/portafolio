@@ -1,12 +1,89 @@
 .contacto {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
+    background: var(--background-body-primary);
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.contacto .line-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin-bottom: 15px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.contacto .titulo_proyectos {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Montserrat", monospace;
+    font-weight: bold;
+}
+.contacto .desc-proyectos {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-primary-color);
+}
+.contacto .contenedor {
+    max-width: 1100px;
+    margin: 50px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.contacto .contenedor .informacion {
+    background-color: var(--contact-background-container);
+    width: 50%;
+    color: var(--contact-text-color);
+    padding: 50px 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.contacto .informacion h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.contacto .informacion p{
+    line-height: 28px;
+    font-size: 18px;
+    color: var(--contact-sub-text-color);
+}
+
+.contacto .informacion .correo,
+.contacto .informacion .localizacion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+.contacto .informacion i{
+    background-color: #FF9A6C;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    color: var(--contact-text-color);
+}
+.contacto .informacion p {
+    margin: 0;
+}
+.contacto .informacion .text-info {
+    color: var(--contact-text-color) !important;
+    font-weight: bold;
+    font-size: 15px;    
+}
+.contacto .informacion .redes {
+    display: inline-flex;
+    gap: 15px;
 }
 .contacto form {
-    width: 100%;
-    max-width: 450px;
-    margin: auto;
+    width: 50%;
+    margin: 35px 35px 0 35px;
+    padding:0px 0px 0px 10px;
 }
 .error-message {
     color: #dc3545;
@@ -18,6 +95,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-top: 20px;
 }
 .error-message i {
     margin-right: 0.5rem;
@@ -28,35 +106,21 @@ input.ng-invalid,
 textarea.ng-invalid {
     border-color: #dc3545;
 }
-
-.contacto h2 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    color: var(--text-color);
-    font-family: "Montserrat", monospace;
-}
 .contacto label {
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-left: 10px;
+    color: var(--text-languaje-color);
     font-family: "Montserrat", monospace;
+    font-size: 0.835rem;
+    font-weight: bold;
 }
-
 .contacto input[type="text"],
 .contacto textarea{
     width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--border-color);
-    outline: none;
-    padding: 10px;
+    border: 1px solid var(--contact-input-border);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px 10px;
     margin: 10px 0;
-    background-color: transparent !important;
-    color: var(--text-color);
-    margin-bottom: 35px;
-    
+    outline: none;
     
 }
 .contacto input[type="text"]::placeholder,
@@ -66,36 +130,52 @@ textarea.ng-invalid {
 }
 
 .contacto textarea {
-    min-height: 70px;
+    min-height: 150px;
     max-height: 150px;
 }
 
 .contacto input[type="text"]:focus,
 .contacto textarea:focus {
-    border-bottom: 1px solid var(--primary-color);
+    border: 2px solid #FF8548;
 }
-.contacto .contenedor-formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .contacto button {
     width: 100%;
     border: none;
     background-color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: 50px;
     color: #fff;
-    padding: 5px 20px;
-    transition: background-color .5s;
+    padding: 17px 20px;
+    transition: background-color .3s;
     font-weight: bold;
-    margin-bottom: 50px;
-    
-}
-.contacto .button-enviar {
-    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
 }
 .contacto button:hover {
-    background-color: var(--primary-hover-color);
+    background-color: #e64911;
 }
 
+@media screen and (max-width: 1200px) {
+    .contacto .contenedor {
+        margin: 50px 20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .contacto .contenedor {
+        display: block;
+    }
+    .contacto .contenedor .informacion {
+        width: 100%;
+    }
+    .contacto form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contacto .contenedor .informacion h2 { font-size: 25px; }
+    .contacto .informacion p { font-size: 17px; }
+}

@@ -1,38 +1,40 @@
 <div class="proyectos">
+    <div class="line-separador"></div>
     <h2 class="titulo_proyectos">{{ getTranslation('projects')}}</h2>
+    <p class="desc-proyectos">{{ getTranslation('selectProjectTitle') }}</p>
     <section class="card-section">
 
         <ng-container *ngFor="let proyecto of proyectos">
             <article class="card01">
-                <div class="scale-imagen">
-                    <img [src]="proyecto.imagen" [alt]="getTranslation(proyecto.titulo)"/>
-                    <div class="tecnologias">
-                        <div class="container-images">
-                            <ng-container *ngFor="let imagen of proyecto.tecnologias">
-                                <img [src]="imagen.tecnologia" [alt]="getTranslation(imagen.descripcion)" />
-                            </ng-container>
-                        </div>
-
+                <img [src]="proyecto.imagen" [alt]="getTranslation(proyecto.titulo)"/>
+                <div class="contenedor-info">
+                    <div class="etiquetas-lenguajes">
+                        <p>React Native</p>
+                        <p>Node.js</p>
+                        <p>MongoDB</p>
+                        <p>Css</p>
+                    </div>
+                    <h2>{{ getTranslation(proyecto.titulo_key)}}</h2>
+                    <p>{{ getTranslation(proyecto.descripcion_key)}}</p>
+                    <div class="botones">
+                        <a *ngIf="!proyecto.estado" href="{{proyecto.web_site}}" target="_blank"><i
+                                class="bi bi-box-arrow-up-right"></i>{{ getTranslation('buttonWeb')}}</a>
+                        <a *ngIf="!proyecto.estado" href="{{proyecto.github}}" target="_blank"><i
+                                class="bi bi-github"></i>{{ getTranslation('buttonGitHub')}}</a>
+                        <a *ngIf="proyecto.estado" class="disabled-link"><i
+                                class="bi bi-box-arrow-up-right"></i>{{ getTranslation('buttonWeb')}}</a>
+                        <a *ngIf="proyecto.estado" class="disabled-link"><i
+                                class="bi bi-github"></i>{{ getTranslation('buttonGitHub')}}</a>
                     </div>
                 </div>
-                <h2>{{ getTranslation(proyecto.titulo_key)}}</h2>
-                <p>{{ getTranslation(proyecto.descripcion_key)}}</p>
-                <div class="botones">
-                    <a *ngIf="!proyecto.estado" href="{{proyecto.web_site}}" target="_blank">{{ getTranslation('buttonWeb')}} <i
-                            class="bi bi-globe"></i></a>
-                    <a *ngIf="!proyecto.estado" href="{{proyecto.github}}" target="_blank">{{ getTranslation('buttonGitHub')}} <i
-                            class="bi bi-github"></i></a>
-                    <a *ngIf="proyecto.estado" class="disabled-link">{{ getTranslation('buttonWeb')}} <i
-                            class="bi bi-globe"></i></a>
-                    <a *ngIf="proyecto.estado" class="disabled-link">{{ getTranslation('buttonGitHub')}} <i
-                            class="bi bi-github"></i></a>
-                </div>
-                
                 <div *ngIf="proyecto.estado" class="estado-title">
                     <span>{{proyecto.estado}}</span>
                 </div>
             </article>
         </ng-container>
     </section>
-
+    
+    <div class="contenedor-ver-proyectos">
+        <a class="ver-proyectos">{{ getTranslation('moreButtonProject') }} <i class="bi bi-arrow-right"></i></a>
+    </div>
 </div>

@@ -1,39 +1,122 @@
 .sobre-mi {
-    margin-top: 130px;
-    border-radius: 10px;
-    margin-left: auto; 
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    padding-top: 80px;
+    background-color: var(--background-about-me);
+    padding-bottom: 30px;
+}
+
+.sobre-mi .line-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin-bottom: 15px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .sobre-mi .titulo-sobre-mi {
-    font-size: 3.5rem;
-    padding-bottom: 15px;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
     text-align: center;
     color: var(--text-color);
     font-family: "Montserrat", monospace;
+    font-weight: bold;
+}
+.sobre-mi .subtitulo {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-primary-color);
+    margin: 0 10px;
 }
 .sobre-mi .contenedor-sobre-mi {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 120px;
+    gap: 140px;
+    width: auto;
+    max-width: 1100px;
+    margin: 30px auto;
 }
 .sobre-mi .movie-card {
-    width: 100%;
-    max-width: 330px;
+    width: 329px;
+    max-width: 100%;
     background-color: #fff;
     margin: auto;
-    border-radius: 50px;
-    box-shadow: 0 14px 6px -6px rgba(0,0,0,0.5);
+    border-radius: 30px;
+    box-shadow: 0 14px 6px -6px rgba(46, 46, 46, 0.5);
     
-    border: 10px solid #000;
-    height: 490px;
-    overflow-y: scroll;
+    border: 9px solid #222222;
+    height: 580px;
+
+    overflow: hidden;
+    position: relative;
+}
+.sobre-mi .movie-card::before {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #333333;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sobre-mi .movie-card .parte-superior {
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 15px;
+    height: 21px;
+}
+.sobre-mi .movie-card .parte-superior p {
+    color: #fff;
+    font-size: 10px;
+}
+.sobre-mi .movie-card .parte-superior .circulos {
+    display: flex;
+    gap: 3px;
+    margin-top: 3px;
+}
+.sobre-mi .movie-card .parte-superior .circulos .circulo {
+    background-color: #D1D1D1;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.sobre-mi .lineas-card {
+    position: relative;
+    padding: 25px;
+}
+.line-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF6B35;
+    width: 100px;
+    height: 2px;
+}
+.line-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF6B35;
+    width: 2px;
+    height: 100px;
+}
+.line-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #FF6B35;
+    width: 2px;
+    height: 100px;
+}
+.line-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #FF6B35;
+    width: 100px;
+    height: 2px;
 }
 .sobre-mi .movie-card::-webkit-scrollbar {
     width: 0px;
@@ -45,7 +128,7 @@
     justify-content: center;
     align-items: center;
     gap: 13px;
-    margin-top: 15px;
+    margin-top: 7px;
     margin-bottom: 8px;
 }
 .sobre-mi .movie-card .menu-superior .search {
@@ -72,7 +155,7 @@
 }
 .sobre-mi .movie-card .banner img {
     width: 100%;
-    height: 85px;
+    height: 100px;
 }
 .sobre-mi .movie-card .banner .logo {
     background-color: #fff;
@@ -80,122 +163,151 @@
     border-top-right-radius: 50%;
     position: absolute;
     bottom: -25px;
-    left: 8px;
+    left: 10px;
 }
 .sobre-mi .movie-card .banner .logo img {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    margin: 6px;
+    margin: 4px;
     object-fit: cover;
 }
 .sobre-mi .movie-card .informacion-perfil {
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 10px;
     max-height: 400px;  
     font-family: "Montserrat", monospace;
 }
 .sobre-mi .movie-card .informacion-perfil h2 {
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     font-family: "Montserrat", monospace;
-}
-.sobre-mi .movie-card .informacion-perfil p:nth-child(2) {
-    font-size: 13px;
+    font-weight: bold;
+    color: #2b2b2b;
 }
 .sobre-mi .movie-card .informacion-perfil p {
-    width: 97%;
-    font-size: 12px;
-    margin-top: -8px;  
+    width: 90%;
+    font-size: 11px;
+    margin-top: -17px;  
 }
-.sobre-mi .movie-card .informacion-perfil .centro-educativo {
-    margin-top: 0;
+.sobre-mi .movie-card .informacion-perfil p:nth-child(2) {
+    line-height: 14px;
+}
+.sobre-mi .movie-card .informacion-perfil p:nth-child(3) {
+    margin-top: -8px;
+    margin-bottom: 25px;
 }
 .sobre-mi .movie-card .informacion-perfil p:nth-child(4) {
     font-size: 11px;
-    color: #9a9999;
+    color: #1EA5FF;
+    font-weight: bold;
 }
 .sobre-mi .movie-card .informacion-perfil .butones {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin: 15px 0;
 }
-.sobre-mi .movie-card .informacion-perfil .butones button {
+.sobre-mi .movie-card .informacion-perfil .butones span {
     font-size: 11px;
-    height: 30px;
     border-radius: 15px;
     border: none;
-    background-color: rgb(21, 25, 240);
+    background-color: #0077B5;
     color: #fff;
-    overflow: hidden;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
+    padding: 2px 13px;
 }
-.sobre-mi .movie-card .informacion-perfil .butones button:nth-child(2),
-.sobre-mi .movie-card .informacion-perfil .butones button:nth-child(3) {
+.sobre-mi .movie-card .informacion-perfil .butones span:nth-child(2),
+.sobre-mi .movie-card .informacion-perfil .butones span:nth-child(3) {
     background-color: transparent;
-    border: 1px solid rgb(21, 25, 240);
-    color: rgb(21, 25, 240);
+    border: 1px solid #0077B5;
+    color: #0077B5;
 }
-.sobre-mi .movie-card .informacion-perfil .butones button:nth-child(3) {
-    width: 11%;
-    padding-top: 4px;
-    height: 25px;
+.sobre-mi .movie-card .informacion-perfil .butones span:nth-child(3) {
+    border: 1px solid #838383;
+    color: #838383;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo {
     width: 95%;
-    background-color: rgb(225, 226, 255);
-    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
     margin-top: 10px;
     padding: 10px;
     padding-bottom: 0;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo h3 {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 20px;
     font-family: "Montserrat", monospace;
+    margin-bottom: 25px;
+    color: #414141;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo p {
-    font-size: 12px;
-    text-wrap: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.sobre-mi .movie-card .informacion-perfil .titulo-header i {
-    margin-top: -5px;
-}
-.sobre-mi .movie-card .informacion-perfil .busca-empleo p:nth-child(3) {
-    font-size: 12px;
-    color: rgb(18, 55, 203);
-    padding-bottom: 8px;
+    font-size: 11px;
+    width: 95%;
 }
 .sobre-mi .movie-card .informacion-perfil .busca-empleo .titulo-header {
     display: flex;
     justify-content: space-between;
 }
+.sobre-mi .movie-card .activity-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: -15px;
+}
+.sobre-mi .movie-card .activity-feed .icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.sobre-mi .movie-card .activity-feed .icon-like {
+    background-color: #e0efff;
+    color: #0073b1;
+}
+.sobre-mi .movie-card .busca-empleo .activity-feed .activity-item {
+    display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.sobre-mi .movie-card .activity-item .activity-text {
+    margin: 0;
+    flex-grow: 1;
+    line-height: 12px;
+}
+.sobre-mi .movie-card .activity-feed .activity-content {
+    width: 100%;
+}
+.sobre-mi .movie-card .activity-item .timestamp {
+    font-size: 11px;
+    color: #888;
+}
+.sobre-mi .bio-container .line {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin: 20px 0;
+}
+.sobre-mi .bio-container h2 {
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--text-color);
+}
+.sobre-mi .bio-container .bio-text {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: var(--text-info);
+}
 .sobre-mi .bio-container p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: left;
+    line-height: 1.8;
     color: var(--text-color);
     width: 100%;
     font-family: "Montserrat", monospace;
-    margin-bottom: 25px;
-}
-.sobre-mi .bio-container span {
-    width: 100%;
-    max-width: 180px;
-    background-color: transparent !important;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 7px;
-    color: #828282;
-    margin-top: 10px;
-    position: relative;
-    overflow: hidden;
 }
 .sobre-mi .bio-container span::before {
     content: '';
@@ -207,6 +319,58 @@
     animation: animated 1s linear infinite;
     animation-delay: 0s, 15s;
     border-radius: 15px;
+}
+
+.sobre-mi .bio-container .experiencia {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.sobre-mi .bio-container .boxExp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sobre-mi .bio-container .boxExp i {
+    font-size: 20px;
+    background-color: var(--background-in-icon);
+    border-radius: 50%;
+    color: #FF6B35;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.sobre-mi .bio-container .boxExp h3 {
+    font-size: 17px;
+    margin: auto;
+    color: var(--text-color);
+}
+.sobre-mi .bio-container .boxExp p {
+    line-height: 1;
+    font-size: 13px;
+    color: var(--text-primary-color);
+}
+.sobre-mi .bio-container .botones {
+    margin-top: 50px;
+}
+.sobre-mi .bio-container .botones a {
+    border: 1px solid #FF6B35;
+    border-radius: 50px;
+    padding: 12px 30px;
+    margin-right: 20px;
+    color: #FF6B35;
+    cursor: pointer;
+}
+.sobre-mi .bio-container .botones i {
+    margin-right: 10px;
+}
+.sobre-mi .bio-container .botones a:hover {
+    background-color: var(--background-in-icon);
+    color: var(--text-color);
 }
 @keyframes animated {
     0% {
@@ -231,58 +395,36 @@
     color: #fff;   
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
     .sobre-mi .contenedor-sobre-mi{
-        flex-direction: column;
-        gap: 50px;
+        display: block;
+        width: 100%;
+    }
+    .sobre-mi .movie-card {
+        width: 100%;
+        margin: auto;
     }
     .sobre-mi .contenedor-sobre-mi .bio-container{
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        
     }
+    .sobre-mi .lineas-card {
+        max-width: 370px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sobre-mi .bio-container p {
+        width: 95%;
+    }
+    .sobre-mi .bio-container .experiencia p {
+        width: 100%;
+    }
+    .sobre-mi .bio-container {
+        padding: 5px 20px;
+    }   
 }
-@media screen and (max-width: 950px) {
-    .sobre-mi .contenedor-sobre-mi .card{
-        width: 200px;
-        height: 280px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .card-contenedor .imagen {
-        width: 170px;
-        height: 150px;
-    }
-}
-@media screen and (max-width: 700px) {
-    .sobre-mi .contenedor-sobre-mi {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sobre-mi .contenedor-sobre-mi .card{
-        width: 300px;
-        height: 430px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .card-contenedor{
-        margin: 40px 25px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .card-contenedor .imagen {
-        width: 250px;
-        height: 250px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card-contenedor .imagen p {
-        font-size: 25px;
-        line-height: 10px;
-        margin-top: 15px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card-contenedor .imagen p:nth-child(3) {
-        font-size: 15px;
-    }
-    .sobre-mi .contenedor-sobre-mi .card .webPortafolio p {
-        text-align: center;
-    }
-    .sobre-mi .contenedor-sobre-mi .card-contenedor .line {
-        height: 300px;
-    }
-    .sobre-mi .contenedor-sobre-mi .bio-container p {
-        font-size: 16px;
-    }
 
+@media screen and (max-width: 900px) {
+    .sobre-mi .bio-container h2 {font-size: 23px;}
+    .sobre-mi .bio-container .bio-text { font-size: 16px;}
 }

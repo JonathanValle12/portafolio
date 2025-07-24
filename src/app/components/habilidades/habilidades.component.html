@@ -1,16 +1,36 @@
 <div class="habilidades">
+    <div class="line-separador"></div>
     <h2>{{ getTranslation('skills')}}</h2>
-    <section class="card-section">
+    <p class="subtitulo">{{ getTranslation('toolsAndTechnologiesTitle') }}</p>
+    <div class="contenedor">
+        <section class="card-section">
 
-        <ng-container *ngFor="let habilidad of habilidades">
-            <article class="card-skill">
-                <img [src]="habilidad.portada" [alt]="getTranslation(habilidad.descripcion)" />
-                <div class="contenido">
-                    <h3>{{habilidad.lenguaje}}</h3>
-                    <p>{{ getTranslation(habilidad.descripcion)}}</p>
-                </div>
-                <div class="porcentaje"></div>
+            <ng-container *ngFor="let habilidad of habilidades">
+                <article class="card-skill">
+                    <img [src]="habilidad.portada" [alt]="getTranslation(habilidad.descripcion)" />
+                    <div class="contenido">
+                        <h3>{{habilidad.lenguaje}}</h3>
+                    </div>
+                </article>
+            </ng-container>
+        </section>
+    
+        <section class="card02">
+            <article class="card">
+                    <i class="bi bi-laptop"></i>
+                    <h3>{{ getTranslation('servicesFrontendTitle') }}</h3>
+                    <p>{{ getTranslation('servicesFrontendDescription') }}</p>
             </article>
-        </ng-container>
-    </section>
+            <article class="card">
+                    <i class="bi bi-cloud"></i>
+                    <h3>{{ getTranslation('servicesBackendTitle') }}</h3>
+                    <p>{{ getTranslation('servicesBackendDescription') }}</p>
+            </article>
+            <article class="card">
+                    <i class="bi bi-list-task"></i>
+                    <h3>{{ getTranslation('servicesProjectsTitle') }}</h3>
+                    <p>{{ getTranslation('servicesProjectsDescription') }}</p>
+            </article>
+        </section>
+    </div>
 </div>

@@ -1,129 +1,130 @@
+.proyectos {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: var(--background-body-primary);
+}
 .proyectos .card-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 16px;
-    margin-bottom: 50px;
+    gap: 25px;
     grid-auto-flow: row;
+
+    width: 100%;
+    max-width: 1475px;
+    margin: auto;
+    padding: 0 20px;
+}
+.proyectos .line-separador {
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin-bottom: 15px;
+    margin: 20px auto;
 }
 .proyectos .titulo_proyectos {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
     color: var(--text-color);
-    margin-top: 100px;
-    margin-bottom: 65px;
-    font-size: 3.5rem;
     font-family: "Montserrat", monospace;
+    font-weight: bold;
 }
-.proyectos .tecnologias {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-.proyectos .card01:hover .tecnologias img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-    object-position: center;
-
-}
-.proyectos .card01 .tecnologias .container-images {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    transition: all .5s ease-in;
-}
-
-.proyectos .card01:hover .tecnologias .container-images:hover img {
-    transition: all .5s;
-}
-
-.proyectos .card01 .scale-imagen:hover .tecnologias {
-    display: block;
-}
-.proyectos .tecnologias .container-images img {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.proyectos .card01 .tecnologias .container-images:hover img {
-    opacity: 1;
-    transition-delay: 0.3s;
-}
-
-.proyectos .scale-imagen {
-    overflow: hidden;
-    position: relative;
-}
-.proyectos .scale-imagen img {
-    object-fit: cover;
-    object-position: center;
-}
-
-.proyectos .scale-imagen:hover img {
-    transform: scale(1.1);
-    transition: transform 0.5s;
+.proyectos .desc-proyectos {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-primary-color);
+    margin-bottom: 50px;
 }
 .proyectos .card-section .card01 {
-    border: 1px solid var(--card-border-color);
-    border-radius: 5px;
+    border: 1px solid var(--border-card-color);
+    border-radius: 12px;
     position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+.proyectos .card-section .card01:hover {
+    border: 1px solid #FF6B35;
+    transition: all .2s ease;
+}
+.proyectos .card-section .card01:hover .contenedor-info h2 {
+    color: #FF6B35;
+    transition: all .2s ease;
 }
 .proyectos .card-section img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     object-position: center;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+.proyectos .contenedor-info {
+    margin: 0 20px;
+}
+.proyectos .contenedor-info .etiquetas-lenguajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+.proyectos .contenedor-info .etiquetas-lenguajes p {
+    background-color: var(--background-nametags);
+    color: var(--color-nametags-text);
+    font-weight: bold;
+    opacity: .8;
+    padding: 2px 8px;
+    border-radius: 50px;
+    margin: 0;
+    font-size: 10px;
 }
 .proyectos .card-section h2 {
     font-size: 20px;
-    text-align: center;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 15px;
     color: var(--text-color);
     font-family: "Montserrat", monospace;
 }
 .proyectos .card-section p {
-    text-align: center;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 20px;
-    color: var(--text-color);
+    margin-top: -5px;
+    margin-bottom: 25px;
+    color: var(--text-info);
     font-family: "Montserrat", monospace;
+    font-size: 13px;
 }
-
 .proyectos .card-section .botones {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 .proyectos .card-section .botones a {
+    flex: 1 1 0;
     text-decoration: none;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     color: var(--text-active-color);
-    padding: 8px 40px;
-    border-radius: 15px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 0;
     font-weight: bold;
     font-size: 14px;
-    margin-bottom: 20px;
-    transition: background-color .5s, transform .5s;
+    margin-bottom: 23px;
+    transition: background-color .5s, transform .5s, border-color .5s;
     cursor: pointer;
+}
+.proyectos .card-section .botones a > i {
+    margin-right: 14px;
 }
 .proyectos .card-section .botones a:nth-child(2) {
     background-color: transparent !important;
-    color: var(--text-color);
+    color: #FF6B35;
 }
 .proyectos .card-section .botones a:hover {
-    transform: scale(1.1);
-    background-color: var(--primary-hover-color);
+    background-color: #dd4c18;
+    border: 1px solid #dd4c18;
 }
-
+.proyectos .card-section .botones a:nth-child(2):hover {
+    background-color: var(--background-in-icon) !important;
+    color: var(--button-text-color);
+}
 .proyectos .card-section .botones .disabled-link {
     pointer-events: none;
     filter: saturate(70%);
@@ -133,18 +134,34 @@
 }
 .proyectos .estado-title {
     position: absolute;
-    top: 35px;
-    left: -25px;
-    font-size: 14px;
+    top: 20px;
+    left: 0;
+    font-size: 12px;
     font-weight: bold;
     color: white;
-    padding: 8px 20px;
+    padding: 0px 6px;
     background-color: var(--primary-color);
-    border: 2px solid white;
-    border-radius: 20px;
-    transform: rotate(-45deg);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
     z-index: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-ver-proyectos {
+    text-align: center;
+}
+.ver-proyectos {
+  display: inline-block;
+  color: #FF6B35;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.proyectos .ver-proyectos:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 912px) {
