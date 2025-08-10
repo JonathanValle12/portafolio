@@ -54,6 +54,8 @@ export const TRANSLATIONS_ES = {
     plataforma_cursos_online_title: 'Plataforma Cursos Online',
     js_game_title: 'Juegos JavaScript',
     CRIPTOclave_title: 'CRIPTOclave: Contraseñas Seguras',
+    evaluadorTecnico_title: 'Evaluador Técnico',
+    evaluadorTecnico_description: 'Analiza tu CV o portafolio con IA y recibe recomendaciones para mejorar y destacar frente a reclutadores',
     redSocial_title: 'Clon Twitter',
     redSocial_description: 'Clon de Twitter para móviles con funcionalidades de autentificación y publicación de tweets.',
     CRIPTOclave_description: 'CRIPTOclave crea contraseñas seguras al instante para proteger tus cuentas en línea con combinaciones únicas de caracteres y símbolos.',

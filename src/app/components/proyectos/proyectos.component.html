@@ -9,10 +9,7 @@
                 <img [src]="proyecto.imagen" [alt]="getTranslation(proyecto.titulo)"/>
                 <div class="contenedor-info">
                     <div class="etiquetas-lenguajes">
-                        <p>React Native</p>
-                        <p>Node.js</p>
-                        <p>MongoDB</p>
-                        <p>Css</p>
+                        <p *ngFor="let tecnologia of proyecto.tecnologias">{{ tecnologia }}</p>
                     </div>
                     <h2>{{ getTranslation(proyecto.titulo_key)}}</h2>
                     <p>{{ getTranslation(proyecto.descripcion_key)}}</p>

@@ -1,29 +1,11 @@
 [
     {
-        "titulo_key": "redSocial_title",
-        "imagen": "assets/img/proyectos/redSocial.png",
-        "descripcion_key": "redSocial_description",
-        "estado": "En construccion",
-        "github": "#",
-        "web_site": "#",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/react.webp",
-                "descripcion": "language_react_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/nodejs.webp",
-                "descripcion": "language_node_descriptio"
-            },
-            {
-                "tecnologia": "assets/img/skills/mongodb.webp",
-                "descripcion": "language_mongodb_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/css3.webp",
-                "descripcion": "language_css_description"
-            }
-        ]
+        "titulo_key": "evaluadorTecnico_title",
+        "imagen": "assets/img/proyectos/Evaluador_tecnico.webp",
+        "descripcion_key": "evaluadorTecnico_description",
+        "github": "https://github.com/JonathanValle12/analizador-profesional",
+        "web_site": "https://analizador-profesional.vercel.app/",
+        "tecnologias": ["React", "TypeScript", "Tailwind"]
     },
     {
         "titulo_key": "trello_title",
@@ -31,16 +13,7 @@
         "descripcion_key": "trello_description",
         "github": "https://github.com/JonathanValle12/Trello.git",
         "web_site": "https://trello-two-lilac.vercel.app/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/angular.webp",
-                "descripcion": "language_react_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/tailwindcss.webp",
-                "descripcion": "language_tailwindcss_description"
-            }
-        ]
+        "tecnologias": ["Angular", "Tailwind"]
     },
     {
         "titulo_key": "clon_spotify_title",
@@ -48,21 +21,7 @@
         "descripcion_key": "spotify_description",
         "github": "https://github.com/JonathanValle12/clon_spotify.git",
         "web_site": "https://clon-spotify-alpha.vercel.app/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/react.webp",
-                "descripcion": "language_react_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/css3.webp",
-                "descripcion": "language_css_description"
-            },
-            
-            {
-                "tecnologia": "assets/img/skills/vite.png",
-                "descripcion": "language_vite_description"
-            }
-        ]
+        "tecnologias": ["React", "Css"]
     },
     {
         "titulo_key": "CRIPTOclave_title",
@@ -70,20 +29,7 @@
         "descripcion_key": "CRIPTOclave_description",
         "github": "https://github.com/JonathanValle12/generador-clave.git",
         "web_site": "https://generador-clave.vercel.app/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/react.webp",
-                "descripcion": "language_react_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/tailwindcss.webp",
-                "descripcion": "language_tailwindcss_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/vite.png",
-                "descripcion": "language_vite_description"
-            }
-        ]
+        "tecnologias": ["React", "Tailwind"]
     },
     {
         "titulo_key": "js_game_title",
@@ -91,16 +37,15 @@
         "descripcion_key": "jsGame_description",
         "github": "https://github.com/JonathanValle12/JSGames",
         "web_site": "https://js-games-one.vercel.app/",
-        "tecnologias": [
-            {
-                "tecnologia": "assets/img/skills/astro.png",
-                "descripcion": "language_html_description"
-            },
-            {
-                "tecnologia": "assets/img/skills/tailwindcss.webp",
-                "descripcion": "language_css_description"
-            }
-        ]
+        "tecnologias": ["Astro", "Tailwind"]
+    },
+        {
+        "titulo_key": "redSocial_title",
+        "imagen": "assets/img/proyectos/redSocial.png",
+        "descripcion_key": "redSocial_description",
+        "estado": "En construccion",
+        "github": "#",
+        "web_site": "#",
+        "tecnologias": ["React Native", "NodeJS", "MongoDB", "Css"]
     }
-    
 ]
